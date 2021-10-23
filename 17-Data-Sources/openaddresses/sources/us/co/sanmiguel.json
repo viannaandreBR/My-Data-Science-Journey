@@ -1,0 +1,51 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08113",
+            "name": "San Miguel County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "san miguel"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "San Miguel County",
+                "data": "https://services.arcgis.com/aXqye4IXyXsdIpPb/ArcGIS/rest/services/Addresses/FeatureServer/0",
+                "website": "http://www.sanmiguelcountyco.gov/185/MappingGIS",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "SAN",
+                        "SNS"
+                    ],
+                    "street": [
+                        "PRD",
+                        "RD",
+                        "STS"
+                    ],
+                    "unit": "UNIT",
+                    "city": "MCN"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "San Miguel County",
+                "data": "https://services.arcgis.com/aXqye4IXyXsdIpPb/ArcGIS/rest/services/TaxParcelsPublic/FeatureServer/0",
+                "website": "http://www.sanmiguelcountyco.gov/185/MappingGIS",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

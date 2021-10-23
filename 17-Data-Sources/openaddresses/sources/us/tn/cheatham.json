@@ -1,0 +1,29 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "47021",
+            "name": "Cheatham County",
+            "state": "Tennessee"
+        },
+        "country": "us",
+        "state": "tn",
+        "county": "Cheatham"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gismapper.apsu.edu/arcgis/rest/services/Cheatham/CheathamViewer/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "housenum",
+                    "street": "street_nam",
+                    "region": "state",
+                    "postcode": "zip"
+                }
+            }
+        ]
+    }
+}

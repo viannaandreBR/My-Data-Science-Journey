@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "31097",
+            "name": "Johnson County",
+            "state": "Nebraska"
+        },
+        "country": "us",
+        "state": "ne",
+        "county": "Johnson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://maps5.gisworkshop.com/ArcGIS/rest/services/Johnson/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "field": "PROPADDRESS",
+                        "pattern": "^([0-9]+)"
+                    },
+                    "street": {
+                        "function": "regexp",
+                        "field": "PROPADDRESS",
+                        "pattern": "^(?:[0-9]+ )(.*)",
+                        "replace": "$1"
+                    }
+                }
+            }
+        ]
+    }
+}

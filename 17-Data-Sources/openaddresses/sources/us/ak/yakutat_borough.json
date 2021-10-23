@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "02282",
+            "name": "Yakutat Borough",
+            "state": "Alaska"
+        },
+        "country": "us",
+        "state": "ak",
+        "county": "Yakutat"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services2.arcgis.com/gRKiTtxkoTx0gERB/ArcGIS/rest/services/AddressingOnline/FeatureServer/2",
+                "website": "http://www.arcgis.com/home/item.html?id=3635a612b78042a4ac705c5f73ae4007",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddressNumber",
+                    "street": "FullStreetName",
+                    "unit": "BuildingLetter"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services2.arcgis.com/gRKiTtxkoTx0gERB/ArcGIS/rest/services/ParcelsOnline/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "ParcelID"
+                }
+            }
+        ]
+    }
+}

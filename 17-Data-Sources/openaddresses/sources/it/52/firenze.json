@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                11.171,
+                43.78
+            ]
+        },
+        "country": "it",
+        "state": "Tuscany",
+        "city": "Firenze"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://datigis.comune.fi.it/shp/civici.zip",
+                "website": "http://www.datiopen.it/it/opendata/Comune_di_Firenze_Civici",
+                "license": {
+                    "text": "CC by 3.0",
+                    "attribution": true,
+                    "share-alike": false
+                },
+                "attribution": "Città di Firenze",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "accuracy": 1,
+                    "srs": "EPSG:3003",
+                    "number": "numerocivi",
+                    "street": "strada"
+                }
+            }
+        ]
+    }
+}

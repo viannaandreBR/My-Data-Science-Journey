@@ -1,0 +1,29 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41037",
+            "state": "Oregon",
+            "name": "Lake County"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Lake"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://lcmaps.lanecounty.org/arcgis/rest/services/PATS/LakePATSBaseMap/MapServer/231",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDR_NUM",
+                    "street": "STREETNAME",
+                    "city": "USPS_CITY",
+                    "postcode": "ZIP5"
+                }
+            }
+        ]
+    }
+}

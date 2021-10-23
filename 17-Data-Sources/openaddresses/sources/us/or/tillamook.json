@@ -1,0 +1,46 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41057",
+            "name": "Tillamook County",
+            "state": "Oregon"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Tillamook"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "ftp://ftp.lcog.org//lcog/Outgoing/TillamookECD/Tillamook_Deliverable_2017_10_30.zip",
+                "protocol": "ftp",
+                "compression": "zip",
+                "conform": {
+                    "format": "gdb",
+                    "file": "Tillamook_Deliverable.gdb",
+                    "layer": "Address_Point",
+                    "number": [
+                        "stnum",
+                        "stnumsuf"
+                    ],
+                    "street": [
+                        "predir",
+                        "name",
+                        "type",
+                        "sufdir"
+                    ],
+                    "unit": [
+                        "unit_type",
+                        "unit"
+                    ],
+                    "city": "postcomm",
+                    "district": "county",
+                    "region": "state",
+                    "postcode": "zip"
+                }
+            }
+        ]
+    }
+}

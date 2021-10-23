@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "39061",
+            "county": "Hamilton County",
+            "state": "Ohio"
+        },
+        "country": "us",
+        "state": "oh",
+        "county": "Hamilton"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://cagisonline.hamilton-co.org/arcgis/rest/services/Countywide_Layers/addressesTables/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "HNUM",
+                    "street": [
+                        "CAGDIR",
+                        "CAGSTRNAME",
+                        "CAGSFX"
+                    ],
+                    "unit": "UNIT",
+                    "format": "geojson",
+                    "postcode": "ZIPCODE",
+                    "city": "JURISFULL",
+                    "region": "STATE"
+                }
+            }
+        ]
+    }
+}

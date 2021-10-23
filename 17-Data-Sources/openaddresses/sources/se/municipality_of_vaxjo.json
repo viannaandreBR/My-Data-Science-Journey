@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                14.578,
+                56.925
+            ]
+        },
+        "country": "se",
+        "city": "Växjö"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://gis1.vaxjo.se/arcgis/rest/services/Kartgenerering/Grundkarta_WM/MapServer/59",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADRPLATS",
+                    "street": "ADROMRADE",
+                    "city": "POSTORT",
+                    "id": "ACEID"
+                }
+            }
+        ]
+    }
+}

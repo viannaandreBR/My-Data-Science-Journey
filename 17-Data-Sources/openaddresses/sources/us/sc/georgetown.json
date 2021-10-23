@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "45043",
+            "name": "Georgetown County",
+            "state": "South Carolina"
+        },
+        "country": "us",
+        "state": "sc",
+        "county": "Georgetown"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis1.georgetowncountysc.org/webadaptor/rest/services/GeorgetownCountyMapServer/MapServer/8",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUM",
+                    "street": {
+                        "function": "remove_prefix",
+                        "field": "ADDRESS",
+                        "field_to_remove": "ADDRESS"
+                    }
+                }
+            }
+        ]
+    }
+}

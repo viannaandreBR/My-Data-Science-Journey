@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "22099",
+            "name": "St. Martin Parish",
+            "state": "Louisiana"
+        },
+        "country": "us",
+        "state": "la",
+        "county": "St. Martin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://services.geoportalmaps.com/arcgis/rest/services/StMartin_Services/MapServer/8",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NO",
+                    "street": [
+                        "ST_DIR",
+                        "STREET_NAM",
+                        "ST_SUFFIX"
+                    ],
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

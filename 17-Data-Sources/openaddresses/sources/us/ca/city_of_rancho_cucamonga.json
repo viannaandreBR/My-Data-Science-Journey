@@ -1,0 +1,52 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.566174,
+                34.12459
+            ]
+        },
+        "US Census": {
+            "geoid": "0659451",
+            "name": "City of Rancho Cucamonga",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "San Bernardino",
+        "city": "Rancho Cucamonga"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://services1.arcgis.com/bF44QtfoYZDGo7TK/arcgis/rest/services/AddressesPublic/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ST_NUM",
+                    "street": [
+                        "ST_NAME",
+                        "ST_SUFF"
+                    ],
+                    "unit": "UNIT",
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "data": "https://services1.arcgis.com/bF44QtfoYZDGo7TK/ArcGIS/rest/services/Parcels_Public_View/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "APN_TEXT"
+                }
+            }
+        ]
+    }
+}

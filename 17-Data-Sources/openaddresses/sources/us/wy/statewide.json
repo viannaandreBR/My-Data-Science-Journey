@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "56",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "state",
+                "data": "https://ptd.wyo.gov/parcels/Wyoming_Parcels.zip",
+                "protocol": "http",
+                "website": "https://www.arcgis.com/apps/webappviewer/index.html?id=4bb9a66f7287402b8f650aa9f21d3fa5",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile-polygon",
+                    "srs": "EPSG:4326",
+                    "id": "PARCELNO",
+                    "number": {
+                        "function": "regexp",
+                        "field": "locationad",
+                        "pattern": "^([0-9]+)"
+                    },
+                    "unit": {
+                        "function": "regexp",
+                        "field": "locationad",
+                        "pattern": "^(?:[0-9]+ )(?:.*?)( {2}.*)$"
+                    },
+                    "street": {
+                        "function": "regexp",
+                        "field": "locationad",
+                        "pattern": "^(?:[0-9]+ )(.*?)(?: {2}.*)?$",
+                        "replace": "$1"
+                    }
+                }
+            }
+        ]
+    }
+}

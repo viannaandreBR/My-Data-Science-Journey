@@ -1,0 +1,41 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.89,
+                33.81
+            ]
+        },
+        "US Census": {
+            "geoid": "0653980",
+            "name": "City of Orange",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "city": "orange"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "attribution": "City of Orange",
+                "data": "http://gis.cityoforange.org/orangegis/rest/services/ParcelPublicAccessMI/MapServer/3",
+                "website": "http://cityoforange.org/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "street": "FULLNAME",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "city": "MUNICIPALITY"
+                }
+            }
+        ]
+    }
+}

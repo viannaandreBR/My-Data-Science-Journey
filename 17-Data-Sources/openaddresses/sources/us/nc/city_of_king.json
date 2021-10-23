@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -80.389,
+                36.282
+            ]
+        },
+        "US Census": {
+            "geoid": "3735760",
+            "name": "City of King",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "city": "King"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://www.webgis.net/arcgis/rest/services/NC/CityOfKing/MapServer/18",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "PHYSICAL_ADDRESS"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "PHYSICAL_ADDRESS"
+                    }
+                }
+            }
+        ]
+    }
+}

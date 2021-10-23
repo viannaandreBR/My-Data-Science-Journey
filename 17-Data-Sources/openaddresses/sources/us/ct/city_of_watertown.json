@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.184,
+                41.615
+            ]
+        },
+        "US Census": {
+            "geoid": "09-80490",
+            "name": "City of Watertown",
+            "state": "Connecticut"
+        },
+        "country": "us",
+        "state": "ct",
+        "city": "watertown"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "attribution": "City of Watertown",
+                "data": "http://107.20.209.214/ArcGIS/rest/services/WatertownCT/WatertownDynamic/MapServer/0",
+                "website": "http://www.watertownct.org/",
+                "protocol": "ESRI",
+                "conform": {
+                    "street": "ParcelPolygon.StreetName",
+                    "number": "ParcelPolygon.StreetNumber",
+                    "format": "geojson",
+                    "postcode": "cama.zip"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "schema": 2,
+    "coverage": {
+        "US Census": {"geoid": "26081", "name": "Kent County", "state": "Michigan"},
+        "country": "us",
+        "state": "mi",
+        "county": "Kent"
+    },
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.kentcountymi.gov/agisprod/rest/services/ParcelsWithCondos/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "PROPERTYADDRESS"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "PROPERTYADDRESS"
+                    },
+                    "city": "PROPADDRESSCITY"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://gis.kentcountymi.gov/agisprod/rest/services/BuildingFootprints/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://gis.kentcountymi.gov/agisprod/rest/services/FGDBParcels/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PPN"
+                }
+            }
+        ]
+    }
+}

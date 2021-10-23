@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.146,
+                39.893
+            ]
+        },
+        "US Census": {
+            "geoid": "0883835",
+            "name": "City of Westminster",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "city": "Westminster"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "attribution": "City of Westminster",
+                "data": "http://maps.cityofwestminster.us/arcgis/rest/services/Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "ADDRNUM",
+                    "street": [
+                        "STREETDIR",
+                        "STREETNAME",
+                        "STREETTYPE"
+                    ],
+                    "unit": "UNITNUM",
+                    "format": "geojson",
+                    "postcode": "ZIPCODE",
+                    "district": "COUNTY"
+                }
+            }
+        ]
+    }
+}

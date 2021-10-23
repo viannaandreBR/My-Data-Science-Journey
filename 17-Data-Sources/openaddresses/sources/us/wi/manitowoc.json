@@ -1,0 +1,46 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55071",
+            "name": "Manitowoc County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Manitowoc"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://manitowocmaps.info/arcgis/rest/services/AnnotationWork/MapServer/89",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HNUM",
+                    "street": [
+                        "PREDIR",
+                        "PRE_CNTY",
+                        "NAME",
+                        "RD_TYPE",
+                        "SUFFIX"
+                    ],
+                    "postcode": "ZIPCODE",
+                    "city": "PSTL_CITY"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://manitowocmaps.info/arcgis/rest/services/AnnotationWork/MapServer/91",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "ParcelsWCities.PIN"
+                }
+            }
+        ]
+    }
+}

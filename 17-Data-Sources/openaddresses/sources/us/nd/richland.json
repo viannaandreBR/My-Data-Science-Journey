@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "38077",
+            "name": "Richland County",
+            "state": "North Dakota"
+        },
+        "country": "us",
+        "state": "nd",
+        "county": "Richland"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "https://c39gisserver.co.richland.nd.us/arcgis/rest/services/Addressing/Addresses/MapServer/362",
+                "conform": {
+                    "format": "geojson",
+                    "number": "house_num",
+                    "street": [
+                        "street",
+                        "st_suffix",
+                        "st_postdir"
+                    ],
+                    "unit": "house_num_suf",
+                    "city": "postal_comm",
+                    "region": "state",
+                    "postcode": "zip_code"
+                }
+            }
+        ]
+    }
+}

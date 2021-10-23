@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12083",
+            "name": "Marion County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Marion"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.marioncountyfl.org/arcgis/rest/services/Geocortex/AddressPnts/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NU",
+                    "street": [
+                        "PREFIX",
+                        "STREET_NA",
+                        "TYPE",
+                        "SUFFIX"
+                    ],
+                    "unit": "UNIT",
+                    "city": "CITY",
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ]
+    }
+}

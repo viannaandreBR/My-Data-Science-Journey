@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "17019",
+            "name": "Champaign County",
+            "state": "Illinois"
+        },
+        "country": "us",
+        "state": "il",
+        "county": "Champaign"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www.maps.ccgisc.org/arcgismaps/rest/services/Webmap_Champaign/AddressPointLabels/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "id": "UniqueID",
+                    "number": "AddNum",
+                    "unit": "SubAddress",
+                    "street": "StreetName",
+                    "postcode": "Zip"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "18035",
+            "name": "Delaware County",
+            "state": "Indiana"
+        },
+        "country": "us",
+        "state": "in",
+        "county": "Delaware"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://data.openaddresses.io/cache/uploads/trescube/f39920/DelawareCoIndianaAddressPts_04102017.shp.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "HOUSE",
+                    "street": [
+                        "DIR",
+                        "STREET"
+                    ],
+                    "unit": "SUFFIX",
+                    "city": "COMMUNITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "5380010",
+            "name": "City of Yakima",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Yakima"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://map.co.thurston.wa.us/arcgis/rest/services/Thurston/Thurston_AddressPoints_TCOMM/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "Unit",
+                    "number": [
+                        "Add_Number",
+                        "AddNum_Suf"
+                    ],
+                    "street": "STREET",
+                    "city": "Post_Comm",
+                    "postcode": "Post_Code"
+                }
+            }
+        ]
+    }
+}

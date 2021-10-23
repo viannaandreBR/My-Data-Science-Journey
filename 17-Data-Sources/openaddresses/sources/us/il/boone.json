@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "17007",
+            "name": "Boone County",
+            "state": "Illinois"
+        },
+        "country": "us",
+        "state": "il",
+        "county": "Boone"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://maps.boonecountyil.org/arcgis/rest/services/Ownership_Parcels/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "add_num",
+                    "street": [
+                        "add_prefix",
+                        "add_strt",
+                        "add_type",
+                        "add_sdir"
+                    ],
+                    "city": "add_munic",
+                    "postcode": "add_zip"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "coverage": {
+        "country": "gg",
+        "ISO 3166": {
+            "alpha2": "GG",
+            "country": "Guernsey"
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "data": "https://gps.digimap.gg/arcgis/rest/services/AddressPointLabels/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "LocationOn",
+                    "street": "RoadName",
+                    "city": "ParishName",
+                    "postcode": "PostCode"
+                }
+            }
+        ]
+    }
+}

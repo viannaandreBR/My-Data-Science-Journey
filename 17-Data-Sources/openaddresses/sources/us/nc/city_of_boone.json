@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -81.667,
+                36.21
+            ]
+        },
+        "US Census": {
+            "geoid": "3707080",
+            "name": "City of Boone",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "city": "Boone"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://gisviewer.townofboone.net/arcgis/rest/services/Parcels/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "PROPADDRESS"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "PROPADDRESS"
+                    }
+                }
+            }
+        ]
+    }
+}

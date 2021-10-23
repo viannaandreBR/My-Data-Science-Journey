@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55097",
+            "name": "Portage County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Portage"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gisinfo.co.portage.wi.us/gis/rest/services/webGIS/LandRecords2/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "street": "FullName",
+                    "unit": "UNITID",
+                    "postcode": "Zipcode",
+                    "city": "City"
+                }
+            }
+        ]
+    }
+}

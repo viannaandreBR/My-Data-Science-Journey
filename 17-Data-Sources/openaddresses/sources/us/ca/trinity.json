@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06105",
+            "name": "Trinity County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Trinity"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services2.arcgis.com/32siQkg0O6da8zFF/ArcGIS/rest/services/Address_Locations/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STREET_NUMBER",
+                    "street": [
+                        "STREET_NAME",
+                        "STREET_TYPE"
+                    ],
+                    "unit": "UNIT_NUMBER",
+                    "city": "COMMUNITY",
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services2.arcgis.com/32siQkg0O6da8zFF/ArcGIS/rest/services/Parcel_Service/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCEL"
+                }
+            }
+        ]
+    }
+}

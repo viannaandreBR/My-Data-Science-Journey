@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "13217",
+            "name": "Newton County",
+            "state": "Georgia"
+        },
+        "country": "us",
+        "state": "ga",
+        "county": "Newton"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.ncboc.com/arcgis/rest/services/Public/Newton_Address_Points/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddNum",
+                    "street": [
+                        "StPreDir",
+                        "StPreType",
+                        "StName",
+                        "StType",
+                        "StDir"
+                    ],
+                    "unit": [
+                        "UnitType",
+                        "Unit"
+                    ],
+                    "postcode": "ZipCode"
+                }
+            }
+        ]
+    }
+}

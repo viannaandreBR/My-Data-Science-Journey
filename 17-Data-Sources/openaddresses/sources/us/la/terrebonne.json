@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "22109",
+            "name": "Terrebonne Parish",
+            "state": "Louisiana"
+        },
+        "country": "us",
+        "state": "la",
+        "county": "Terrebonne"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://services.geoportalmaps.com/arcgis/rest/services/Terrebonne_Service/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "MUN_NO",
+                    "street": [
+                        "DIR",
+                        "STREET",
+                        "DESIGNATIO"
+                    ],
+                    "unit": "APT_LOT",
+                    "city": "PSDA",
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ]
+    }
+}

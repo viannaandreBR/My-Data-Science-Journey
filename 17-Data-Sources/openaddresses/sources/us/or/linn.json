@@ -1,0 +1,41 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41043",
+            "name": "Linn County",
+            "state": "Oregon"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Linn"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://data.openaddresses.io/cache/uploads/migurski/d5add2/oregon_state_addresses.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "gdb",
+                    "file": "Delivery/addresses_oregon.gdb",
+                    "layer": "Linn",
+                    "number": [
+                        "NUMBER",
+                        "NUM_FRAC"
+                    ],
+                    "street": [
+                        "PRE_DIR",
+                        "STREET",
+                        "SUFFIX",
+                        "POST_DIR"
+                    ],
+                    "unit": "UNIT",
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

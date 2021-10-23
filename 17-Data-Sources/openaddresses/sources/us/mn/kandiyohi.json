@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27067",
+            "name": "Kandiyohi County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Kandiyohi"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "http://gis.co.kandiyohi.mn.us/maps/kandigis/",
+                "data": "http://gis.co.kandiyohi.mn.us/arcgis/rest/services/Kandiyohi/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUM",
+                    "street": "STREETNAME",
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

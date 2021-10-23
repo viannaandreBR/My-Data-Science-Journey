@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53007",
+            "name": "Chelan County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Chelan"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": {
+                    "text": "Public Domain",
+                    "attribution": false,
+                    "share-alike": false
+                },
+                "protocol": "ftp",
+                "compression": "zip",
+                "note": "point shapefile AddressPoints.shp, address columns: FULLADDR, FULLNAME, POST_COMM",
+                "data": "ftp://ponyexpress.co.chelan.wa.us/gis/Transportation/AddressPoints.zip",
+                "website": "http://www.co.chelan.wa.us/assessor/mapping/default.htm",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ADDRNUM",
+                    "street": "FULLNAME",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "city": "POST_COMM",
+                    "district": "COUNTY",
+                    "addrtype": "ADDRESS_SU",
+                    "postcode": "POST_CODE"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "56005",
+            "name": "Campbell County",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy",
+        "county": "Campbell"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "note": "This source is county-only addresses. There are two cities inside the county that have their own sources (Wright and Gillette)",
+                "data": "https://gis.ccgov.net/arcgis/rest/services/Campbell_Public/AddressesCountywide/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "unit": "UNITNAME",
+                    "street": "SP_STREET",
+                    "postcode": "ZIP",
+                    "city": "CITY"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37195",
+            "name": "Wilson County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Wilson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.wilson-co.com/arcgis/rest/services/Base_Layers/County_Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STNUM",
+                    "street": [
+                        "PREDIR",
+                        "STNAME",
+                        "SUFFIX",
+                        "POSTDIR"
+                    ],
+                    "unit": [
+                        "POSTQUAL",
+                        "APTNUM"
+                    ],
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

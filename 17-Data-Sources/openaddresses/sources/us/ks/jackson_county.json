@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20085",
+            "name": "Jackson County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Jackson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "number": "PropStNum",
+                    "street": [
+                        "PropStDir",
+                        "PropStName",
+                        "PropStSuff",
+                        "PropStSuDi"
+                    ],
+                    "city": "PropCity",
+                    "region": "PropState",
+                    "postcode": "PropZip"
+                },
+                "data": "http://gis.publicaccessnow.com/arcgis/rest/services/JacksonKs/JacksonKsDynamic/MapServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

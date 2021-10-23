@@ -1,0 +1,44 @@
+{
+    "schema": 2,
+    "coverage": {
+        "US Census": {
+            "geoid": "32023",
+            "name": "Nye County",
+            "state": "Nevada"
+        },
+        "country": "us",
+        "state": "nv",
+        "county": "Nye"
+    },
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/4YineAQdtmx0tv46/ArcGIS/rest/services/NyeNVFeatures/FeatureServer/6",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUMBER",
+                    "street": [
+                        "ST_PREFIX",
+                        "ST_PRETYPE",
+                        "ST_NAME",
+                        "ST_POSTTYPE",
+                        "ST_POSTDIR"
+                    ]
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/4YineAQdtmx0tv46/ArcGIS/rest/services/NyeNVFeatures/FeatureServer/5",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "GIS_Parcel_Number"
+                }
+            }
+        ]
+    }
+}

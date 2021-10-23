@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55087",
+            "name": "Outagamie County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Outagamie"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.outagamie.org/arcgis/rest/services/Address/ADDRESSES/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRESS_NUM",
+                    "unit": "UNIT",
+                    "street": [
+                        "PREFIX",
+                        "STREET_NAME",
+                        "SUFFIX"
+                    ],
+                    "city": "MA_CITY",
+                    "postcode": "MA_ZIP",
+                    "accuracy": 1
+                }
+            }
+        ]
+    }
+}

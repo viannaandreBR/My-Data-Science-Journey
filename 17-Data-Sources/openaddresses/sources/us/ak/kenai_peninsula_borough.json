@@ -1,0 +1,51 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "02122",
+            "name": "Kenai Peninsula Borough",
+            "state": "Alaska"
+        },
+        "country": "us",
+        "state": "ak",
+        "county": "Kenai Peninsula Borough"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Copyright © 2021 Kenai Peninsula Borough",
+                "data": "ftp://ftp.borough.kenai.ak.us/GIS/Downloads/Shapefiles/PhysicalAddress.zip",
+                "website": "http://www.kpb.us/gis-dept/kpb-data-downloads/cadastre",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "street": [
+                        "STREET_PRE",
+                        "STREET_NAM",
+                        "STREET_SUF",
+                        "STREET_POS"
+                    ],
+                    "number": "HouseNumbe",
+                    "format": "shapefile",
+                    "postcode": "ZIP_CODE",
+                    "city": "COMM_NAME"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Copyright © 2021 Kenai Peninsula Borough",
+                "data": "ftp://ftp.borough.kenai.ak.us/GIS/Downloads/Shapefiles/PhysicalAddress.zip",
+                "website": "http://www.kpb.us/gis-dept/kpb-data-downloads/cadastre",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "pid": "PARCEL_ID"
+                }
+            }
+        ]
+    }
+}

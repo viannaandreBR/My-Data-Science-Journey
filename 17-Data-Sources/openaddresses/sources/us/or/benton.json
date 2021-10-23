@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41003",
+            "name": "Benton County",
+            "state": "Oregon"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Benton"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.co.benton.or.us/gisdata/Address/houses.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ST_NUMBR",
+                    "street": [
+                        "ST_PFX",
+                        "ST_NAME",
+                        "ST_TYPE",
+                        "ST_SFX"
+                    ],
+                    "unit": [
+                        "UNIT",
+                        "UNITNUM"
+                    ],
+                    "postcode": "ZIP",
+                    "city": "CITY"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "29009",
+            "name": "Barry County",
+            "state": "Missouri"
+        },
+        "country": "us",
+        "state": "mo",
+        "county": "Barry"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis-server.greatriv.com/ArcGIS/rest/services/BarryCo/BarryCo_operational/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "address",
+                    "street": "roadname",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

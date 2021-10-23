@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "18093",
+            "name": "Lawrence County",
+            "state": "Indiana"
+        },
+        "country": "us",
+        "state": "in",
+        "county": "Lawrence"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://elb2.39dn.com/arcgis/rest/services/eGISDynamicServices/LawrenceINDynamic/MapServer/9",
+                "protocol": "ESRI",
+                "skip": true,
+                "note": "39dn requested that we stop using data obtained from their servers on 2017-05-07",
+                "conform": {
+                    "number": "House",
+                    "street": "Street",
+                    "city": "Community",
+                    "postcode": "Zip",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

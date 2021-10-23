@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "country": "at",
+        "ISO 3166": {
+            "alpha2": "AT",
+            "country": "Austria"
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "website": "http://www.bev.gv.at/portal/page?_pageid=713,1604469&_dad=portal&_schema=PORTAL",
+                "license": "http://www.bev.gv.at/portal/page?_pageid=713,2573888&_dad=portal&_schema=PORTAL",
+                "attribution": "© Austrian address register, date data from 2021-04-01",
+                "data": "https://v2.openaddresses.io/batch-prod/upload/1/2745sy2ib6x/at-31254.zip",
+                "year": "2021",
+                "compression": "zip",
+                "protocol": "http",
+                "conform": {
+                    "format": "shapefile",
+                    "number": {
+                        "function": "join",
+                        "fields": [
+                            "HAUSNRZAHL",
+                            "HAUSNRBUCH"
+                        ],
+                        "separator": ""
+                    },
+                    "street": "STRASSE_ST",
+                    "postcode": "PLZ",
+                    "city": "GEMEINDE_G"
+                }
+            }
+        ]
+    }
+}

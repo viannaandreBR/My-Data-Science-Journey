@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -80.22,
+                26.141
+            ]
+        },
+        "US Census": {
+            "geoid": "1224000",
+            "name": "Fort Lauderdale",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "city": "Fort Lauderdale"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.fortlauderdale.gov/arcgis/rest/services/PropertyReporter/Interactive/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUM",
+                    "street": [
+                        "PREFDIR",
+                        "PREFTYPE",
+                        "STREETNAME",
+                        "SUFFTYPE",
+                        "SUFFDIR"
+                    ],
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "city": "MUNICIPALITY",
+                    "region": "ADDRSTATE",
+                    "postcode": "ADDRZIP"
+                }
+            }
+        ]
+    }
+}

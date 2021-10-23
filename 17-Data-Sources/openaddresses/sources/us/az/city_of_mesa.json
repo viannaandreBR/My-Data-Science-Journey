@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -111.73,
+                33.39
+            ]
+        },
+        "US Census": {
+            "geoid": "446000",
+            "name": "City of Mesa",
+            "state": "Arizona"
+        },
+        "country": "us",
+        "state": "az",
+        "city": "Mesa"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://services2.arcgis.com/1gVyYKfYgW5Nxb1V/arcgis/rest/services/Address/FeatureServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Mesa",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "ADDRESSNUMBER",
+                        "ADDRESSFRACTION"
+                    ],
+                    "street": "ADDRESSSTREETNAME",
+                    "unit": [
+                        "UNITDESIGNATION",
+                        "UNITNUMBER"
+                    ],
+                    "city": "JURISDICTION"
+                }
+            }
+        ]
+    }
+}

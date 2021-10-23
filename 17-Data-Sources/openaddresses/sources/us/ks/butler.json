@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20015",
+            "name": "Butler County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Butler"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "http://ww1.bucoks.com/arcgis/rest/services/BuCoKs_NGAddressPoints/MapServer/0",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "HNO",
+                        "HNS"
+                    ],
+                    "unit": "UNIT",
+                    "street": [
+                        "PRD",
+                        "STP",
+                        "RD",
+                        "STS"
+                    ],
+                    "city": "MUNI",
+                    "region": "COUNTY",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

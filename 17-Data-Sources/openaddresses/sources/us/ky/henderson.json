@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "21101",
+            "name": "Henderson County",
+            "state": "Kentucky"
+        },
+        "country": "us",
+        "state": "ky",
+        "county": "Henderson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.hendersonky.us/arcgis/rest/services/Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDR_NUM",
+                    "unit": "ADDR_NUM_SUF",
+                    "street": [
+                        "PREFIX_DIR",
+                        "NAME",
+                        "PREFIX_TYPE",
+                        "TYPE",
+                        "SUFFIX_DIR"
+                    ],
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ]
+    }
+}

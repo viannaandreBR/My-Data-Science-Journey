@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37047",
+            "name": "Columbus County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Columbus"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www2.columbusco.org/GISDATA/Addresses.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ADDRESS",
+                    "street": {
+                        "function": "regexp",
+                        "field": "FULLADD",
+                        "pattern": "^([0-9]+) (.*)",
+                        "replace": "$2"
+                    },
+                    "unit": "APT"
+                }
+            }
+        ]
+    }
+}

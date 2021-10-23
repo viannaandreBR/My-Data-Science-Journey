@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "54077",
+            "name": "Preston County",
+            "state": "West Virginia"
+        },
+        "country": "us",
+        "state": "wv",
+        "county": "Preston"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://ags.agdmaps.com/arcgis/rest/services/PrestonWV/MapServer/254",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "unit",
+                    "number": "number_",
+                    "street": "street",
+                    "city": "community",
+                    "postcode": "zip",
+                    "accuracy": 1
+                }
+            }
+        ]
+    }
+}

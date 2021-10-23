@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "56017",
+            "name": "Hot Springs County",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy",
+        "county": "Hot Springs"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://maps.hscounty.com/mapserver/",
+                "compression": "zip",
+                "data": "http://maps.hscounty.com/download/parcels.zip",
+                "protocol": "http",
+                "conform": {
+                    "format": "shapefile-polygon",
+                    "srs": "EPSG:3738",
+                    "file": "export/parcels.shp",
+                    "number": {
+                        "function": "regexp",
+                        "field": "st_address",
+                        "pattern": "^([0-9]+)"
+                    },
+                    "street": {
+                        "function": "regexp",
+                        "field": "st_address",
+                        "pattern": "^(?:[0-9]+ )(.*)",
+                        "replace": "$1"
+                    },
+                    "id": "pidn",
+                    "accuracy": 2
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "nd",
+        "county": "Stark",
+        "city": "Dickinson",
+        "US Census": {
+            "geoid": "3819620",
+            "name": "City of Dickinson",
+            "state": "North Dakota"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -102.788527,
+                46.887047
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "protocol": "ESRI",
+                "data": "http://maps5.gisworkshop.com/ArcGIS/rest/services/CityofDickinsonElectric/MapServer/4",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "field": "PROPADDRESS",
+                        "pattern": "^(\\S+)"
+                    },
+                    "street": {
+                        "function": "regexp",
+                        "field": "PROPADDRESS",
+                        "pattern": "^(?:\\S+ )(.*)",
+                        "replace": "$1"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37097",
+            "name": "Iredell County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Iredell"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://icgis.co.iredell.nc.us/arcgis/rest/services/Data/Addresses/FeatureServer/0",
+                "protocol": "ESRI",
+                "website": "http://hub.arcgis.com/datasets/2f0f14bbf30e454780f230f2d84a1bb8_0",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "St_Number",
+                        "St_NumSuffix"
+                    ],
+                    "unit": [
+                        "UnitType",
+                        "Unit"
+                    ],
+                    "street": [
+                        "PreDir",
+                        "St_Name",
+                        "St_Type",
+                        "PostDir"
+                    ],
+                    "city": "POCity",
+                    "postcode": "Zipcode"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53017",
+            "name": "Douglas County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Douglas"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://www.douglascountywa.net/departments/tls/gis/",
+                "protocol": "ESRI",
+                "data": "https://gis.douglascountywa.net/server/rest/services/InterActiveWebMap/MapServer/3",
+                "website": "http://www.douglascountywa.net/departments/tls/gis/",
+                "conform": {
+                    "format": "geojson",
+                    "number": "BLDG_NUM",
+                    "street": "STREET",
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "license": "http://www.douglascountywa.net/departments/tls/gis/",
+                "protocol": "ESRI",
+                "data": "https://gis.douglascountywa.net/server/rest/services/InterActiveWebMap/MapServer/2",
+                "website": "http://www.douglascountywa.net/departments/tls/gis/",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "ParcelNumb"
+                }
+            }
+        ]
+    }
+}

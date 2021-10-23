@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "21019",
+            "name": "Boyd County",
+            "state": "Kentucky"
+        },
+        "country": "us",
+        "state": "ky"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "state",
+                "data": "https://data.openaddresses.io/cache/uploads/iandees/4c9049/MasterAddresses.zip",
+                "note": "Shapefile received from Sandy Ott, http://boydcounty911.com/",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "NUMBER",
+                    "street": "STREET"
+                }
+            }
+        ]
+    }
+}

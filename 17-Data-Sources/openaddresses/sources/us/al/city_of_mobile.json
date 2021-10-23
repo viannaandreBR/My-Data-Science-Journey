@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.233,
+                30.702
+            ]
+        },
+        "US Census": {
+            "geoid": "0150000",
+            "name": "City of Mobile",
+            "state": "Alabama"
+        },
+        "country": "us",
+        "state": "al",
+        "city": "Mobile"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://maps.cityofmobile.org/arcgis/rest/services/Address_Points_MS/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HSN",
+                    "unit": "UNITNO",
+                    "street": "ROADNAME",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "data": "https://maps.cityofmobile.org/arcgis/rest/services/Parcel_Details_MS/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCEL"
+                }
+            }
+        ]
+    }
+}

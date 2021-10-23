@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.8,
+                35.611
+            ]
+        },
+        "US Census": {
+            "geoid": "3725300",
+            "name": "City of Fuquay-Varina",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "city": "Fuquay-Varina"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://arcgis.fuquay-varina.org/arcgis/rest/services/public/Address_Points/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Str_Num",
+                    "street": [
+                        "Str_Dir",
+                        "Str_Name",
+                        "Str_Type",
+                        "Post_Str_D"
+                    ],
+                    "unit": "Str_Apt_Nu"
+                }
+            }
+        ]
+    }
+}

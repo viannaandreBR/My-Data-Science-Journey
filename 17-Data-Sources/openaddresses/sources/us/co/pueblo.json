@@ -1,0 +1,65 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08101",
+            "name": "Pueblo County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Pueblo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Pubelo County",
+                "data": "http://maps.co.pueblo.co.us/outside/rest/services/internal_map_services/planning_countywide_data/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "ADDRNUM",
+                        "ADDRNUM_SFX"
+                    ],
+                    "unit": "APT_UNIT",
+                    "street": [
+                        "STPREDIR",
+                        "STPRETYPE",
+                        "STNAME",
+                        "STTYPE",
+                        "STDIR"
+                    ],
+                    "postcode": "ZIP",
+                    "city": "CITY",
+                    "region": "STATE",
+                    "accuracy": 1
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Pubelo County",
+                "data": "http://maps.co.pueblo.co.us/outside/rest/services/pueblo_county_parcels_bld_footprints/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PAR_NUM"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "attribution": "Pubelo County",
+                "data": "http://maps.co.pueblo.co.us/outside/rest/services/pueblo_county_parcels_bld_footprints/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

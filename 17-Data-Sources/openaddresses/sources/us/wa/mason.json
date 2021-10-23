@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53045",
+            "name": "Mason County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Mason"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://www.co.mason.wa.us/gis/disclaimer.php",
+                "protocol": "ESRI",
+                "data": "http://gis.co.mason.wa.us/arcgis/rest/services/MasonCoSite/SiteAddresses/MapServer/0",
+                "website": "http://www.co.mason.wa.us/gis/",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STREETNUMB",
+                    "street": "STREET",
+                    "unit": "STRNUMSUFF",
+                    "city": "CITYWHOLE",
+                    "postcode": "ZIP_CD"
+                }
+            }
+        ]
+    }
+}

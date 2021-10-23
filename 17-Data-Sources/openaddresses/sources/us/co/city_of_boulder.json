@@ -1,0 +1,70 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.31,
+                40.029
+            ]
+        },
+        "US Census": {
+            "geoid": "0807850",
+            "name": "City of Boulder",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "city": "Boulder"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "website": "https://open-data.bouldercolorado.gov/",
+                "data": "https://maps.bouldercolorado.gov/arcgis/rest/services/plan/AddressPoints/MapServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Boulder",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "UNITID",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "FULLADDR"
+                    },
+                    "street": [
+                        "PREDIR",
+                        "STREETNAME",
+                        "STREETSUFFIX",
+                        "POSTDIR"
+                    ]
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "website": "https://open-data.bouldercolorado.gov/",
+                "data": "https://maps.bouldercolorado.gov/arcgis/rest/services/plan/Parcels/MapServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Boulder",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCELNUM"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "city",
+                "website": "https://open-data.bouldercolorado.gov/",
+                "data": "https://maps.bouldercolorado.gov/arcgis/rest/services/general/BuildingFootprints/MapServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Boulder",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

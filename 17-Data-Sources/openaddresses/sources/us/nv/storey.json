@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "32029",
+            "name": "Storey County",
+            "state": "Nevada"
+        },
+        "country": "us",
+        "state": "nv",
+        "county": "Storey"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://douglasnvgis.info/varcgis/rest/services/StoreyCo/ParcelsWGS84/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "PLOC_",
+                    "street": [
+                        "PLOCDR",
+                        "PLOCNM"
+                    ]
+                }
+            }
+        ]
+    }
+}

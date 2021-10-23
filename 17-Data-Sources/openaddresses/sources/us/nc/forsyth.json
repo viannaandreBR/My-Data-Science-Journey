@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37067",
+            "name": "Forsyth County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Forsyth"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://maps.co.forsyth.nc.us/arcgis/rest/services/Addressing/AddressSearch/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNIT"
+                    ],
+                    "street": [
+                        "STDIR",
+                        "STNAME",
+                        "STTYPEPO"
+                    ],
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

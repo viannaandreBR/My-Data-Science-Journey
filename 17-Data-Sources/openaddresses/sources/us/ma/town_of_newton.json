@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ma",
+        "county": "Middlesex",
+        "city": "Newton",
+        "US Census": {
+            "geoid": "2545560",
+            "name": "Town of Newton",
+            "state": "Massachusetts"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -71.1953,
+                42.3612
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://github.com/NewtonMAGIS/GISData/raw/master/Addresses/Addresses.geojson",
+                "website": "https://github.com/NewtonMAGIS/GISData/",
+                "protocol": "http",
+                "conform": {
+                    "format": "geojson",
+                    "id": "AddressID",
+                    "number": "Number",
+                    "street": [
+                        "StreetName",
+                        "PostType"
+                    ],
+                    "unit": "Unit",
+                    "city": "City",
+                    "postcode": "ZipCode"
+                }
+            }
+        ]
+    }
+}

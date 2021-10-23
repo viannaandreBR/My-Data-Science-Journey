@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12119",
+            "name": "Sumter County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Sumter"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.sumtercountyfl.gov/sumtergis/rest/services/Interactive/Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADD_NUM",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITNUM"
+                    ],
+                    "street": "FULLSTREET",
+                    "city": "CITY",
+                    "postcode": "POST_CODE"
+                }
+            }
+        ]
+    }
+}

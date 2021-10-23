@@ -1,0 +1,54 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06033",
+            "name": "Lake County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Lake"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Lake County",
+                "data": "https://gispublic.co.lake.ca.us/server/rest/services/ParcelsFV/Mapserver/0",
+                "website": "http://gis.co.lake.ca.us/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "SITUSNUM",
+                    "street": "SITUSSTR"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Lake County",
+                "data": "https://gispublic.co.lake.ca.us/server/rest/services/ParcelsFV/Mapserver/0",
+                "website": "http://gis.co.lake.ca.us/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "APN"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "attribution": "Lake County",
+                "data": "https://gispublic.co.lake.ca.us/server/rest/services/Misc/buildings/MapServer/0",
+                "website": "http://gis.co.lake.ca.us/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

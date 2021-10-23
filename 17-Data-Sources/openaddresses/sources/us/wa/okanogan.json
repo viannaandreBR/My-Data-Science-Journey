@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53047",
+            "name": "Okanogan County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Okanogan"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://okanogancounty.org/planning/data.htm",
+                "protocol": "ftp",
+                "compression": "zip",
+                "year": "2020",
+                "data": "ftp://24.181.140.100/DISPATCH/2020-07-28_Address_Points.zip",
+                "website": "http://okanogancounty.org/planning/data.htm",
+                "conform": {
+                    "format": "shapefile",
+                    "unit": "e911_unit",
+                    "number": "e911_add",
+                    "street": "dis_road",
+                    "city": "city"
+                }
+            }
+        ]
+    }
+}

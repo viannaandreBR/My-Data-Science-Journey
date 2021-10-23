@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -98.034,
+                30.308
+            ]
+        },
+        "US Census": {
+            "geoid": "4805000",
+            "name": "City of Austin",
+            "state": "Texas"
+        },
+        "country": "us",
+        "state": "tx",
+        "city": "Austin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "website": "https://data.austintexas.gov/Locations-and-Maps/Addresses/mkjr-t5r2",
+                "data": "https://data.austintexas.gov/api/geospatial/mkjr-t5r2?method=export&format=Shapefile",
+                "license": {
+                    "text": "Public Domain",
+                    "attribution": false,
+                    "share-alike": false
+                },
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "full_stree"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "full_stree"
+                    },
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

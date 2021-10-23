@@ -1,0 +1,62 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08014",
+            "name": "Broomfield County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Broomfield"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services1.arcgis.com/vXSRPZbyyOmH9pek/arcgis/rest/services/Addresses/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "ADDRESS_NUMBER",
+                        "ADDRESS_NUMBER_SUFFIX"
+                    ],
+                    "unit": "CONCATENATE_UNIT",
+                    "street": [
+                        "STREET_PREDIRECTIONAL",
+                        "STREET_PREMODIFIER",
+                        "STREET_PRETYPE",
+                        "STREET_NAME",
+                        "STREET_POSTTYPE",
+                        "STREET_POSTMODIFIER",
+                        "STREET_POSTDIRECTIONAL"
+                    ],
+                    "city": "CITY",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services1.arcgis.com/vXSRPZbyyOmH9pek/ArcGIS/rest/services/Parcels/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCELNUMBER"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://services1.arcgis.com/vXSRPZbyyOmH9pek/ArcGIS/rest/services/BuildingFootprints/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

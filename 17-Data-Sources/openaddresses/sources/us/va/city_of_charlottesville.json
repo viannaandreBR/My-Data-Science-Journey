@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -78.479,
+                38.0299
+            ]
+        },
+        "US Census": {
+            "geoid": "51540",
+            "name": "City of Charlottesville",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "city": "Charlottesville"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://widget.charlottesville.org/gis/zip_download/parcel_point.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ST_NUMBER",
+                    "street": "ST_NAME",
+                    "unit": "ST_UNIT",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

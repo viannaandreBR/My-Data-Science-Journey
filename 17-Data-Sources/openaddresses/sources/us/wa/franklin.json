@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53021",
+            "name": "Franklin County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Franklin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://gis.co.franklin.wa.us/datadisclaimer.shtml",
+                "protocol": "ESRI",
+                "data": "https://gisportal.franklin.co.franklin.wa.us/arcgis/rest/services/Address/FeatureServer/0",
+                "website": "http://franklingis.org/",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HouseNumber",
+                    "street": [
+                        "DirPrefix",
+                        "FeatureName",
+                        "FeatureType",
+                        "DirSuffix"
+                    ],
+                    "unit": [
+                        "UnitType",
+                        "UnitNumber"
+                    ]
+                }
+            }
+        ]
+    }
+}

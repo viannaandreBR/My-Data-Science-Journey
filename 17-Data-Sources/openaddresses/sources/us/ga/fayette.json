@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "13113",
+            "name": "Fayette County",
+            "state": "Georgia"
+        },
+        "country": "us",
+        "state": "ga",
+        "county": "Fayette"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "http://arcgis4.roktech.net/arcgis/rest/services/FayetteCountyGA/dynamicLocal/MapServer/17",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "pattern": "^(\\d+[A-Z]?)(?:.*)$",
+                        "field": "FullAddr"
+                    },
+                    "street": {
+                        "function": "regexp",
+                        "pattern": "^(?:\\d+[A-Z]?)\\s*(.*?)(?:\\s*#.*?)?$",
+                        "field": "FullAddr"
+                    },
+                    "unit": [
+                        "UnitType",
+                        "Unit"
+                    ],
+                    "city": "City",
+                    "postcode": "ZipCode",
+                    "region": "State"
+                }
+            }
+        ]
+    }
+}

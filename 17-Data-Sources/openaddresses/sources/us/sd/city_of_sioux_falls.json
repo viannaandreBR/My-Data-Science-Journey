@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.816,
+                43.541
+            ]
+        },
+        "US Census": {
+            "geoid": "4659020",
+            "name": "City of Sioux Falls",
+            "state": "South Dakota"
+        },
+        "country": "us",
+        "state": "sd",
+        "city": "Sioux Falls"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "protocol": "ESRI",
+                "data": "https://gis.siouxfalls.org/arcgis/rest/services/Data/Property/MapServer/0",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUM",
+                    "street": [
+                        "PR1",
+                        "STNM1",
+                        "TYP1",
+                        "PD1"
+                    ],
+                    "unit": "ADDRESSNUM_SUF",
+                    "city": "MUNICIPALITY",
+                    "district": "COUNTY",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

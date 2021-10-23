@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "56015",
+            "name": "Goshen County",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy",
+        "county": "Goshen"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services1.arcgis.com/HGQgPu4V7Rwvw86U/arcgis/rest/services/GoshenWAB_Parcels/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "StreetNo",
+                    "street": [
+                        "StreetDire",
+                        "StreetName",
+                        "StreetSuff"
+                    ],
+                    "city": "StreetCity"
+                }
+            }
+        ]
+    }
+}

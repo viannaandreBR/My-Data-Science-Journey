@@ -1,0 +1,48 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "01055",
+            "name": "Etowah County",
+            "state": "Alabama"
+        },
+        "country": "us",
+        "state": "al",
+        "county": "Etowah"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://web4.kcsgis.com/kcsgis/rest/services/Etowah/Public/MapServer/38",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "SitusStreetNumber",
+                    "street": "SitusStreetName"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://web4.kcsgis.com/kcsgis/rest/services/Etowah/Public/MapServer/38",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://web4.kcsgis.com/kcsgis/rest/services/Etowah/Public/MapServer/41",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

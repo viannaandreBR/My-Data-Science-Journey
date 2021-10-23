@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "21111",
+            "name": "Jefferson County",
+            "state": "Kentucky"
+        },
+        "country": "us",
+        "state": "ky",
+        "county": "Jefferson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "ftp://ftp.lojic.org/Pub/federal/",
+                "data": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/OpenDataAddresses/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENO",
+                    "street": [
+                        "DIR",
+                        "STRNAME",
+                        "TYPE"
+                    ],
+                    "unit": "APT",
+                    "city": "MUNI_NAME",
+                    "postcode": "ZIPCODE"
+                },
+                "attribution": "Metro Louisville,  LOJIC partners"
+            }
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06031",
+            "name": "Kings County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Kings"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Kings County",
+                "data": "http://kingscountygis.com:6080/arcgis/rest/services/Kings/MapServer/9",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STREET_NBR",
+                    "street": [
+                        "STREET_DIR",
+                        "STREET_NAM",
+                        "STREET_TYP"
+                    ],
+                    "unit": {
+                        "function": "regexp",
+                        "field": "ADDRESS",
+                        "pattern": "; ((?:UNIT|BLDG) .+)$"
+                    },
+                    "city": {
+                        "function": "regexp",
+                        "field": "CITYST",
+                        "pattern": "^(.+?), "
+                    },
+                    "region": {
+                        "function": "regexp",
+                        "field": "CITYST",
+                        "pattern": ", (CA)$"
+                    },
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Kings County",
+                "data": "http://kingscountygis.com:6080/arcgis/rest/services/Kings/MapServer/32",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "APN"
+                }
+            }
+        ]
+    }
+}

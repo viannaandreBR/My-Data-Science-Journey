@@ -1,0 +1,48 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "1608830",
+            "name": "City of Boise",
+            "state": "Idaho"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -116.233,
+                43.6
+            ]
+        },
+        "country": "us",
+        "state": "id",
+        "city": "Boise"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gismaps.cityofboise.org/arcgis/rest/services/Korterra/MapServer/31",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddNum",
+                    "street": [
+                        "StPreMod",
+                        "StPreDir",
+                        "StPrefix",
+                        "StName",
+                        "StSuffix",
+                        "StPostDir",
+                        "StPostMod"
+                    ],
+                    "unit": [
+                        "PrUnitType",
+                        "PrUnitID"
+                    ],
+                    "city": "CommName",
+                    "postcode": "Zip4"
+                }
+            }
+        ]
+    }
+}

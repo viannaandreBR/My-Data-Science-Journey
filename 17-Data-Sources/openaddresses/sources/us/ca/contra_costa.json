@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06013",
+            "name": "Contra Costa County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Contra Costa"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://ccmap.cccounty.us/arcgis/rest/services/CCMAP/CCMAP/MapServer/0",
+                "website": "http://www.contracosta.ca.gov/1818/GIS",
+                "license": "http://www.ccmap.us/information.asp",
+                "attribution": "Contra Costa County",
+                "protocol": "ESRI",
+                "note": "Details for the dataset (eg, projection) can be found here http://www.ccmap.us/Details.asp?Product=134492",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "cccGIS_Assessor.ASSRADMIN.Parcel_DOIT_WEB.full_address_search"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "cccGIS_Assessor.ASSRADMIN.Parcel_DOIT_WEB.full_address_search"
+                    },
+                    "city": "cccGIS_Assessor.ASSRADMIN.Parcel_DOIT_WEB.s_city"
+                }
+            }
+        ]
+    }
+}

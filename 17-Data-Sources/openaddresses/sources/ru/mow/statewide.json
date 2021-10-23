@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "ISO 3166": {
+            "alpha2": "RU-MOW",
+            "country": "Russian Federation",
+            "subdivision": "Moscow"
+        },
+        "country": "ru",
+        "state": "MOW"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "state",
+                "data": "https://data.openaddresses.io/cache/uploads/sergiyprotsiv/cfbc25/ru-msk.csv.zip",
+                "website": "http://data.mos.ru/opendata/7705031674-adresniy-reestr-zdaniy-i-soorujeniy-v-gorode-moskve",
+                "license": {
+                    "url": "https://apidata.mos.ru/Home/Terms",
+                    "attribution": true,
+                    "share-alike": false
+                },
+                "protocol": "http",
+                "compression": "zip",
+                "language": "ru",
+                "conform": {
+                    "number": {
+                        "function": "format",
+                        "fields": [
+                            "Housenumber",
+                            "Unit",
+                            "Building"
+                        ],
+                        "format": "дом $1, корпус $2, строение $3"
+                    },
+                    "street": "StreetParsed",
+                    "city": "CityParsed",
+                    "district": "raion",
+                    "id": "GUID",
+                    "format": "csv",
+                    "lat": "lat",
+                    "lon": "lon"
+                }
+            }
+        ]
+    }
+}

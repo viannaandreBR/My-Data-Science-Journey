@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41047",
+            "state": "Oregon",
+            "name": "Marion County"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Marion"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "http://gis.co.marion.or.us/GISDownload/gisdownload.aspx",
+                "data": "http://gis.co.marion.or.us/gisdownload/download/assessors/taxlot.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile-polygon",
+                    "number": "XSTNO",
+                    "street": [
+                        "SDIRPX",
+                        "STNAM",
+                        "STYP",
+                        "SDIRSX"
+                    ]
+                }
+            }
+        ]
+    }
+}

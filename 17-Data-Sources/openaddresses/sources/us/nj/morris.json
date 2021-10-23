@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "34027",
+            "name": "Morris County",
+            "state": "New Jersey"
+        },
+        "country": "us",
+        "state": "nj",
+        "county": "Morris"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://morrisgisapps.co.morris.nj.us/GISData/PublicData/Shapefiles/Countywide/Addresses.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "AddNum",
+                    "street": "FullName",
+                    "unit": "Unit",
+                    "city": "City",
+                    "postcode": "ZIP",
+                    "region": "State",
+                    "accuracy": 1
+                }
+            }
+        ]
+    }
+}

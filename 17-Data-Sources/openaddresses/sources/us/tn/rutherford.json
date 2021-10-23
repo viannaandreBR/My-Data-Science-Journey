@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "47149",
+            "name": "Rutherford County",
+            "state": "Tennessee"
+        },
+        "country": "us",
+        "state": "tn",
+        "county": "Rutherford"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://map3.rutherfordcountytn.gov/arcgis/rest/services/Basemaps/Basemap/MapServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "street": [
+                        "ROADPREMOD",
+                        "ROADPREDIR",
+                        "ROADPRETYPE",
+                        "ROADNAME",
+                        "ROADTYPE",
+                        "ROADPOSTDIR",
+                        "ROADPOSTMOD"
+                    ],
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "city": "MUNICIPALITY",
+                    "district": "COUNTY",
+                    "region": "STATE",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

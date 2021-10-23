@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53031",
+            "name": "Jefferson County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Jefferson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "license": "http://www.co.jefferson.wa.us/idms/mapserver.shtml",
+                "protocol": "ESRI",
+                "note": "previous data was parcel polygons at http://www.co.jefferson.wa.us/idms/shapefiles/Parcels_Public.zip",
+                "data": "https://gisweb.jeffcowa.us/server/rest/services/OpenData/OpenData/MapServer/19",
+                "website": "https://hub.arcgis.com/datasets/b3654c5205da4e05b5e63f3d04b0ebc1_19",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Add_Number",
+                    "street": [
+                        "St_PreDir",
+                        "StreetName",
+                        "St_PosType"
+                    ],
+                    "city": "Post_Comm",
+                    "postcode": "Post_Code"
+                }
+            }
+        ]
+    }
+}

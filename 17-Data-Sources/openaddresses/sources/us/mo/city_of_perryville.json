@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -89.913,
+                37.729
+            ]
+        },
+        "US Census": {
+            "geoid": "2957116",
+            "name": "Perryville",
+            "state": "Missouri"
+        },
+        "country": "us",
+        "state": "mo",
+        "city": "Perryville"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://www.semogis.com/arcgis/rest/services/PerryvilleBase/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddNum",
+                    "street": [
+                        "Prefix",
+                        "RoadName",
+                        "Suffix"
+                    ],
+                    "unit": "Unit"
+                }
+            }
+        ]
+    }
+}

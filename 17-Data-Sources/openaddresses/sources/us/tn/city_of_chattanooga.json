@@ -1,0 +1,53 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -85.267222,
+                35.045556
+            ]
+        },
+        "US Census": {
+            "geoid": "4714000",
+            "name": "City of Chattanooga",
+            "state": "Tennessee"
+        },
+        "country": "us",
+        "state": "tn",
+        "county": "Hamilton",
+        "city": "Chattanooga"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://data.chattlibrary.org/api/views/rz29-uyu4/rows.csv?accessType=DOWNLOAD",
+                "website": "https://data.chattlibrary.org/Government/Address-Data/rz29-uyu4",
+                "license": "https://data.chattlibrary.org/terms",
+                "protocol": "http",
+                "conform": {
+                    "srs": "EPSG:4326",
+                    "lon": "LONGITUDE",
+                    "lat": "LATITUDE",
+                    "number": "STNUM",
+                    "street": [
+                        "DIRPFX",
+                        "PRETYPE",
+                        "STNAME",
+                        "TYPESFX",
+                        "DIRSFX"
+                    ],
+                    "unit": [
+                        "CATEGORY",
+                        "UNIT",
+                        "BUILDING"
+                    ],
+                    "city": "CITY",
+                    "format": "csv",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

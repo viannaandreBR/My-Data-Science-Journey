@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41039",
+            "state": "Oregon",
+            "name": "Lane County"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Lane"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://lcmaps.lanecounty.org/arcgis/rest/services/LaneCountyMaps/AddressParcel/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "house_nbr",
+                        "house_suffix_code"
+                    ],
+                    "street": [
+                        "pre_direction_code",
+                        "street_name",
+                        "street_type_code"
+                    ],
+                    "unit": [
+                        "unit_type_code",
+                        "unit_id"
+                    ],
+                    "city": "city_name",
+                    "postcode": "five_digit_zip_code"
+                }
+            }
+        ]
+    }
+}

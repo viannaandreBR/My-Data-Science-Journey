@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37153",
+            "name": "Richmond County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Richmond"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis3.richmondnc.com/portal/sharing/rest/content/items/3351280ce7804736886e5f486c17c1dd/data",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://gis3.richmondnc.com/portal/apps/sites/#/richmond-county-open-data-portal",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "addrnum",
+                    "street": "fullstreet",
+                    "city": "postalcom",
+                    "postcode": "postalzip"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://gis3.richmondnc.com/portal/sharing/rest/content/items/3f99be4a704b4aaaa941f74e82d3112e/data",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://gis3.richmondnc.com/portal/apps/sites/#/richmond-county-open-data-portal",
+                "conform": {
+                    "format": "shapefile",
+                    "pid": "pin"
+                }
+            }
+        ]
+    }
+}

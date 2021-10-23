@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12015",
+            "name": "Charlotte County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Charlotte"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Charlotte County",
+                "data": "https://data.charlottecountyfl.gov/ccgis/data/zips/addresses.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://www.charlottecountyfl.gov/services/gis/Pages/Shapefile-Gallery.aspx",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "number",
+                    "street": "street",
+                    "unit": "UNIT",
+                    "postcode": "zipcode"
+                }
+            }
+        ]
+    }
+}

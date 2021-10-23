@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {"geoid": "38079", "name": "Rolette County", "state": "North Dakota"},
+        "country": "us",
+        "state": "nd",
+        "county": "Rolette"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/4YineAQdtmx0tv46/ArcGIS/rest/services/RoletteNDFeatures/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE",
+                    "street": "STREET",
+                    "unit": "UNIT",
+                    "city": "CITY"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/4YineAQdtmx0tv46/ArcGIS/rest/services/RoletteNDFeatures/FeatureServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "GIS_Parcel_Number"
+                }
+            }
+        ]
+    }
+}

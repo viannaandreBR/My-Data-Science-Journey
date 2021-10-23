@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "01091",
+            "name": "Marengo County",
+            "state": "Alabama"
+        },
+        "country": "us",
+        "state": "al",
+        "county": "Marengo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://146.148.59.120/arcgis/rest/services/Parcels/Marengo/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "P_HOUSE_",
+                    "street": "P_STREET",
+                    "city": "P_CITY"
+                }
+            }
+        ]
+    }
+}

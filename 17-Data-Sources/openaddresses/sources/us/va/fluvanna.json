@@ -1,0 +1,29 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51065",
+            "name": "Fluvanna County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Fluvanna"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.webgis.net/arcgis/rest/services/VA/Fluvanna_WebGIS/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NUM",
+                    "street": "ROADNAME",
+                    "unit": "APARTMENT",
+                    "city": "Postal_Comm_Bound"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08115",
+            "name": "Sedgwick County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "state",
+                "data": "https://gis.colorado.gov/public/rest/services/OIT/SedgwickCounty/MapServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "UNITNAME",
+                    "number": "STREETNO",
+                    "street": ["PREDIRECTI", "STREETNAME", "STREETTYPE" ]
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "state",
+                "data": "https://gis.colorado.gov/public/rest/services/OIT/SedgwickCounty/MapServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCELNO"
+                }
+            }
+        ]
+    }
+}

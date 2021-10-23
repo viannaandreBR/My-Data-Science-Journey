@@ -1,0 +1,50 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37057",
+            "name": "Davidson County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Davidson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://webgis.co.davidson.nc.us/arcgis/rest/services/E911_Addresses_Roads/MapServer/0",
+                "protocol": "ESRI",
+                "website": "http://webgis.co.davidson.nc.us/website/DavidsonGIS/default.htm",
+                "conform": {
+                    "format": "geojson",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "number": [
+                        "PREADDRNUM",
+                        "ADDRNUM",
+                        "ADDRNUMSUF"
+                    ],
+                    "street": "ADDRNUMSUF",
+                    "city": "MUNICIPALITY",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://webgis.co.davidson.nc.us/arcgis/rest/services/MobileMap/MapServer/8",
+                "protocol": "ESRI",
+                "website": "http://webgis.co.davidson.nc.us/website/DavidsonGIS/default.htm",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

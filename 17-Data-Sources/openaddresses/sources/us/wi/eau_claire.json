@@ -1,0 +1,45 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55035",
+            "name": "Eau Claire County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Eau Claire"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services6.arcgis.com/FsBMyO0EKuAe3Kx8/arcgis/rest/services/AddressPoint/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "format",
+                        "fields": [
+                            "PREADDRNUM",
+                            "ADDRNUM"
+                        ],
+                        "format": "$1$2"
+                    },
+                    "street": [
+                        "ROADPREDIR",
+                        "ROADNAME",
+                        "ROADTYPE",
+                        "ROADSUFFDIR"
+                    ],
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "postcode": "ZIP",
+                    "city": "MUNICIPALITY"
+                }
+            }
+        ]
+    }
+}

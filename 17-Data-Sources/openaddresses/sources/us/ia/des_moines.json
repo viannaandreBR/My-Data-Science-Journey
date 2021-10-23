@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "19057",
+            "name": "Des Moines County",
+            "state": "Iowa"
+        },
+        "country": "us",
+        "state": "ia",
+        "county": "Des Moines"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.dmcwebgis.com/arcgis/rest/services/Base/AddressMar/MapServer/0/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE",
+                    "unit": "Unit",
+                    "street": [
+                        "DIR",
+                        "STREET",
+                        "STREET_TYP",
+                        "SUFF"
+                    ],
+                    "city": "COMMUNITY",
+                    "id": "FID"
+                }
+            }
+        ]
+    }
+}

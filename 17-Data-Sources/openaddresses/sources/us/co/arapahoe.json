@@ -1,0 +1,50 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08005",
+            "name": "Arapahoe County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Arapahoe"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Arapahoe County",
+                "website": "https://gis.arapahoegov.com/ArapaMAP/",
+                "data": "https://gis.arapahoegov.com/arcgis/rest/services/Background_Map/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "Unit",
+                    "number": "Number",
+                    "street": [
+                        "Pre_Direction",
+                        "Street_Name",
+                        "Street_Type",
+                        "Suffix_Direction"
+                    ],
+                    "city": "City_State",
+                    "postcode": "Zip"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Arapahoe County",
+                "website": "https://gis.arapahoegov.com/ArapaMAP/",
+                "data": "https://gis.arapahoegov.com/arcgis/rest/services/ArapaMAP_3_9_5/MapServer/278",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCEL_ID"
+                }
+            }
+        ]
+    }
+}

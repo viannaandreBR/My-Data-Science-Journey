@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "24015",
+            "name": "Cecil County",
+            "state": "Maryland"
+        },
+        "country": "us",
+        "state": "md",
+        "county": "Cecil"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www.ccgov.org/home/showdocument?id=11855",
+                "website": "http://www.ccgov.org/dept_planning/gis/avdata.cfm",
+                "license": "http://www.ccgov.org/dept_planning/gis/orthos/licenseagreement_4_6_07.pdf",
+                "compression": "zip",
+                "protocol": "http",
+                "year": 2016,
+                "conform": {
+                    "format": "shapefile",
+                    "number": "STRT_ADD",
+                    "street": [
+                        "STRT_PFX",
+                        "STRT_NAME",
+                        "TYP",
+                        "STRT_SUF"
+                    ],
+                    "unit": "UNIT",
+                    "city": "COMMUNITY"
+                }
+            }
+        ]
+    }
+}

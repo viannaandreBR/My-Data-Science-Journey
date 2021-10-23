@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "29510",
+            "name": "City of St. Louis",
+            "state": "Missouri"
+        },
+        "country": "us",
+        "state": "mo",
+        "city": "St. Louis",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -90.19564351558604,
+                38.62660048873864
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://stlcin.missouri.org/citydata/downloads/pargeocd.zip",
+                "license": "http://stlcin.missouri.org/citydata/downloads/terms.cfm",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "http://stlcin.missouri.org/citydata/downloads/",
+                "conform": {
+                    "number": "housenum",
+                    "street": [
+                        "predir",
+                        "streetname",
+                        "streettype",
+                        "sufdir"
+                    ],
+                    "unit": "UNITNUM",
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

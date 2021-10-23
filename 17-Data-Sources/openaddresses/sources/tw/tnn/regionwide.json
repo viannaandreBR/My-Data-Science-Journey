@@ -1,0 +1,43 @@
+{
+    "coverage": {
+        "ISO 3166": {
+            "alpha2": "TW-TNN",
+            "country": "Taiwan"
+        },
+        "country": "tw"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "data": "http://water.tainan.gov.tw/tnwrbarcgis/rest/services/TNRW/Address/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "field": "NO",
+                        "pattern": "^([0-9０-９]+號?)"
+                    },
+                    "unit": {
+                        "function": "regexp",
+                        "field": "NO",
+                        "pattern": "^(?:[0-9０-９]+號?)(.*)"
+                    },
+                    "street": {
+                        "function": "join",
+                        "fields": [
+                            "ROADNAME",
+                            "LANE"
+                        ],
+                        "separator": ""
+                    },
+                    "city": "VILLAGE",
+                    "district": "DISTRICT",
+                    "region": "COUNTY"
+                }
+            }
+        ]
+    }
+}

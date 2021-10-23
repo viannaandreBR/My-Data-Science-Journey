@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20087",
+            "name": "Jefferson County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Jefferson"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "NUMBER_",
+                        "SUB_NUM"
+                    ],
+                    "street": [
+                        "PRE_DIR",
+                        "STR_NAM",
+                        "STR_TYPE",
+                        "SUF_DIR"
+                    ],
+                    "unit": [
+                        "UNIT_TYPE",
+                        "UNIT_NUM"
+                    ],
+                    "city": "CITY",
+                    "region": "ST",
+                    "postcode": "ZIP5"
+                },
+                "data": "http://www.jfksgis.com/arcgis/rest/services/Address911/MapServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

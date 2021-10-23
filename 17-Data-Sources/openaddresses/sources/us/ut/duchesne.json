@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "49013",
+            "name": "Duchesne County",
+            "state": "Utah"
+        },
+        "country": "us",
+        "state": "ut",
+        "county": "Duchesne"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://duchesnecountygis.org/arcgis/rest/services/CurrentAddress/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_N",
+                    "street": [
+                        "PRE_DIR",
+                        "S_NAME",
+                        "SUF_DIR",
+                        "S_TYPE"
+                    ],
+                    "id": "PARCEL_ID"
+                }
+            }
+        ]
+    }
+}

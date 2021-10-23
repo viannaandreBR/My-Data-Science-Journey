@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "2208920",
+            "name": "City of Bossier",
+            "state": "Louisiana"
+        },
+        "country": "us",
+        "state": "la",
+        "city": "Bossier",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -93.6984183,
+                32.5850691
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://services.geoportalmaps.com/arcgis/rest/services/Bossier_Internal/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "F911_NUMBER",
+                    "street": "name_total"
+                }
+            }
+        ]
+    }
+}

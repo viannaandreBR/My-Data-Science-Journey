@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "13215",
+            "name": "Muscogee County",
+            "state": "Georgia"
+        },
+        "country": "us",
+        "state": "ga",
+        "county": "Muscogee"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Muscogee County",
+                "data": "https://gis.columbusga.org/arcgis/rest/services/Base/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "id": "OBJECTID",
+                    "number": "AddressNumber",
+                    "unit": "Subaddress",
+                    "street": [
+                        "StreetPrefix",
+                        "StreetName",
+                        "StreetType",
+                        "StreetSuffix"
+                    ],
+                    "postcode": "ZipCode",
+                    "city": "ZipCodeCity"
+                }
+            }
+        ]
+    }
+}

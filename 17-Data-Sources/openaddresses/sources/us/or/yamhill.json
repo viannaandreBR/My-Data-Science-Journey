@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41071",
+            "state": "Oregon",
+            "name": "Yamhill County"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Yamhill"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "http://www.yamhillcountymaps.com/",
+                "data": "https://gis.salkeiz.k12.or.us/arcgis/rest/services/Y2018/Private_2018SK/MapServer/29",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "addhouse",
+                    "street": [
+                        "Streetdir",
+                        "StreetName",
+                        "StreetType"
+                    ],
+                    "unit": [
+                        "unittype",
+                        "unitnum"
+                    ],
+                    "city": "city",
+                    "id": "TXACCOUN_1"
+                }
+            }
+        ]
+    }
+}

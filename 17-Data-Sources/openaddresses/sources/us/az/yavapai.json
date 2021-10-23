@@ -1,0 +1,54 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "04025",
+            "name": "Yavapai County",
+            "state": "Arizona"
+        },
+        "country": "us",
+        "state": "az",
+        "county": "Yavapai"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.yavapai.us/arcgis/rest/services/Property/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "CIVIC",
+                    "street": [
+                        "PRE_DIR",
+                        "STREET",
+                        "SUFFIX"
+                    ],
+                    "unit": "Unit",
+                    "city": "COMMUNITY"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://gis.yavapai.us/arcgis/rest/services/Property/MapServer/5",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://gis.yavapai.us/arcgis/rest/services/Parcels/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCEL_ID"
+                }
+            }
+        ]
+    }
+}

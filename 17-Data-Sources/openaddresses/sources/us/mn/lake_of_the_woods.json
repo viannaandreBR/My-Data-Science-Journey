@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27077",
+            "name": "Lake of the Woods County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Lake of the Woods"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://oak.co.lake-of-the-woods.mn.us/arcgis/rest/services/LOW_Internal/MapServer/31",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "AS400_Export.dbo.tblParcelJoin.PropAdd"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "AS400_Export.dbo.tblParcelJoin.PropAdd"
+                    },
+                    "city": "AS400_Export.dbo.tblParcelJoin.PropCity"
+                }
+            }
+        ]
+    }
+}

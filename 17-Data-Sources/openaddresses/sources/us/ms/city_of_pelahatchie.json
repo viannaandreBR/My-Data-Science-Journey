@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -89.877,
+                32.308
+            ]
+        },
+        "US Census": {
+            "geoid": "2856200",
+            "name": "City of Pelahatchie",
+            "state": "Mississippi"
+        },
+        "country": "us",
+        "state": "ms",
+        "city": "Pelahatchie"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.cmpdd.org/arcgis/rest/services/Rankin/Pelahatchie/MapServer/16",
+                "protocol": "ESRI",
+                "note": "Likely to be owner addresses, not site address",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STREET_NUM",
+                    "street": "STREET",
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.982927,
+                33.045199
+            ]
+        },
+        "US Census": {
+            "geoid": "4842508",
+            "name": "City of Lewisville",
+            "state": "Texas"
+        },
+        "country": "us",
+        "state": "tx",
+        "city": "Lewisville"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://adaptergis.cityoflewisville.com/arcgis/rest/services/OpenData/Housing_OpenData/MapServer/6",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddressNum",
+                    "street": [
+                        "PreDirection",
+                        "StreetName",
+                        "StreetType"
+                    ],
+                    "unit": "Unit",
+                    "city": "City",
+                    "region": "State",
+                    "postcode": "Zip"
+                }
+            }
+        ]
+    }
+}

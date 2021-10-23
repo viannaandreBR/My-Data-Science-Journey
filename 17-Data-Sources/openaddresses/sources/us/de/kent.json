@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "10001",
+            "name": "Kent County",
+            "state": "Delaware"
+        },
+        "country": "us",
+        "state": "de",
+        "county": "Kent"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Address",
+                    "street": "Roadname",
+                    "unit": "Apartment",
+                    "postcode": "Zipcode",
+                    "city": "City"
+                },
+                "data": "https://co.kent.de.us/server/rest/services/AddressesAndRoads/MapServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

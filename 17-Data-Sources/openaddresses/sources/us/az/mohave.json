@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "04015",
+            "name": "Mohave County",
+            "state": "Arizona"
+        },
+        "country": "us",
+        "state": "az",
+        "county": "Mohave"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://mcgis2.mohavecounty.us/arcgis/rest/services/PSAP/NENA_911_AddrPts/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "Add_Number",
+                        "AddNum_Suf"
+                    ],
+                    "street": [
+                        "St_PreMod",
+                        "St_PreDir",
+                        "St_PreTyp",
+                        "St_PreSep",
+                        "StreetName",
+                        "St_PosDir",
+                        "St_PosMod"
+                    ],
+                    "postcode": "Post_Code",
+                    "city": "Inc_Muni",
+                    "district": "County",
+                    "region": "State"
+                }
+            }
+        ]
+    }
+}

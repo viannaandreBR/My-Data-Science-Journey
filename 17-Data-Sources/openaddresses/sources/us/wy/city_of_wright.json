@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.517,
+                43.751
+            ]
+        },
+        "US Census": {
+            "geoid": "5685015",
+            "name": "City of Wright",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy",
+        "county": "Campbell",
+        "city": "Wright"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.ccgov.net/arcgis/rest/services/BaseMapRebuild/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE",
+                    "unit": "UNIT",
+                    "street": [
+                        "DIRECTION",
+                        "STREET",
+                        "SUFFIX"
+                    ]
+                }
+            }
+        ]
+    }
+}

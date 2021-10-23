@@ -1,0 +1,29 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                16.257,
+                56.687
+            ]
+        },
+        "country": "se",
+        "city": "Kalmar"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.kalmar.se/arcgisserver/rest/services/Bakgrundskartan/Bakgrundskarta_500k/MapServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADRPLATS",
+                    "street": "ADROMRADE",
+                    "city": "KOMDELLAGE"
+                }
+            }
+        ]
+    }
+}

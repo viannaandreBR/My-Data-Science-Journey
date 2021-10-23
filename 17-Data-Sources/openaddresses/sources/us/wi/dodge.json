@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55027",
+            "name": "Dodge County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Dodge"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://geo.co.dodge.wi.us/arcgis/rest/services/OpenData/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDFULL",
+                    "street": [
+                        "PREDIR",
+                        "PRETYPE",
+                        "STREETNAME",
+                        "SUFTYPE",
+                        "SUFDIR"
+                    ],
+                    "unit": "ADDUNIT",
+                    "city": "MUNINAME",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

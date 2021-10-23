@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.247,
+                47.054
+            ]
+        },
+        "country": "ch",
+        "city": "Luzern"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://svc-test.geo.lu.ch/agssec/rest/services/basis/basis_gbplan/MapServer/49",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HAUSNUMMER",
+                    "street": "LOK_NAME",
+                    "city": {
+                        "function": "regexp",
+                        "field": "ORTSCHAFT",
+                        "pattern": "^(.+?)(?:\\s+LU)?\\s*$"
+                    },
+                    "postcode": "PLZ"
+                }
+            }
+        ]
+    }
+}

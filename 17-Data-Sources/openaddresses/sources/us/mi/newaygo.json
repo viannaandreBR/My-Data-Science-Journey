@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "26123",
+            "name": "Newaygo County",
+            "state": "Michigan"
+        },
+        "country": "us",
+        "state": "mi",
+        "county": "Newaygo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://arcgisweb.countyofnewaygo.com:6080/arcgis/rest/services/WebMaps/NewaygoCounty/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "P_NUMB",
+                    "street": [
+                        "P_DIR",
+                        "P_STREET"
+                    ],
+                    "city": "P_CITY",
+                    "postcode": "P_ZIP"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "coverage": {
+        "country": "ca",
+        "state": "on",
+        "county": "Amherstburg"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "http://mapamherstburg.ca/arcgis/rest/services/Parcels/MapServer/2",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADD1",
+                    "street": "STREETNAME"
+                }
+            }
+        ]
+    }
+}

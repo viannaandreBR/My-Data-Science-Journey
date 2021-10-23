@@ -1,0 +1,61 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06089",
+            "name": "Shasta County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Shasta"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Shasta County",
+                "data": "https://services2.arcgis.com/22p1CUjMjjRWlw6O/arcgis/rest/services/AddressPoints/FeatureServer/0",
+                "website": "http://www.co.shasta.ca.us/index/gis_index.aspx",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "AddressNumber",
+                    "street": [
+                        "PrefixDir",
+                        "PrefixType",
+                        "StreetName",
+                        "StreetType",
+                        "SuffixDir"
+                    ],
+                    "unit": "SpaceApt",
+                    "city": "City",
+                    "postcode": "StreetZIP"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "attribution": "Shasta County",
+                "data": "https://services2.arcgis.com/22p1CUjMjjRWlw6O/ArcGIS/rest/services/BuildingFootprints/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Shasta County",
+                "data": "https://services2.arcgis.com/22p1CUjMjjRWlw6O/ArcGIS/rest/services/ShastaCountyMap_Base/FeatureServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "APN"
+                }
+            }
+        ]
+    }
+}

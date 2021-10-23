@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12111",
+            "name": "St. Lucie County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "St. Lucie"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www.stlucieco.gov/home/showdocument?id=2739",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "number": "StreetNumb",
+                    "street": "StreetLabe",
+                    "unit": "AptSuite",
+                    "postcode": "ZipCode",
+                    "format": "shapefile",
+                    "file": "AddressMaster.shp"
+                }
+            }
+        ]
+    }
+}

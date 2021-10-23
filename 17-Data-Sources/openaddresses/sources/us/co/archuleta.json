@@ -1,0 +1,49 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08007",
+            "name": "Archuleta County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Archuleta"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Archuleta County",
+                "website": "https://www.archuletacounty.org/209/GIS",
+                "data": "https://services5.arcgis.com/b1fZk1fY2MHCTEXz/ArcGIS/rest/services/Addresses/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NUM",
+                    "street": [
+                        "DIR_PREFIX",
+                        "STREET_NAM",
+                        "TYPE"
+                    ],
+                    "unit": "UNIT_NO",
+                    "district": "COUNTY",
+                    "region": "STATE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Archuleta County",
+                "website": "https://www.archuletacounty.org/209/GIS",
+                "data": "https://services5.arcgis.com/b1fZk1fY2MHCTEXz/ArcGIS/rest/services/Parcels/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "pid"
+                }
+            }
+        ]
+    }
+}

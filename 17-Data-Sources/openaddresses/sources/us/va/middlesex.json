@@ -1,0 +1,55 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51119",
+            "name": "Middlesex County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Middlesex"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.co.middlesex.va.us/DocumentCenter/View/1186/Address-Point-Data-ZIP",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://www.co.middlesex.va.us/176/GIS-Shapefile-Downloads",
+                "conform": {
+                    "unit": "Apartment",
+                    "number": "Address",
+                    "street": "Roadname",
+                    "format": "shapefile"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://www.co.middlesex.va.us/DocumentCenter/View/1183/Parcel-Polygon-Data-ZIP",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://www.co.middlesex.va.us/176/GIS-Shapefile-Downloads",
+                "conform": {
+                    "format": "shapefile",
+                    "pid": "PIN"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://www.co.middlesex.va.us/DocumentCenter/View/1191/Building-Footprints-Data-ZIP",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "https://www.co.middlesex.va.us/176/GIS-Shapefile-Downloads",
+                "conform": {
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

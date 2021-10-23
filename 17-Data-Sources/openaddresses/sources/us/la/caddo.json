@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "22017",
+            "name": "Caddo Parish",
+            "state": "Louisiana"
+        },
+        "country": "us",
+        "state": "la",
+        "county": "Caddo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://web1.mobile311.com/arcgis/rest/services/Louisiana/ParishOfCaddo/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "PROP_ADDRE"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "PROP_ADDRE"
+                    }
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "http://web1.mobile311.com/arcgis/rest/services/Louisiana/ParishOfCaddo/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "GEOGNO"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -120.705,
+                35.272
+            ]
+        },
+        "US Census": {
+            "geoid": "0668154",
+            "name": "City of San Luis Obispo",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "city": "San Luis Obispo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://services.arcgis.com/yygmGNIVQrHqSELP/ArcGIS/rest/services/AddressPoints/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "streetNumber",
+                    "street": [
+                        "streetName",
+                        "streetType"
+                    ],
+                    "unit": "suite",
+                    "postcode": "zipCode"
+                }
+            }
+        ]
+    }
+}

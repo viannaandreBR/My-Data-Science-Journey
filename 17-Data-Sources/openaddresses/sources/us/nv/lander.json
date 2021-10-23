@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "32015",
+            "name": "Lander County",
+            "state": "Nevada"
+        },
+        "country": "us",
+        "state": "nv",
+        "county": "Lander"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/4YineAQdtmx0tv46/ArcGIS/rest/services/LanderNVFeatures/FeatureServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "TSC_Site_Address"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "TSC_Site_Address"
+                    },
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

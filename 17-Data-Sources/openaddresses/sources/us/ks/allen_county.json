@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20001",
+            "name": "Allen County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Allen"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "houseno",
+                        "housesuf"
+                    ],
+                    "street": [
+                        "predir",
+                        "streetname",
+                        "streetsuf",
+                        "streetpost"
+                    ],
+                    "city": "community",
+                    "postcode": "zipcode"
+                },
+                "data": "http://72.205.198.131/ArcGIS/rest/services/Allen/Allen/MapServer/32",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

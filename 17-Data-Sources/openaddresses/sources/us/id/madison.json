@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "16065",
+            "name": "Madison County",
+            "state": "Idaho"
+        },
+        "country": "us",
+        "state": "id",
+        "county": "Madison"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://madison.rexburg.org/mrgis/rest/services/Data/Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "id": "ADDRESSID",
+                    "number": "HOUSENUMBER",
+                    "street": {
+                        "function": "remove_prefix",
+                        "field": "AddressLabel",
+                        "field_to_remove": "HOUSENUMBER"
+                    }
+                }
+            }
+        ]
+    }
+}

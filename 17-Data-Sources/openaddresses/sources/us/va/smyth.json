@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51173",
+            "name": "Smyth County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Smyth"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.webgis.net/arcgis/rest/services/VA/SmythCo_WebGIS/MapServer/32",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Add_Number",
+                    "unit": "Unit",
+                    "street": "ROADNAME",
+                    "city": "Post_Comm",
+                    "postcode": "Post_Code"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "46",
+            "state": "South Dakota"
+        },
+        "country": "us",
+        "state": "sd"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "state",
+                "data": "http://arcgis.sd.gov/arcgis/rest/services/BIT/AddressViewer/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "HOUSE_NUM",
+                    "street": "ADDRESS_ONLY",
+                    "unit": "LOCATION",
+                    "city": "CITY",
+                    "postcode": "ZipCode",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

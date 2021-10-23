@@ -1,0 +1,41 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "56039",
+            "name": "Teton County",
+            "state": "Wyoming"
+        },
+        "country": "us",
+        "state": "wy",
+        "county": "Teton"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "https://www.tetoncountywy.gov/958/Geographic-Information-System",
+                "license": {
+                    "text": "Indemnification",
+                    "attribution": false,
+                    "share-alike": false
+                },
+                "compression": "zip",
+                "data": "https://tetonwy.s3.amazonaws.com/gis/download/ownership_shp.zip",
+                "protocol": "http",
+                "conform": {
+                    "file": "address.shp",
+                    "format": "shapefile",
+                    "number": "Street_num",
+                    "street": {
+                        "function": "remove_prefix",
+                        "field": "st_address",
+                        "field_to_remove": "Street_num"
+                    },
+                    "id": "pidn",
+                    "accuracy": 2
+                }
+            }
+        ]
+    }
+}

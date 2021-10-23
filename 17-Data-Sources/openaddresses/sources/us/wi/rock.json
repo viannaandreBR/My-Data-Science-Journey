@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55105",
+            "name": "Rock County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Rock"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.co.rock.wi.us:8443/rockpub/rest/services/Basemaps/Streets_Basemap/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "APT_UNIT",
+                    "number": "NUMBER_",
+                    "street": "ROAD_NAME",
+                    "city": "TOWN",
+                    "postcode": "ZIPCode",
+                    "accuracy": 1
+                }
+            }
+        ]
+    }
+}

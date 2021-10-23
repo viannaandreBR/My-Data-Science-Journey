@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37199",
+            "name": "Yancey County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Yancey"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://web1.mobile311.com/arcgis/rest/services/NorthCarolina/Yancey/MapServer/42",
+                "note": "STREET_NUMBER can contain non-number info (such as 'LT33') so only use digits-only values",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "STREET_APT",
+                    "number": "STREET_NUM",
+                    "street": "STREET_NAM"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "http://web1.mobile311.com/arcgis/rest/services/NorthCarolina/Yancey/MapServer/43",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

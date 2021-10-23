@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -117.157762,
+                33.507351
+            ]
+        },
+        "US Census": {
+            "geoid": "0678120",
+            "name": "City of Temecula",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Riverside",
+        "city": "Temecula"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://gis.temeculaca.gov/arcgis/rest/services/OpenData/FeatureServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NO",
+                    "street": [
+                        "STREET",
+                        "SUFFIX"
+                    ],
+                    "unit": "UNIT",
+                    "city": "CITY",
+                    "region": "STATE",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

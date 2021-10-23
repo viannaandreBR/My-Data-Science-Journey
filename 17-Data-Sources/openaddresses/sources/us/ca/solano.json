@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06095",
+            "name": "Solano County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Solano"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Solano County",
+                "data": "https://regis.solanocounty.com/server/rest/services/iSolano/Addresses/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "id": "APN",
+                    "number": "SITENUM",
+                    "unit": "UNITBLDG",
+                    "street": "SITEROAD",
+                    "postcode": "ZIP",
+                    "city": "CITY",
+                    "region": "STATE"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12057",
+            "name": "Hillsborough County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Hillsborough"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Hillsborough County",
+                "data": "https://arcgis.tampagov.net/arcgis/rest/services/Address/AddressPoints/FeatureServer/0",
+                "protocol": "ESRI",
+                "website": "ftp://ftp.hillsboroughcounty.org/",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "ADDRNUM",
+                        "ADDRNUMSUF"
+                    ],
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "street": [
+                        "DIRPRE",
+                        "STREETNAME",
+                        "TYPE",
+                        "DIRSUF"
+                    ],
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

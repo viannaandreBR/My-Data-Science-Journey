@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "21093",
+            "name": "Hardin County",
+            "state": "Kentucky"
+        },
+        "country": "us",
+        "state": "ky",
+        "county": "Hardin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://services1.arcgis.com/fYwcHOBzInDTQxh0/ArcGIS/rest/services/Address_PointsJAN2017/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADD_NUM",
+                    "unit": "APT",
+                    "street": "ROADNAME",
+                    "postcode": "ZIPCODE",
+                    "city": "COMM_L"
+                }
+            }
+        ]
+    }
+}

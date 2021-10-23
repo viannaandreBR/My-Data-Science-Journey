@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12045",
+            "name": "Gulf County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Gulf"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HouseNumber",
+                    "street": {
+                        "function": "remove_prefix",
+                        "field": "PrimaryAddress",
+                        "field_to_remove": "HouseNumber"
+                    }
+                },
+                "data": "http://arcgis4.roktech.net/arcgis/rest/services/gulf/GoMaps4/MapServer/2",
+                "protocol": "ESRI",
+                "website": "http://maps2.roktech.net/GulfGoMaps4/?mapName=GIS"
+            }
+        ]
+    }
+}

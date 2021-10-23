@@ -1,0 +1,43 @@
+{
+    "schema": 2,
+    "coverage": {
+        "US Census": {"geoid": "26099", "name": "Macomb County", "state": "Michigan"},
+        "country": "us",
+        "state": "mi",
+        "county": "Macomb"
+    },
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.macombgov.org/arcgis1/rest/services/ACCELA/Parcel_Address/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "UNIT",
+                    "number": "HOUSE_NUMBER",
+                    "street": [
+                        "PREFIX_DIRECTION",
+                        "PREFIX_TYPE",
+                        "STREET_NAME",
+                        "STREET_TYPE",
+                        "SUFFIX_DIRECTION"
+                    ],
+                    "city": "COMMUNITY",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://gis.macombgov.org/arcgis1/rest/services/ACCELA/Parcel_Address/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

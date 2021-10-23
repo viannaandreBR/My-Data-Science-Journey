@@ -1,0 +1,45 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "53015",
+            "name": "Cowlitz County",
+            "state": "Washington"
+        },
+        "country": "us",
+        "state": "wa",
+        "county": "Cowlitz"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://www.cowlitzinfo.net/arcgis/rest/services/WSPublic/WSAddressPoints/MapServer/0",
+                "website": "http://www.co.cowlitz.wa.us/index.aspx?nid=201",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Add_Number",
+                    "unit": "UNIT",
+                    "street": "SITE_ALL",
+                    "postcode": "Post_Code",
+                    "city": "CITY",
+                    "district": "County",
+                    "region": "State"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://www.cowlitzinfo.net/arcgis/rest/services/WSPublic/ParcelsDark/MapServer/0",
+                "website": "http://www.co.cowlitz.wa.us/index.aspx?nid=201",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCNO"
+                }
+            }
+        ]
+    }
+}

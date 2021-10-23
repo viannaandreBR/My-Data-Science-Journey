@@ -1,0 +1,22 @@
+{
+    "coverage": {
+        "country": "sa",
+        "city": "Yanbu"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://rcyegisweb.rcyanbu.gov.sa/arcgis/rest/services/ApplicationServices/CCAF_AHCEC/MapServer/4",
+                "protocol": "ESRI",
+                "language": "en",
+                "conform": {
+                    "number": "HOUSE_NO",
+                    "street": "STREET",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

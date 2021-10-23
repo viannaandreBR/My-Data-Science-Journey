@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "24005",
+            "name": "Baltimore County",
+            "state": "Maryland"
+        },
+        "country": "us",
+        "state": "md",
+        "county": "Baltimore"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "ftp://gispublic:public@ftp.baltimorecountymd.gov/Shapefile/AddressPoints.zip",
+                "website": "http://www.baltimorecountymd.gov/Agencies/infotech/GIS/datadownload.html",
+                "license": {
+                    "text": "Public Domain",
+                    "attribution": false,
+                    "share-alike": false
+                },
+                "compression": "zip",
+                "protocol": "ftp",
+                "year": 2013,
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ST_NUMBER",
+                    "street": [
+                        "ST_PREMOD",
+                        "ST_PREFIXD",
+                        "ST_PREFIXT",
+                        "ST_NAME",
+                        "ST_TYPE",
+                        "ST_SUFFIXD",
+                        "ST_POSTMOD"
+                    ],
+                    "unit": "ST_NUMSUFF",
+                    "city": "CITY_POSTA",
+                    "postcode": "ZIP",
+                    "region": "STATE"
+                }
+            }
+        ]
+    }
+}

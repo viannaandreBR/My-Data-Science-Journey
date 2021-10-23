@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37001",
+            "name": "Alamance County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Alamance"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://apps.alamance-nc.com/gisftp/Addresses_Streets_CityLimits_Parcels_Shapefiles_06122019.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "http://apps.alamance-nc.com/gisftp/",
+                "conform": {
+                    "format": "shapefile",
+                    "file": "Addresses_Streets_CityLimits_Parcels_Shapefiles_06122019/Address.shp",
+                    "id": "ADDRESSID",
+                    "number": [
+                        "ADDRNUMBER",
+                        "ADDRSUFFIX"
+                    ],
+                    "street": [
+                        "DIRECTION",
+                        "STREETNAME",
+                        "STREETYPE",
+                        "STREETSUFF"
+                    ],
+                    "unit": [
+                        "UNITYPE",
+                        "UNIT"
+                    ],
+                    "city": "COMMUNITY",
+                    "district": "COUNTY",
+                    "region": "STATE",
+                    "postcode": "ZIPCODE"
+                }
+            }
+        ]
+    }
+}

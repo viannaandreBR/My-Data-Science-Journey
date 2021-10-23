@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -94.877,
+                38.954
+            ]
+        },
+        "US Census": {
+            "geoid": "2039350",
+            "name": "City of Lenexa",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "city": "Lenexa"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "conform": {
+                    "format": "geojson",
+                    "number": "NUMBER",
+                    "street": [
+                        "DIR",
+                        "NAME",
+                        "TYPE"
+                    ],
+                    "unit": [
+                        "SUITE_APT",
+                        "BUILDING"
+                    ],
+                    "city": "CITY",
+                    "postcode": "ZIP"
+                },
+                "data": "https://maps.lenexa.com/arcgis/rest/services/GovernmentServices/SiteAddressPoints_RES_OCC_only/MapServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

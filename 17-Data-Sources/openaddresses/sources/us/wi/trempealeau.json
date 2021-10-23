@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55121",
+            "name": "Trempealeau County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Trempealeau"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www.tremplocounty.com/ArcGIS/rest/services/Public/Landmarks_Addressing/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "FIRE_NO",
+                    "street": "STREETNAME",
+                    "unit": "UNIT_NO"
+                }
+            }
+        ]
+    }
+}

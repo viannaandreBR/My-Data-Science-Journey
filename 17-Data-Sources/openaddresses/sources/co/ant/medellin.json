@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "country": "co",
+        "region": "ant",
+        "city": "Medellín",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -75.59,
+                6.23
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://data.openaddresses.io/cache/uploads/thatdatabaseguy/a512bf/medellin.geojson.zip",
+                "website": "https://www.medellin.gov.co/geomedellin/",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "field": "PLACA",
+                        "pattern": "^(.*?)(?:\\s*\\(.*\\).*?)?$"
+                    },
+                    "street": "VIA",
+                    "unit": "INTERIOR"
+                }
+            }
+        ]
+    }
+}

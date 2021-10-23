@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41033",
+            "name": "Josephine County",
+            "state": "Oregon"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Josephine"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "https://gis.co.josephine.or.us/arcgis/rest/services/Site_Addresses/MapServer/0",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STNUM",
+                    "street": [
+                        "NAME",
+                        "TYPE"
+                    ],
+                    "city": "POSTCOMM",
+                    "postcode": "ZIP",
+                    "district": "COUNTY"
+                }
+            }
+        ]
+    }
+}

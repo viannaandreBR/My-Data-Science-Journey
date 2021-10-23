@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -83.957,
+                42.008
+            ]
+        },
+        "US Census": {
+            "geoid": "2679120",
+            "name": "City of Tecumseh",
+            "state": "Michigan"
+        },
+        "country": "us",
+        "state": "mi",
+        "city": "Tecumseh"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://services6.arcgis.com/vseBlcrQsepHsjub/ArcGIS/rest/services/tecumseh_parcel/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "Address"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "Address"
+                    }
+                }
+            }
+        ]
+    }
+}

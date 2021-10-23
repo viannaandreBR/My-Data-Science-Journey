@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51107",
+            "name": "Loudoun County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Loudoun"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://logis.loudoun.gov/gis/rest/services/COL/LandRecords/MapServer/2",
+                "protocol": "ESRI",
+                "website": "https://logis.loudoun.gov/weblogis/",
+                "conform": {
+                    "number": "AD_ADDRESS",
+                    "street": "ST_FULLNAME",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

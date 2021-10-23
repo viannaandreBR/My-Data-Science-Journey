@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "16037",
+            "name": "Custer County",
+            "state": "Idaho"
+        },
+        "country": "us",
+        "state": "id",
+        "county": "Custer"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://maps.greenwoodmap.com/custer/download/address.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "number": "HOUSE_NUM",
+                    "street": "FULL_STR",
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

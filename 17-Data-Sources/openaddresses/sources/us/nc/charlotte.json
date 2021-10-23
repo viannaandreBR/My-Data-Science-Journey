@@ -1,0 +1,41 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37119",
+            "name": "Mecklenburg County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Mecklenburg",
+        "city": "Charlotte",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -80.8426986638011,
+                35.22576989957289
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.mecklenburgcountync.gov/data/MAT.zip",
+                "license": "",
+                "year": "",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "number": "txt_street",
+                    "street": [
+                        "nme_street",
+                        "cde_roadwa"
+                    ],
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

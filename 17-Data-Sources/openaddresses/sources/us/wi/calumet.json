@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55015",
+            "name": "Calumet County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Calumet"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "ftp://liouser:l!oguest1@ftp.co.calumet.wi.us/websitedata/CalumetAddressPts.zip",
+                "protocol": "ftp",
+                "compression": "zip",
+                "conform": {
+                    "file": "AddressPoint.shp",
+                    "format": "shapefile",
+                    "number": "ADDRNUM",
+                    "street": "FULLNAME",
+                    "city": "MUNICIPALI",
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

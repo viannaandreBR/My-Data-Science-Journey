@@ -1,0 +1,49 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -94.16,
+                36.06
+            ]
+        },
+        "US Census": {
+            "geoid": "0523290",
+            "name": "City of Fayetteville",
+            "state": "Arkansas"
+        },
+        "country": "us",
+        "state": "ar",
+        "city": "Fayetteville"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "website": "http://www.fayetteville-ar.gov/384/GIS-Interactive-Maps",
+                "data": "https://maps.fayetteville-ar.gov/server/rest/services/Addresses/MapServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Fayetteville",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "NUMBER",
+                        "SUB_NUM"
+                    ],
+                    "street": [
+                        "PREDIR",
+                        "PRE_TYPE",
+                        "NAME",
+                        "TYPE",
+                        "SUF_DIR"
+                    ],
+                    "unit": "UNIT_NUM",
+                    "city": "CITY",
+                    "postcode": "ZIP",
+                    "region": "STATE"
+                }
+            }
+        ]
+    }
+}

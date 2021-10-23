@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27051",
+            "name": "Grant County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Grant"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.co.grant.mn.us/arcgis/rest/services/Grant/Grant_Internal_LINK/MapServer/67",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "id": "ID",
+                    "number": "HOUSE_NUM",
+                    "street": [
+                        "STREETNAME",
+                        "ST_TYPE",
+                        "ST_SUFFIX"
+                    ],
+                    "addrtype": "PLACE",
+                    "city": "CITY",
+                    "district": "COUNTY",
+                    "region": "STATE",
+                    "postcode": "ZIPCODE",
+                    "notes": "NOTES"
+                }
+            }
+        ]
+    }
+}

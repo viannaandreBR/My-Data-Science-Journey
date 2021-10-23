@@ -1,0 +1,37 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20149",
+            "name": "Pottawatomie County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Pottawatomie"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "unit": [
+                        "UNIT_TYPE",
+                        "UNIT_NUM"
+                    ],
+                    "number": "HNO",
+                    "street": [
+                        "PRD",
+                        "RD",
+                        "STS"
+                    ],
+                    "city": "POSTCO",
+                    "postcode": "ZIP"
+                },
+                "data": "http://www2.pottcounty.org/arcgis2/rest/services/AddressAll/MapServer/1",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

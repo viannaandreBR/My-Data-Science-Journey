@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27137",
+            "name": "St. Louis County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "St. Louis"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "http://stlouiscountymndata-slcgis.opendata.arcgis.com/datasets/e1ca424971f8470d9afa4083c471a686_17",
+                "data": "https://gis.stlouiscountymn.gov/server2/rest/services/GeneralUse/OpenData/MapServer/17",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDNUM",
+                    "unit": "Unit",
+                    "street": "StreetName",
+                    "city": "Town_Name",
+                    "postcode": "ZIP5"
+                }
+            }
+        ]
+    }
+}

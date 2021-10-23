@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ca",
+        "county": "Santa Clara",
+        "city": "San Jose",
+        "US Census": {
+            "geoid": "0668000",
+            "name": "City of San Jose",
+            "state": "California"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -121.74,
+                37.35
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "protocol": "http",
+                "compression": "zip",
+                "data": "https://github.com/sanjosegis/gis-open-data/blob/master/Parcels/ParcelGeoJS.zip?raw=true",
+                "website": "https://github.com/sanjosegis/gis-open-data/blob/master/README_Disclaimer.md",
+                "conform": {
+                    "format": "geojson",
+                    "id": "APN",
+                    "number": "SNUM",
+                    "street": [
+                        "SDIR",
+                        "SNAM",
+                        "STYP"
+                    ]
+                }
+            }
+        ]
+    }
+}

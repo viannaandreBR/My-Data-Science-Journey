@@ -1,0 +1,58 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "12005",
+            "name": "Bay County",
+            "state": "Florida"
+        },
+        "country": "us",
+        "state": "fl",
+        "county": "Bay"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "attribution": "Bay County",
+                "data": "https://gis.baycountyfl.gov/arcgis/rest/services/BayView/BayView/MapServer/0",
+                "website": "https://gis.baycountyfl.gov/bayview/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": [ "UNITTYPE", "UNIT" ],
+                    "number": "FULLHOUSE",
+                    "street": "FULLNAME",
+                    "city": "CMNTY",
+                    "postcode": "ZIP",
+                    "region": "STATE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "attribution": "Bay County",
+                "data": "https://gis.baycountyfl.gov/arcgis/rest/services/BayView/BayView/MapServer/2",
+                "website": "https://gis.baycountyfl.gov/bayview/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "A1RENUM"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "attribution": "Bay County",
+                "data": "https://gis.baycountyfl.gov/arcgis/rest/services/BasicLayers/MapServer/21",
+                "website": "https://gis.baycountyfl.gov/bayview/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

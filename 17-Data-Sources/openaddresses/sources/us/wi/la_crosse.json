@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55063",
+            "name": "La Crosse County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "La Crosse"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.lacrossecounty.org/gisserver/rest/services/AGOL/AddressPoints/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSENUMBE",
+                    "street": [
+                        "STREETNAME",
+                        "STREETTYPE",
+                        "STREETSUFF"
+                    ],
+                    "postcode": "ZIP"
+                }
+            }
+        ]
+    }
+}

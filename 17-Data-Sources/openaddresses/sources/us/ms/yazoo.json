@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "28163",
+            "name": "Yazoo County",
+            "state": "Mississippi"
+        },
+        "country": "us",
+        "state": "ms",
+        "county": "Yazoo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "https://gis3.cmpdd.org/arcgis/rest/services/County/Yazoo_County/MapServer/3",
+                "conform": {
+                    "format": "geojson",
+                    "accuracy": 2,
+                    "number": "STR_NUM",
+                    "street": "STR_NAME"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "protocol": "ESRI",
+                "data": "https://gis3.cmpdd.org/arcgis/rest/services/County/Yazoo_County/MapServer/3",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCEL_ID"
+                }
+            }
+        ]
+    }
+}

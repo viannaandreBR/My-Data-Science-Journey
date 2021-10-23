@@ -1,0 +1,63 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -81.276441,
+                36.901018
+            ]
+        },
+        "US Census": {
+            "geoid": "5169456",
+            "name": "City of Rural Retreat",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "city": "Rural Retreat"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://www.webgis.net/arcgis/rest/services/VA/RuralRetreat_WebGIS/MapServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "FullAddress"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "FullAddress"
+                    },
+                    "city": "City",
+                    "postcode": "ZipCode"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "data": "https://www.webgis.net/arcgis/rest/services/VA/RuralRetreat_WebGIS/MapServer/6",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "SMAPNUM"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "city",
+                "data": "https://www.webgis.net/arcgis/rest/services/VA/RuralRetreat_WebGIS/MapServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

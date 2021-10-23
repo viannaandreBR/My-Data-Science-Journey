@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27145",
+            "name": "Stearns County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Stearns"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://data.openaddresses.io/cache/uploads/trescube/d09cac/Address_Points_Lat_Long.csv.zip",
+                "compression": "zip",
+                "protocol": "http",
+                "note": "https://github.com/openaddresses/openaddresses/issues/2504",
+                "conform": {
+                    "format": "csv",
+                    "lon": "Long",
+                    "lat": "Lat",
+                    "number": "HouseNum",
+                    "street": "Street"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "il",
+        "city": "skokie",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.733528,
+                42.032549
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://cookviewer1.cookcountyil.gov/ArcGIS/rest/services/cookElectnSrvc/MapServer/1",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

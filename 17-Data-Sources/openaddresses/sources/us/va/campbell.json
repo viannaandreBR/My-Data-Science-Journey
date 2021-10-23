@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51031",
+            "name": "Campbell County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Campbell"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://data-campbellva.opendata.arcgis.com/datasets/f9be506a218645f1a8de82529344832a_0.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "ADDRNUM",
+                    "unit": "UNITID",
+                    "street": [
+                        "PRE_DIR",
+                        "STREET_NAM",
+                        "STREET_TYP"
+                    ],
+                    "city": "MSAG",
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ]
+    }
+}

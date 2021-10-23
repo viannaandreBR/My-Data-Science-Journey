@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "17203",
+            "name": "Woodford County",
+            "state": "Illinois"
+        },
+        "country": "us",
+        "state": "il",
+        "county": "Woodford"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://www.centralilmaps.com/arcgis/rest/services/Woodford/WoodfordGIS_Flex_New_20160509/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDR_HN",
+                    "street": [
+                        "ADDR_PD",
+                        "ADDR_PT",
+                        "ADDR_ST_NA",
+                        "ADDR_ST"
+                    ],
+                    "unit": "Unit_Name"
+                }
+            }
+        ]
+    }
+}

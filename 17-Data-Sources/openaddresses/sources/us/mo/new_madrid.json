@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "29143",
+            "name": "New Madrid County",
+            "state": "Missouri"
+        },
+        "country": "us",
+        "state": "mo",
+        "county": "New Madrid"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://elb2.39dn.com/arcgis/rest/services/eGISDynamicServices/NewMadridMODynamic/MapServer/0",
+                "protocol": "ESRI",
+                "skip": true,
+                "note": "39dn requested that we stop using data obtained from their servers on 2017-05-07",
+                "conform": {
+                    "number": "STRUCTURE_NUM",
+                    "street": "COMP_STR_NAME",
+                    "unit": "UNIT_DESIG",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06009",
+            "name": "Calaveras County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Calaveras"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gisportal.co.calaveras.ca.us/arcserver/rest/services/OpenData/PARCELS_Open_Data/MapServer/0",
+                "website": "https://opendata-calaveras-gis.opendata.arcgis.com/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STRNUM",
+                    "street": "STREET"
+                }
+            }
+        ]
+    }
+}

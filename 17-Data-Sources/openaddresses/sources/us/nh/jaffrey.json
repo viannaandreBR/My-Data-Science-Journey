@@ -1,0 +1,62 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "nh",
+        "county": "Cheshire",
+        "city": "jaffrey",
+        "US Census": {
+            "geoid": "3338500",
+            "name": "Town of Jaffrey",
+            "state": "New Hampshire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -72.02290246278615,
+                42.81455551167606
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://35.172.145.31/arcgis/rest/services/JaffreyNH/JaffreyE911/MapServer/0",
+                "website": "http://hosting.tighebond.com/jaffreynh_public/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "SubAddress",
+                    "number": "Address",
+                    "street": "Road_Name",
+                    "district": "COUNTY",
+                    "city": "Town_Name"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "city",
+                "data": "http://35.172.145.31/arcgis/rest/services/JaffreyNH/JaffreyE911/MapServer/3",
+                "website": "http://hosting.tighebond.com/jaffreynh_public/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "data": "http://35.172.145.31/arcgis/rest/services/JaffreyNH/JaffreyDynamic/MapServer/0",
+                "website": "http://hosting.tighebond.com/jaffreynh_public/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "Parcels.PARCEL_NUM"
+                }
+            }
+        ]
+    }
+}

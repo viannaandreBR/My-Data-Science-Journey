@@ -1,0 +1,25 @@
+{
+    "coverage": {
+        "ISO 3166": {
+            "alpha2": "TW-TPE",
+            "country": "Taiwan"
+        },
+        "country": "tw"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "data": "http://heogis.tcg.gov.tw/arcgis/rest/services/drn/drnBusLayer/MapServer/29",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HOUSE_NO",
+                    "street": "ROADNAME",
+                    "city": "TOWNNAME"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37031",
+            "name": "Carteret County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Carteret"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "website": "https://gisdata-cc-gis.opendata.arcgis.com/datasets/address-points",
+                "data": "https://arcgisweb.carteretcountync.gov/arcgis/rest/services/Feature_Services/Address_Points/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Address",
+                    "street": "StreetName",
+                    "unit": "Unit",
+                    "city": "COMMUNITY",
+                    "postcode": "Zipcode",
+                    "district": "COUNTY",
+                    "region": "STATE"
+                }
+            }
+        ]
+    }
+}

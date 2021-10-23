@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "2876720",
+            "name": "City of Vicksburg",
+            "state": "Mississippi"
+        },
+        "country": "us",
+        "state": "ms",
+        "city": "Vicksburg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -90.86697745037957,
+                32.34697864243946
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://services.geoportalmaps.com/arcgis/rest/services/Vicksburg_Public/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "STNUMBER",
+                    "street": "FULLSTNAME"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -122.15,
+                37.4
+            ]
+        },
+        "US Census": {
+            "geoid": "0649670",
+            "name": "City of Mountain View",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "city": "Mountain View"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://maps.mountainview.gov/arcgis/rest/services/Public/SiteAddressPoint/MapServer/0",
+                "attribution": "City of Mountain View",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": [
+                        "PREADDRNUM",
+                        "ADDRNUM",
+                        "ADDRNUMSUF"
+                    ],
+                    "street": "FULLNAME",
+                    "unit": [
+                        "UNITTYPE",
+                        "UNITID"
+                    ],
+                    "city": "MUNICIPALITY",
+                    "postcode": "ZIP5"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "schema": 2,
+    "coverage": {
+        "US Census": {
+            "geoid": "1722164",
+            "name": "City of East Peoria",
+            "state": "Illinois"
+        },
+        "country": "us",
+        "state": "il",
+        "city": "East Peoria",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -89.564842,
+                40.717134
+            ]
+        }
+    },
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "protocol": "ESRI",
+                "website": "https://www.cityofeastpeoria.com/301/Geographic-Information-Services-GIS",
+                "data": "https://mapping.cityofeastpeoria.com/epgis/rest/services/Planning/Address_Points/FeatureServer/0",
+                "conform": {
+                    "format": "geojson",
+                    "accuracy": 2,
+                    "unit": "UNIT",
+                    "number": "ADDR_HN",
+                    "street": [
+                        "ADDR_PD",
+                        "ADDR_SN",
+                        "ADDR_ST"
+                    ],
+                    "city": "CITY",
+                    "postcode": "ZIP_CODE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "protocol": "ESRI",
+                "website": "https://www.cityofeastpeoria.com/301/Geographic-Information-Services-GIS",
+                "data": "https://mapping.cityofeastpeoria.com/epgis/rest/services/Planning/Parcels/FeatureServer/0",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "city",
+                "protocol": "ESRI",
+                "website": "https://www.cityofeastpeoria.com/301/Geographic-Information-Services-GIS",
+                "data": "https://mapping.cityofeastpeoria.com/epgis/rest/services/Planning/Building_Footprints/FeatureServer/0",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

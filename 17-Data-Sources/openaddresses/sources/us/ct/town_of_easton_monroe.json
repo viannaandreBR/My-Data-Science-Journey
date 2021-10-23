@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ct",
+        "county": "Fairfield",
+        "city": "Monroe",
+        "US Census": {
+            "geoid": "0948620",
+            "name": "Town of Monroe",
+            "state": "Connecticut"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -73.26495,
+                41.288664
+            ]
+        }
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://gis.ctmetro.org/arcgis/rest/services/GBRC/GBRC_Parcels/MapServer/0",
+                "website": "http://www.eastonct.gov/",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Street_Number",
+                    "street": "Street_Name",
+                    "unit": "Street_Unit",
+                    "city": "SITE_CITY",
+                    "postcode": "SITE_ZIP",
+                    "region": "SITE_STATE"
+                }
+            }
+        ]
+    }
+}

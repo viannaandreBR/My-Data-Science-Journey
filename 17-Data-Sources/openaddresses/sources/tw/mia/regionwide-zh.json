@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "ISO 3166": {
+            "alpha2": "TW-ILA",
+            "country": "Taiwan"
+        },
+        "country": "tw"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "country",
+                "data": "http://ja.miaoli.gov.tw/arcgis/rest/services/Miaoli/miaoliDpDynamic_B/FeatureServer/1",
+                "protocol": "ESRI",
+                "language": "zh",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "regexp",
+                        "field": "NUM",
+                        "pattern": "^([0-9０-９]+號?)"
+                    },
+                    "unit": {
+                        "function": "regexp",
+                        "field": "NUM",
+                        "pattern": "^(?:[0-9０-９]+號?)(.*)"
+                    },
+                    "street": {
+                        "function": "join",
+                        "fields": [
+                            "ROAD",
+                            "LANE",
+                            "ALLEY"
+                        ],
+                        "separator": ""
+                    },
+                    "city": "VILLAGE",
+                    "district": "TOWN"
+                }
+            }
+        ]
+    }
+}

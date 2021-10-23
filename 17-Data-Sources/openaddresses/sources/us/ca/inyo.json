@@ -1,0 +1,41 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "06027",
+            "name": "Inyo County",
+            "state": "California"
+        },
+        "country": "us",
+        "state": "ca",
+        "county": "Inyo"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/0jRlQ17Qmni5zEMr/ArcGIS/rest/services/AddressPoints/FeatureServer/0",
+                "website": "http://inyocounty.us/gis/GISPage_Data.htm",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ST_NUM",
+                    "street": "STREET",
+                    "city": "TOWN"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://services.arcgis.com/0jRlQ17Qmni5zEMr/ArcGIS/rest/services/ParcelsAttributed/FeatureServer/0",
+                "website": "http://inyocounty.us/gis/GISPage_Data.htm",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

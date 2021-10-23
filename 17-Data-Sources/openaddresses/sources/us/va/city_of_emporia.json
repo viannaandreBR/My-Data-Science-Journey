@@ -1,0 +1,35 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -77.54,
+                36.68
+            ]
+        },
+        "US Census": {
+            "geoid": "51595",
+            "name": "City of Emporia",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "city": "Emporia"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "http://gis.worldviewsolutions.com/arcgis/rest/services/emporia/main/MapServer/5",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "HseNum",
+                    "street": "StreetName",
+                    "postcode": "ZIP",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

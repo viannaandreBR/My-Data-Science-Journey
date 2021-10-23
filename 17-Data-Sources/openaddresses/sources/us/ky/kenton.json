@@ -1,0 +1,54 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "21117",
+            "name": "Kenton County",
+            "state": "Kentucky"
+        },
+        "country": "us",
+        "state": "ky",
+        "county": "Kenton"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://linkgis.org/arcgisweb/rest/services/addressPoints/MapServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "NUMADDR"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "NUMADDR"
+                    }
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://linkgis.org/arcgisweb/rest/services/Web_Scene_Map_Parcels/MapServer/13",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIDN"
+                }
+            }
+        ],
+        "buildings": [
+            {
+                "name": "county",
+                "data": "https://linkgis.org/arcgisweb/rest/services/Buildings/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

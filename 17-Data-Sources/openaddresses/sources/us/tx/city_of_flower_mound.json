@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -97.201,
+                33.036
+            ]
+        },
+        "US Census": {
+            "geoid": "4826232",
+            "name": "City of Flower Mound",
+            "state": "Texas"
+        },
+        "country": "us",
+        "state": "tx",
+        "county": "Denton/Tarrant",
+        "city": "Flower Mount"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://gismaps.flower-mound.com/wafmp/rest/services/Basemap/LandRecords_MS/MapServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRESS",
+                    "street": [
+                        "PREFIX_DIR",
+                        "STREET_NAME",
+                        "STREET_TYPE",
+                        "SUFFIX_DIR"
+                    ]
+                }
+            }
+        ]
+    }
+}

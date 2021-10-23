@@ -1,0 +1,33 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37187",
+            "name": "Washington County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Washington"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "shapefile",
+                    "number": "NUMBER",
+                    "street": "STREET",
+                    "unit": "StreetMisc",
+                    "postcode": "ZipCode",
+                    "city": "COMMUNITY",
+                    "region": "State"
+                },
+                "data": "http://www.washconc.org/GIS%20Maps/AddressPts_Dec13.zip",
+                "protocol": "http",
+                "compression": "zip",
+                "website": "http://www.washconc.org/gis_mapping.aspx"
+            }
+        ]
+    }
+}

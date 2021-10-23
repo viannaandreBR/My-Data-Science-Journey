@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "20161",
+            "name": "Riley County",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "county": "Riley"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "id": "SITEADDID",
+                    "number": "ADDRNUM",
+                    "street": [
+                        "ROADPREMOD",
+                        "ROADPREDIR",
+                        "ROADNAME",
+                        "ROADTYPE",
+                        "ROADPOSTDIR"
+                    ],
+                    "unit": [
+                        "ALTUNITTYPE",
+                        "ALTUNITID"
+                    ],
+                    "city": "PSTLCITY",
+                    "postcode": "PSTLZIP5"
+                },
+                "data": "https://services.arcgis.com/6WmEmDp2YlKJjhJt/arcgis/rest/services/AddressPoints/FeatureServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37159",
+            "name": "Rowan County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Rowan"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://web1.mobile311.com/arcgis/rest/services/NorthCarolina/Rowan2/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "B_ADDRESS",
+                    "street": [
+                        "ROAD_PRE",
+                        "ROAD_NAME",
+                        "ROAD_TYPE",
+                        "ROAD_SUF"
+                    ],
+                    "unit": "ADDSUF",
+                    "postcode": "ZIPNUM"
+                }
+            }
+        ]
+    }
+}

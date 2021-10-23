@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "17043",
+            "name": "DuPage County",
+            "state": "Illinois"
+        },
+        "country": "us",
+        "state": "il",
+        "county": "DuPage"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.dupageco.org/arcgis/rest/services/ParcelSearch/DuPageAssessmentParcelViewer/MapServer/4",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": "PROPSTNUM",
+                    "street": [
+                        "PROPSTDIR",
+                        "PROPSTNAME"
+                    ],
+                    "unit": "PROPAPT",
+                    "city": "PROPCITY",
+                    "region": "PROPSTATE",
+                    "postcode": "PROPZIP",
+                    "format": "geojson"
+                }
+            }
+        ]
+    }
+}

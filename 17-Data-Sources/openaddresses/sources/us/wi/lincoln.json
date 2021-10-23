@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "55069",
+            "name": "Lincoln County",
+            "state": "Wisconsin"
+        },
+        "country": "us",
+        "state": "wi",
+        "county": "Lincoln"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis2.msa-ps.com/ArcGIS/rest/services/StreetsAddress/MapServer/49",
+                "protocol": "ESRI",
+                "note": "Number col contains letters",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNO",
+                    "street": "FULLROADNM",
+                    "unit": "APTSUITE",
+                    "postcode": "ZIP5",
+                    "city": "CITY"
+                }
+            }
+        ]
+    }
+}

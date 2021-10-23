@@ -1,0 +1,31 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27035",
+            "name": "Crow Wing County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Crow Wing"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://gis.crowwing.us/cwcexternal/rest/services/Addressing/AddressPoints/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "number": ["ANUMBERPRE", "ADDRESS_NUMBER", "ANUMBERSUF"],
+                    "street": ["PREFIX_DIRECTIONAL", "ST_PRE_TYP", "STREET_NAME", "STREET_SUFFIX","POST_DIRECTIONAL"],
+                    "city": "COMMUNITY",
+                    "region": "STATE",
+                    "format": "geojson",
+                    "postcode": "ZIP"
+                },
+                "website": "https://hub-cwccm.hub.arcgis.com/pages/opendata"
+            }
+        ]
+    }
+}

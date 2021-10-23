@@ -1,0 +1,51 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.137,
+                40.556
+            ]
+        },
+        "US Census": {
+            "geoid": "0827425",
+            "name": "City of Fort Collins",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "city": "Fort Collins"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "data": "https://services1.arcgis.com/dLpFH5mwVvxSN4OE/arcgis/rest/services/Addresses/FeatureServer/0/",
+                "protocol": "ESRI",
+                "attribution": "City of Fort Collins",
+                "website": "https://www.fcgov.com/gis/",
+                "conform": {
+                    "number": "NUMBER_",
+                    "street": "STRNAME",
+                    "unit": "UNIT",
+                    "postcode": "zip",
+                    "format": "geojson"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "city",
+                "data": "https://services1.arcgis.com/dLpFH5mwVvxSN4OE/ArcGIS/rest/services/Parcels/FeatureServer/0",
+                "protocol": "ESRI",
+                "attribution": "City of Fort Collins",
+                "website": "https://www.fcgov.com/gis/",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PARCELNO"
+                }
+            }
+        ]
+    }
+}

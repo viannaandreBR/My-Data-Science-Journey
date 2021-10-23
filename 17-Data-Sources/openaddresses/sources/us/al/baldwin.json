@@ -1,0 +1,38 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "01003",
+            "name": "Baldwin County",
+            "state": "Alabama"
+        },
+        "country": "us",
+        "state": "al",
+        "county": "Baldwin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://web2.kcsgis.com/kcsgis/rest/services/Baldwin/Public/MapServer/31",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "PropStreetNumber",
+                    "street": "PropStreetName"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://web2.kcsgis.com/kcsgis/rest/services/Baldwin/Public/MapServer/31",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

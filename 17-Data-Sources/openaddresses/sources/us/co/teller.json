@@ -1,0 +1,46 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "08119",
+            "name": "Teller County",
+            "state": "Colorado"
+        },
+        "country": "us",
+        "state": "co",
+        "county": "Teller"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "Unit",
+                    "number": [
+                        "AddNum_Pre",
+                        "Add_Number",
+                        "AddNum_Suf"
+                    ],
+                    "street": "FullStreet",
+                    "city": "Nbhrd_Comm",
+                    "postcode": "Post_Code",
+                    "region": "State"
+                },
+                "data": "https://cdsd.co.teller.co.us/arcgis/rest/services/Property/MapServer/5",
+                "protocol": "ESRI"
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "Teller_County.sde.RWProd_Parcel.ID"
+                },
+                "data": "https://cdsd.co.teller.co.us/arcgis/rest/services/Property/MapServer/6",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

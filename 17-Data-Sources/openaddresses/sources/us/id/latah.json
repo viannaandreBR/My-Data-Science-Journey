@@ -1,0 +1,28 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "16057",
+            "name": "Latah County",
+            "state": "Idaho"
+        },
+        "country": "us",
+        "state": "id",
+        "county": "Latah"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.latah.id.us/arcgis/rest/services/Planning_Building/MapServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "Address",
+                    "street": "Street",
+                    "city": "CITY"
+                }
+            }
+        ]
+    }
+}

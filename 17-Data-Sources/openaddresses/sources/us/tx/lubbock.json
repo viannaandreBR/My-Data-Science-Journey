@@ -1,0 +1,36 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "48303",
+            "name": "Lubbock County",
+            "state": "Texas"
+        },
+        "country": "us",
+        "state": "tx",
+        "county": "Lubbock"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://pubgis.ci.lubbock.tx.us/server/rest/services/DefaultMap_New/MapServer/0",
+                "website": "https://ci.lubbock.tx.us/departments/gis-data-services/public-data/rest-services-new",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDR",
+                    "street": [
+                        "PREFIX",
+                        "STREET",
+                        "STREET_TYPE"
+                    ],
+                    "unit": "SUITE",
+                    "city": "City",
+                    "region": "State",
+                    "postcode": "ZipCodes"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27131",
+            "name": "Rice County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Rice"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "ftp://ftp.gisdata.mn.gov/pub/gdrs/data/pub/us_mn_co_rice/loc_addresses/shp_loc_addresses.zip",
+                "license": "",
+                "year": "",
+                "protocol": "ftp",
+                "compression": "zip",
+                "website": "https://gisdata.mn.gov/dataset/us-mn-co-rice-loc-addresses",
+                "conform": {
+                    "number": "STNUM",
+                    "street": "STREET",
+                    "unit": "UNIT_NO",
+                    "city": "CITY",
+                    "postcode": "ZIPCODE",
+                    "format": "shapefile"
+                }
+            }
+        ]
+    }
+}

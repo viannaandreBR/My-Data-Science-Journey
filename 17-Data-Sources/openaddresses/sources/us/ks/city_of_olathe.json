@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -94.82,
+                38.89
+            ]
+        },
+        "US Census": {
+            "geoid": "2052575",
+            "name": "City of Olathe",
+            "state": "Kansas"
+        },
+        "country": "us",
+        "state": "ks",
+        "city": "Olathe"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "city",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRNUM",
+                    "street": [
+                        "PreDir",
+                        "StrName",
+                        "StrType"
+                    ],
+                    "unit": [
+                        "SecUnitDesc",
+                        "SecUnit"
+                    ]
+                },
+                "data": "https://ozone.olatheks.org/arcgis/rest/services/govoutreach/olathecc/MapServer/0",
+                "protocol": "ESRI"
+            }
+        ]
+    }
+}

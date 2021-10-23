@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "27041",
+            "name": "Douglas County",
+            "state": "Minnesota"
+        },
+        "country": "us",
+        "state": "mn",
+        "county": "Douglas"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://dc-web-2.co.douglas.mn.us/server/rest/services/NEW_SERVICES/Public_Map_Data_Layers/MapServer/68",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "HNUM",
+                    "street": "STREET",
+                    "postcode": "ZIP_CODE",
+                    "city": "CITY",
+                    "district": "COUNTY",
+                    "region": "STATE"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://dc-web-2.co.douglas.mn.us/server/rest/services/NEW_SERVICES/Public_Map_Data_Layers/MapServer/51",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "PIN"
+                }
+            }
+        ]
+    }
+}

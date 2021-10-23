@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "37185",
+            "name": "Warren County",
+            "state": "North Carolina"
+        },
+        "country": "us",
+        "state": "nc",
+        "county": "Warren"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://arcgis4.roktech.net/arcgis/rest/services/Warren/GoMaps4/MapServer/2",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADD_NUM",
+                    "street": [
+                        "PREDIR",
+                        "ST_NAME",
+                        "ST_TYPE",
+                        "POSTDIR"
+                    ],
+                    "unit": "NEWUNIT",
+                    "city": "COMMUN"
+                }
+            }
+        ]
+    }
+}

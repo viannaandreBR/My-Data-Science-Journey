@@ -1,0 +1,44 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "51067",
+            "name": "Franklin County",
+            "state": "Virginia"
+        },
+        "country": "us",
+        "state": "va",
+        "county": "Franklin"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "http://gis.franklincountyva.gov/arcgis/rest/services/PublicServices/LandBaseLayers/MapServer/1",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": "ADDRESS",
+                    "street": [
+                        "NAME",
+                        "EXTENSION"
+                    ],
+                    "unit": "OCCUNIT",
+                    "city": "COMMUNITY",
+                    "postcode": "ZipCode"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "http://gis.franklincountyva.gov/arcgis/rest/services/PublicServices/LandBaseLayers/MapServer/3",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "Parcel_No"
+                }
+            }
+        ]
+    }
+}

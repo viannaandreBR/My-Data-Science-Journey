@@ -1,0 +1,34 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "41069",
+            "state": "Oregon",
+            "name": "Wheeler County"
+        },
+        "country": "us",
+        "state": "or",
+        "county": "Wheeler"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://services3.arcgis.com/e3KSI9Py4B7m3xu6/ArcGIS/rest/services/Wheeler07_E911/FeatureServer/0",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "number": {
+                        "function": "prefixed_number",
+                        "field": "FULL_ADDRE"
+                    },
+                    "street": {
+                        "function": "postfixed_street",
+                        "field": "FULL_ADDRE"
+                    },
+                    "district": "COUNTY"
+                }
+            }
+        ]
+    }
+}

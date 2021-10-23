@@ -1,0 +1,42 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "35045",
+            "name": "San Juan County",
+            "state": "New Mexico"
+        },
+        "country": "us",
+        "state": "nm",
+        "county": "San Juan"
+    },
+    "schema": 2,
+    "layers": {
+        "addresses": [
+            {
+                "name": "county",
+                "data": "https://webmaps.sjcounty.net/arcgis/rest/services/opendata/BaseMapLayers2/MapServer/11",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "unit": "UNIT",
+                    "number": "NUMBER",
+                    "street": "STREET",
+                    "city": "CITY",
+                    "region": "STATE",
+                    "postcode": "ZIP_CODE_"
+                }
+            }
+        ],
+        "parcels": [
+            {
+                "name": "county",
+                "data": "https://webmaps.sjcounty.net/arcgis/rest/services/Maps/ClerksExternal/MapServer/43",
+                "protocol": "ESRI",
+                "conform": {
+                    "format": "geojson",
+                    "pid": "assessor.GIS.Parcels.PARCELNO"
+                }
+            }
+        ]
+    }
+}
