@@ -1,51 +1,71 @@
-# Artificial Inteligence Guide
+# Autonomous Car Demos
 
 
 
 
-# Machine Learning
-![title](assets/AI-Guide.png)
+# Autonomous Car Demo #1
+![title](assets/auto-car-v1.gif)
 
 
 
-# Content
 
-## 1. Algoritmos de Busca
-  - Busca Gulosa
-  - Busca a Estrela
-## 2. Algoritmos de Otimização
-  - Hill Climb
-  - Simulated Annealing
-  - Algoritmo Genético
-## 3. Lógica Fuzzy
-## 4. Machine Learning
-  - Classificação
-  - Regressão
-  - Agrupamento
-  - Associação
-  - Aprendizagem por Reforço
-  - Complementos
-  - Visualização de Dados
-## 5. Deep Learning
-  - Redes Neurais Artificiais
-  - Redes Convolucionais
-## 6. Processamento de Linguagem Natural
-  - Marcação POS
-  - Lematização e Stemização
-  - Buscas em Textos
-  - Extração de Entidades
-  - Nuvem de Palavras
-  - Mineração de Sentimentos
-## 7. Visão Computacional
-  - Detecção de Faces
-  - Reconhecimento Facial
-  - Rastreamento de Objetos
-## 8. Sistemas Multiagente
-  - Comunicação entre Agentes
-## 9. Outras Áreas de IA
-  - Sistemas Especialistas
-  - General Problem Solver
-  - Redes Bayesianas
-  - Raciocínio Baseado em Casos
+# Autonomous Car Demo #2
+![title](assets/auto-car-v2.gif)
 
 
+
+# Autonomous Car Demo #3
+![title](assets/auto-car-v3.gif)
+
+
+
+# Autonomous Car Demo #4
+![title](assets/auto-car-v4.gif)
+
+
+# Autonomous Car Demo #5
+![title](assets/auto-car-v5.gif)
+
+
+# Autonomous Car Demo #6
+![title](assets/auto-car-v6.gif)
+
+
+
+# Autonomous Car Demo #7
+![title](assets/auto-car-v7.gif)
+
+
+
+# Autonomous Car Demo #8
+![title](assets/auto-car-v8.gif)
+
+
+# Autonomous Car Demo #9
+![title](assets/auto-car-v9.gif)
+
+
+
+# Autonomous Car Demo #9
+![title](assets/auto-car-v9.gif)
+
+
+
+# Autonomous Car Demo #10
+![title](assets/auto-car-v10.gif)
+
+
+# Autonomous Car Demo #11
+![title](assets/auto-car-v11.gif)
+
+
+# Autonomous Car Demo #12
+![title](assets/auto-car-v12.gif)
+
+
+# Autonomous Car Demo #13
+![title](assets/auto-car-v13.gif)
+
+
+# Autonomous Car Demo #14
+![title](assets/auto-car-v14.gif)
