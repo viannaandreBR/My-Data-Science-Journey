@@ -24,7 +24,7 @@
 
 ## [3. Lógica Fuzzy](./3-Logica-Fuzzy/)
 
-## [4. Machine Learning](./4-Machine-Lerning/)
+## [4. Machine Learning](./4-Machine-Learning/)
   - Classificação
   - Regressão
   - Agrupamento
