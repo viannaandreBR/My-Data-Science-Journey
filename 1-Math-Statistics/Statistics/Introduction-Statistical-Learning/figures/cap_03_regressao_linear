@@ -1,0 +1,32 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Cap. 03\nRegressão linear",
+      "id": 1,
+      "attr": {
+        "position": [
+          -27,
+          -15,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#008080",
+          "text": {
+            "color": "#FFFFFF"
+          },
+          "fontMultiplier": 1.5,
+          "fontFamily": "Serif"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "O que é uma regressão linear?",
+          "id": "3.171e.9b097a9ae-6311.0b610c63b"
+        }
+      }
+    }
+  },
+  "title": ""
+}
