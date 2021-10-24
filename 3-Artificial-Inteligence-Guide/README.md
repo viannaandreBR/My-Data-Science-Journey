@@ -10,26 +10,42 @@
 
 # Content
 
-## 1. Math & Statistics
-## 2. Python
-## 3. Artificial Inteligence Guide
-## 4. Data Visualization
-## 5. Data Analisys & Pipeline
-## 6. Big Data
-## 7. Machine Learning
-## 8. Deep Learning
-## 9. Reinforcement Learning
-## 10. Analytics
-## 11. R & RStudio
-## 12. Visual Computing
-## 13. API-AI
-## 14. Data Science Apps
-## 15. Cloud & Deploys
-## 16. Data Science Guide
-## 17. Data Sources & Sets
-## 18. Kaggle & Competition
-## 19. GIS & Maps
-## 20. SQL
-## 21. Storing Telling
-## 22. Web Scrapping
+## 1. Algoritmos de Busca
+  - Busca Gulosa
+  - Busca a Estrela
+## 2. Algoritmos de Otimização
+  - Hill Climb
+  - Simulated Annealing
+  - Algoritmo Genético
+## 3. Lógica Fuzzy
+## 4. Machine Learning
+  - Classificação
+  - Regressão
+  - Agrupamento
+  - Associação
+  - Complementos
+  - Visualização de Dados
+  - Aprendizagem por Reforço
+## 5. Deep Learning
+  - Redes Neurais Artificiais
+  - Redes Convolucionais
+## 6. Processamento de Linguagem Natural
+  - Marcação POS
+  - Lematização e Stemização
+  - Buscas em Textos
+  - Extração de Entidades
+  - Nuvem de Palavras
+  - Mineração de Sentimentos
+## 7. Visão Computacional
+  - Detecção de Faces
+  - Reconhecimento Facial
+  - Rastreamento de Objetos
+## 8. Sistemas Multiagente
+  - Comunicação entre Agentes
+## 9. Outras Áreas de IA
+  - Sistemas Especialistas
+  - General Problem Solver
+  - Redes Bayesianas
+  - Raciocínio Baseado em Casos
+
 
