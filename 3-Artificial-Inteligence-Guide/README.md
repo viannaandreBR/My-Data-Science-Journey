@@ -3,7 +3,7 @@
 
 
 
-# AI Guide
+# Machine Learning
 ![title](assets/AI-Guide.png)
 
 
@@ -23,9 +23,9 @@
   - Regressão
   - Agrupamento
   - Associação
+  - Aprendizagem por Reforço
   - Complementos
   - Visualização de Dados
-  - Aprendizagem por Reforço
 ## 5. Deep Learning
   - Redes Neurais Artificiais
   - Redes Convolucionais
