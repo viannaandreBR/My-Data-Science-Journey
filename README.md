@@ -61,7 +61,7 @@
 
 ## [19. GIS & Maps](./19-GIS-Maps/)
 
-## [20. SQ](./20-SQL/)
+## [20. SQL](./20-SQL/)
 
 ## [21. Storing-Telling](./21-Storing-Telling/)
 
