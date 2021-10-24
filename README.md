@@ -31,7 +31,7 @@
 
 ## [1. Math & Statistics](./1-Math-Statistics/)
 ## [2. Python](./2-Python/)
-## [3. Artificial Inteligence Guide](./3-3-Artificial-Inteligence-Guide/)
+## [3. Artificial Inteligence Guide](./3-Artificial-Inteligence-Guide/)
 ## [4. Data Visualization](./4-Data-Visualization/)
 ## [5. Data Analisys & Pipeline](./5-Data-Analisys-Pipepline/)
 
