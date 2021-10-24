@@ -1,0 +1,44 @@
+# Build files
+build
+dist
+Orange3.egg-info
+Orange/version.py
+doc/build
+*.so
+*.pyd
+*.pyc
+MANIFEST
+__pycache__
+
+# Cython generated files
+_contingency.c
+_io.c
+_valuecount.c
+_variable.c
+_tree_scorers.c
+_distance.c
+_discretize.c
+_relieff.cpp
+_variable.c
+_som.c
+
+# Editor files
+.idea
+.idea/*
+*~
+.project
+.pydevproject
+.settings/*
+.DS_Store
+
+# Windows temp files
+Thumbs.db
+
+# PyLint, Coverage reports
+.pylint_cache/*
+htmlcov/*
+.coverage
+.coverage.*
+
+.tox
+pip-wheel-metadata/
