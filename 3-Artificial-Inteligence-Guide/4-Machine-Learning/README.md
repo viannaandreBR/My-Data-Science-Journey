@@ -10,8 +10,16 @@
 # Content
 
 ## [1. Classificação](./1-Classificacao/)
-  - Naive Bayes
-  - Árvore de Decisão
+---
+  ### Naive Bayes
+ ![title](1-Classificacao/naive-bayes-classificacao.gif)
+---
+ ---
+  ### Árvore de Decisão
+
+   ![title](1-Classificacao/naive-bayes-classificacao.gif)
+---
+---
   - Aprendizagem por Regras
   - KNN (K-Nearest Neighbors) 
   - SVM (Suport Vector Machine) 
