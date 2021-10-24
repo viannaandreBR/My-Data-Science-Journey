@@ -1,29 +1,12 @@
-# My Data Science Journey
-
-
-# Data Science 
-
-![title](assets/DataScience-Cloud.png)
-
-# Data Science Joourney
-
-![title](assets/DataScience-Journey1.png)
-
-
-
-
-# Data Science Joourney
-
-![title](assets/DataScience-Journey.png)
+# Statistics  Data Science Journey
 
 
 
 
 
+# Statistics Journey
 
-# Data Science Components
-
-![title](assets/DataSicence-Journey.jpg)
+![title](assets/statistics.png)
 
 
 

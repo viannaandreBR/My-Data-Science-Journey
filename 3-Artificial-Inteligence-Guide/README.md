@@ -1,29 +1,10 @@
-# My Data Science Journey
-
-
-# Data Science 
-
-![title](assets/DataScience-Cloud.png)
-
-# Data Science Joourney
-
-![title](assets/DataScience-Journey1.png)
+# Artificial Inteligence Guide
 
 
 
 
-# Data Science Joourney
-
-![title](assets/DataScience-Journey.png)
-
-
-
-
-
-
-# Data Science Components
-
-![title](assets/DataSicence-Journey.jpg)
+# AI Guide
+![title](assets/AI-Guide.png)
 
 
 
