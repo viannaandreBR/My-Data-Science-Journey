@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 200,
+  "height": 200,
+  "padding": 5,
+  "autosize": "none",
+
+  "signals": [
+    { "name": "clip", "value": false, "bind": {"input": "checkbox"} },
+    { "name": "foreground", "value": false, "bind": {"input": "checkbox"} },
+    { "name": "x", "value": 25,
+      "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
+    { "name": "y", "value": 25,
+      "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
+    { "name": "w", "value": 150,
+      "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
+    { "name": "h", "value": 150,
+      "bind": {"input": "range", "min": 0, "max": 200, "step": 1} },
+    { "name": "cornerRadius", "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 50, "step": 1} },
+    { "name": "strokeWidth", "value": 4,
+      "bind": {"input": "range", "min": 0, "max": 10} },
+    { "name": "color", "value": "both",
+      "bind": {"input": "radio", "options": ["fill", "stroke", "both"]} }
+  ],
+
+  "marks": [
+    {
+      "type": "group",
+      "encode": {
+        "update": {
+          "x": {"signal": "x"},
+          "y": {"signal": "y"},
+          "width": {"signal": "w"},
+          "height": {"signal": "h"},
+          "clip": {"signal": "clip"},
+          "opacity": {"value": 1},
+          "cornerRadius": {"signal": "cornerRadius"},
+          "strokeWidth": {"signal": "strokeWidth"},
+          "strokeForeground": {"signal": "foreground"},
+          "fill": {"signal": "color !== 'stroke' ? '#939597' : null"},
+          "stroke": {"signal": "color !== 'fill' ? '#652c90' : null"}
+        },
+        "hover": {
+          "opacity": {"value": 0.5}
+        }
+      },
+
+      "data": [
+        {
+          "name": "table",
+          "values": [
+            {"x":  5, "y": 5, "w": 100, "h": 30},
+            {"x": -5, "y": 70, "w": 40, "h": 40},
+            {"x": 60, "y": 120, "w": 100, "h": 20}
+          ]
+        }
+      ],
+
+      "marks": [
+        {
+          "type": "rect",
+          "from": {"data": "table"},
+          "encode": {
+            "enter": {
+              "x": {"field": "x"},
+              "y": {"field": "y"},
+              "width": {"field": "w"},
+              "height": {"field": "h"},
+              "stroke": {"value": "firebrick"}
+            },
+            "update": {
+              "fill": {"value": "aliceblue"}
+            },
+            "hover": {
+              "fill": {"value": "salmon"}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
