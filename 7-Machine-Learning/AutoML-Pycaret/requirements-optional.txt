@@ -1,0 +1,20 @@
+shap
+interpret<=0.2.4
+# no interpret-community as it causes a breaking dependency mismatch
+tune-sklearn>=0.2.1
+ray[tune]>=1.0.0
+hyperopt
+optuna>=2.2.0
+scikit-optimize>=0.8.1
+psutil
+catboost>=0.23.2
+xgboost>=1.1.0
+
+# for cloud deployment
+boto3
+azure-storage-blob
+google-cloud-storage
+
+#hpbandster
+#ConfigSpace
+#pdpbox
