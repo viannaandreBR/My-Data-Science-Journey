@@ -1,0 +1,145 @@
+Intel(R) Architecture Code Analyzer Version -  v3.0-28-g1ba2cbb build date: 2017-10-23;17:30:24
+Analyzed File -  x64\Release\StringTable2.dll
+Binary Format - 64Bit
+Architecture  -  SKL
+Analysis Type - Throughput
+
+Throughput Analysis Report
+--------------------------
+Block Throughput: 37.37 Cycles       Throughput Bottleneck: Backend
+Loop Count:  22
+Port Binding In Cycles Per Iteration:
+--------------------------------------------------------------------------------------------------
+|  Port  |   0   -  DV   |   1   |   2   -  D    |   3   -  D    |   4   |   5   |   6   |   7   |
+--------------------------------------------------------------------------------------------------
+| Cycles | 19.9     0.0  | 16.0  |  9.0     9.0  |  9.0     9.0  |  3.0  | 33.0  | 18.2  |  3.0  |
+--------------------------------------------------------------------------------------------------
+
+DV - Divider pipe (on port 0)
+D - Data fetch pipe (on ports 2 and 3)
+F - Macro Fusion with the previous instruction occurred
+* - instruction micro-ops not bound to a port
+^ - Micro Fusion occurred
+# - ESP Tracking sync uop was issued
+@ - SSE instruction followed an AVX256/AVX512 instruction, dozens of cycles penalty is expected
+X - instruction not supported, was not accounted in Analysis
+
+| Num Of   |                    Ports pressure in cycles                         |      |
+|  Uops    |  0  - DV    |  1   |  2  -  D    |  3  -  D    |  4   |  5   |  6   |  7   |
+-----------------------------------------------------------------------------------------
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov rax, qword ptr [rdx+0x8]
+|   2      |             |      |             | 1.0     1.0 |      | 1.0  |      |      | vpbroadcastb xmm4, byte ptr [rdx]
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | vmovdqa xmm3, xmmword ptr [rcx+0x20]
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | vmovdqu xmm0, xmmword ptr [rax]
+|   1      |             | 1.0  |             |             |      |      |      |      | vpcmpgtb xmm1, xmm3, xmm4
+|   2^     |             |      | 1.0     1.0 |             |      | 1.0  |      |      | vpshufb xmm5, xmm0, xmmword ptr [rcx+0x10]
+|   2^     |             | 1.0  |             | 1.0     1.0 |      |      |      |      | vpcmpeqb xmm5, xmm5, xmmword ptr [rcx]
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vptest xmm1, xmm5
+|   1      |             |      |             |             |      |      | 1.0  |      | jnb 0x7
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   1      |             | 0.6  |             |             |      |      | 0.4  |      | not al
+|   3^#    |             | 0.1  | 1.0     1.0 |             |      |      |      |      | ret 
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrb r11d, xmm4, 0x0
+|   1      |             | 0.3  |             |             |      |      | 0.7  |      | mov rax, 0x10
+|   1*     |             |      |             |             |      |      |      |      | mov r10, r11
+|   1      |             | 0.7  |             |             |      |      | 0.3  |      | cmp r10w, ax
+|   2      | 0.1         |      |             |             |      |      | 1.9  |      | cmovnbe r10w, ax
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrb xmm4, xmm4, r10d, 0x1
+|   1*     |             |      |             |             |      |      |      |      | vpxor xmm2, xmm2, xmm2
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrq xmm2, xmm2, rcx, 0x0
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrq xmm2, xmm2, rdx, 0x1
+|   1      | 0.4         | 0.6  |             |             |      |      |      |      | vpandn xmm5, xmm1, xmm5
+|   1      | 1.0         |      |             |             |      |      |      |      | vpmovmskb edx, xmm5
+|   1*     |             |      |             |             |      |      |      |      | vpxor xmm5, xmm5, xmm5
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrq xmm5, xmm5, r8, 0x0
+|   1      |             | 1.0  |             |             |      |      |      |      | popcnt ecx, edx
+|   1*     |             |      |             |             |      |      |      |      | xor r9, r9
+|   0X     |             |      |             |             |      |      |      |      | nop dword ptr [rax], eax
+|   1      |             | 1.0  |             |             |      |      |      |      | tzcnt r8d, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r8d
+|   1      | 0.3         |      |             |             |      |      | 0.7  |      | add rax, r9
+|   1      | 0.7         |      |             |             |      |      | 0.3  |      | inc r8
+|   1      | 0.3         |      |             |             |      |      | 0.7  |      | shrx rdx, rdx, r8
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrd xmm5, xmm5, edx, 0x2
+|   1*     |             |      |             |             |      |      |      |      | xor edx, edx
+|   1*     |             |      |             |             |      |      |      |      | mov r9, rax
+|   1      | 0.3         | 0.4  |             |             |      |      | 0.4  |      | inc r9
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrd xmm5, xmm5, eax, 0x3
+|   1      | 0.4         |      |             |             |      |      | 0.6  |      | shl eax, 0x4
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrq r8, xmm2, 0x0
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | vmovdqa xmm1, xmmword ptr [rax+r8*1+0x40]
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x4
+|   1      |             | 1.0  |             |             |      |      |      |      | vpcmpeqb xmm1, xmm1, xmm0
+|   1      | 1.0         |      |             |             |      |      |      |      | vpmovmskb r8d, xmm1
+|   1      |             | 1.0  |             |             |      |      |      |      | bzhi r8d, r8d, r10d
+|   1      |             | 1.0  |             |             |      |      |      |      | popcnt r8d, r8d
+|   1      |             |      |             |             |      | 1.0  |      |      | movq xmm1, rax
+|   1      |             |      |             |             |      | 1.0  |      |      | vpshufb xmm1, xmm3, xmm1
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrb edx, xmm1, 0x0
+|   1*     |             |      |             |             |      |      |      |      | cmp r8w, 0x10
+|   0*F    |             |      |             |             |      |      |      |      | jz 0x4
+|   1      |             |      |             |             |      |      | 1.0  |      | jmp 0x9
+|   1*     |             |      |             |             |      |      |      |      | cmp dl, 0x10
+|   0*F    |             |      |             |             |      |      |      |      | jnbe 0x57
+|   1      |             |      |             |             |      |      | 1.0  |      | jz 0x19
+|   1*     |             |      |             |             |      |      |      |      | cmp r8b, dl
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x4
+|   1      | 0.6         |      |             |             |      |      | 0.4  |      | jmp 0x12
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrd edx, xmm5, 0x2
+|   1*     |             |      |             |             |      |      |      |      | dec cx
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0xffffffffffffff84
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   1      |             | 0.6  |             |             |      |      | 0.4  |      | not al
+|   3^#    |             | 0.1  | 1.0     1.0 |             |      |      |      |      | ret 
+|   1*     |             |      |             |             |      |      |      |      | mov rax, r8
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrq r8, xmm5, 0x0
+|   1*     |             |      |             |             |      |      |      |      | test r8, r8
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x9
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrd eax, xmm5, 0x3
+|   3^#    |             |      |             | 1.0     1.0 |      |      | 0.1  |      | ret 
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov byte ptr [r8+0x1], al
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrd eax, xmm5, 0x3
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov byte ptr [r8], al
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrq rcx, xmm2, 0x0
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov rcx, qword ptr [rcx+0x30]
+|   1      |             |      |             |             |      |      | 1.0  |      | shl eax, 0x4
+|   1      |             | 1.0  |             |             |      |      |      |      | lea rdx, ptr [rax+rcx*1+0x10]
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov qword ptr [r8+0x8], rdx
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x4
+|   3^#    |             |      |             | 1.0     1.0 |      |      |      |      | ret 
+|   1      |             | 1.0  |             |             |      |      |      |      | sub rdx, r10
+|   2      |             |      |             |             |      | 2.0  |      |      | vpinsrb xmm4, xmm4, ecx, 0x2
+|   1*     |             |      |             |             |      |      |      |      | mov rcx, rdx
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrq r11, xmm2, 0x1
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov r11, qword ptr [r11+0x8]
+|   1      |             | 0.4  |             |             |      |      | 0.6  |      | add r11, r10
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrq r8, xmm2, 0x0
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov r8, qword ptr [r8+0x30]
+|   1      |             |      |             |             |      |      | 1.0  |      | shl eax, 0x4
+|   1      |             | 1.0  |             |             |      |      |      |      | lea r8, ptr [rax+r8*1+0x10]
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov r8, qword ptr [r8+0x8]
+|   1      |             | 0.6  |             |             |      |      | 0.4  |      | add r8, r10
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   0X     |             |      |             |             |      |      |      |      | nop word ptr [rax+rax*1], ax
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov dl, byte ptr [rax+r11*1]
+|   2      |             |      | 1.0     1.0 |             |      |      |      |      | cmp dl, byte ptr [rax+r8*1]
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x12
+|   1      |             | 0.6  |             |             |      |      | 0.4  |      | inc ax
+|   1*     |             |      |             |             |      |      |      |      | dec cx
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0xfffffffffffffff0
+|   1      |             | 0.4  |             |             |      |      | 0.6  |      | add rax, r10
+|   1      |             |      |             |             |      |      | 1.0  |      | jmp 0xffffffffffffff71
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrb ecx, xmm4, 0x2
+|   1*     |             |      |             |             |      |      |      |      | dec cx
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x7
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   1      |             | 0.6  |             |             |      |      | 0.4  |      | not al
+|   3^     |             |      |             | 1.0     1.0 |      |      |      |      | ret 
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrb r10d, xmm4, 0x1
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrb r11d, xmm4, 0x0
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vpextrd edx, xmm5, 0x2
+|   1      |             |      |             |             |      |      | 1.0  |      | jmp 0xfffffffffffffec4
+Total Num Of Uops: 142
+Analysis Notes:
+There was an unsupported instruction(s), it was not accounted in Analysis.
+Backend allocation was stalled due to unavailable allocation resources.

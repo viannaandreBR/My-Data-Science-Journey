@@ -1,0 +1,45 @@
+S:\Source\tracer>iaca x64\Release\StringTable2.dll
+Intel(R) Architecture Code Analyzer Version -  v3.0-28-g1ba2cbb build date: 2017-10-23;17:30:24
+Analyzed File -  x64\Release\StringTable2.dll
+Binary Format - 64Bit
+Architecture  -  SKL
+Analysis Type - Throughput
+
+Throughput Analysis Report
+--------------------------
+Block Throughput: 3.74 Cycles       Throughput Bottleneck: Dependency chains
+Loop Count:  22
+Port Binding In Cycles Per Iteration:
+--------------------------------------------------------------------------------------------------
+|  Port  |   0   -  DV   |   1   |   2   -  D    |   3   -  D    |   4   |   5   |   6   |   7   |
+--------------------------------------------------------------------------------------------------
+| Cycles |  2.0     0.0  |  1.0  |  3.5     3.5  |  3.5     3.5  |  0.0  |  3.0  |  2.0  |  0.0  |
+--------------------------------------------------------------------------------------------------
+
+DV - Divider pipe (on port 0)
+D - Data fetch pipe (on ports 2 and 3)
+F - Macro Fusion with the previous instruction occurred
+* - instruction micro-ops not bound to a port
+^ - Micro Fusion occurred
+# - ESP Tracking sync uop was issued
+@ - SSE instruction followed an AVX256/AVX512 instruction, dozens of cycles penalty is expected
+X - instruction not supported, was not accounted in Analysis
+
+| Num Of   |                    Ports pressure in cycles                         |      |
+|  Uops    |  0  - DV    |  1   |  2  -  D    |  3  -  D    |  4   |  5   |  6   |  7   |
+-----------------------------------------------------------------------------------------
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rax, qword ptr [rdx+0x8]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | vmovdqu xmm0, xmmword ptr [rax]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | vmovdqa xmm1, xmmword ptr [rcx+0x10]
+|   1      |             |      |             |             |      | 1.0  |      |      | vpshufb xmm5, xmm0, xmm1
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | vmovdqa xmm2, xmmword ptr [rcx]
+|   1      | 1.0         |      |             |             |      |      |      |      | vpcmpeqb xmm5, xmm5, xmm2
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | vmovdqa xmm3, xmmword ptr [rcx+0x20]
+|   2      |             |      | 0.5     0.5 | 0.5     0.5 |      | 1.0  |      |      | vpbroadcastb xmm4, byte ptr [rdx]
+|   1      |             | 1.0  |             |             |      |      |      |      | vpcmpgtb xmm1, xmm3, xmm4
+|   2      | 1.0         |      |             |             |      | 1.0  |      |      | vptest xmm1, xmm5
+|   1      |             |      |             |             |      |      | 1.0  |      | jnb 0x10
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   1      |             |      |             |             |      |      | 1.0  |      | not al
+|   3^     |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | ret
+Total Num Of Uops: 18

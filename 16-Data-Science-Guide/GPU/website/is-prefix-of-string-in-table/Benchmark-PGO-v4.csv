@@ -1,0 +1,521 @@
+Name,FuncIndex,BuildConfig,String,MinimumCycles
+IsPrefixOfCStrInArray,0,PGO, 0 $AttrDef,27870
+IsPrefixOfStringInTable_1,1,PGO, 0 $AttrDef,23978
+IsPrefixOfStringInTable_2,2,PGO, 0 $AttrDef,66162
+IsPrefixOfStringInTable_3,3,PGO, 0 $AttrDef,21974
+IsPrefixOfStringInTable_4,4,PGO, 0 $AttrDef,22558
+IsPrefixOfStringInTable_5,5,PGO, 0 $AttrDef,66462
+IsPrefixOfStringInTable_6,6,PGO, 0 $AttrDef,20058
+IsPrefixOfStringInTable_7,7,PGO, 0 $AttrDef,19772
+IsPrefixOfStringInTable_8,8,PGO, 0 $AttrDef,18584
+IsPrefixOfStringInTable_9,9,PGO, 0 $AttrDef,18696
+IsPrefixOfStringInTable_10,10,PGO, 0 $AttrDef,18254
+IsPrefixOfStringInTable_11,11,PGO, 0 $AttrDef,18046
+IsPrefixOfStringInTable_12,12,PGO, 0 $AttrDef,19130
+IsPrefixOfStringInTable_13,13,PGO, 0 $AttrDef,16992
+IsPrefixOfStringInTable_14,14,PGO, 0 $AttrDef,17088
+IsPrefixOfStringInTable_x64_1,15,PGO, 0 $AttrDef,7484
+IsPrefixOfStringInTable_x64_2,16,PGO, 0 $AttrDef,24684
+IsPrefixOfStringInTable_x64_3,17,PGO, 0 $AttrDef,59724
+IsPrefixOfStringInTable_x64_4,18,PGO, 0 $AttrDef,23824
+IsPrefixOfStringInTable_x64_5,19,PGO, 0 $AttrDef,23688
+IsPrefixOfStringInTable_x64_6,20,PGO, 0 $AttrDef,23728
+IsPrefixOfStringInTable_x64_7,21,PGO, 0 $AttrDef,58734
+IsPrefixOfStringInTable_x64_8,22,PGO, 0 $AttrDef,20984
+IsPrefixOfStringInTable_x64_9,23,PGO, 0 $AttrDef,20326
+IsPrefixOfStringInTable_x64_10,24,PGO, 0 $AttrDef,20178
+IntegerDivision_x64_1,25,PGO, 0 $AttrDef,95166
+IsPrefixOfCStrInArray,0,PGO, 1 $BadClus,34332
+IsPrefixOfStringInTable_1,1,PGO, 1 $BadClus,31840
+IsPrefixOfStringInTable_2,2,PGO, 1 $BadClus,66174
+IsPrefixOfStringInTable_3,3,PGO, 1 $BadClus,21968
+IsPrefixOfStringInTable_4,4,PGO, 1 $BadClus,22588
+IsPrefixOfStringInTable_5,5,PGO, 1 $BadClus,66446
+IsPrefixOfStringInTable_6,6,PGO, 1 $BadClus,20050
+IsPrefixOfStringInTable_7,7,PGO, 1 $BadClus,19758
+IsPrefixOfStringInTable_8,8,PGO, 1 $BadClus,18600
+IsPrefixOfStringInTable_9,9,PGO, 1 $BadClus,18686
+IsPrefixOfStringInTable_10,10,PGO, 1 $BadClus,18248
+IsPrefixOfStringInTable_11,11,PGO, 1 $BadClus,18034
+IsPrefixOfStringInTable_12,12,PGO, 1 $BadClus,19180
+IsPrefixOfStringInTable_13,13,PGO, 1 $BadClus,17066
+IsPrefixOfStringInTable_14,14,PGO, 1 $BadClus,17094
+IsPrefixOfStringInTable_x64_1,15,PGO, 1 $BadClus,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 1 $BadClus,24672
+IsPrefixOfStringInTable_x64_3,17,PGO, 1 $BadClus,59728
+IsPrefixOfStringInTable_x64_4,18,PGO, 1 $BadClus,23838
+IsPrefixOfStringInTable_x64_5,19,PGO, 1 $BadClus,23686
+IsPrefixOfStringInTable_x64_6,20,PGO, 1 $BadClus,23670
+IsPrefixOfStringInTable_x64_7,21,PGO, 1 $BadClus,58732
+IsPrefixOfStringInTable_x64_8,22,PGO, 1 $BadClus,20984
+IsPrefixOfStringInTable_x64_9,23,PGO, 1 $BadClus,20324
+IsPrefixOfStringInTable_x64_10,24,PGO, 1 $BadClus,20122
+IntegerDivision_x64_1,25,PGO, 1 $BadClus,95158
+IsPrefixOfCStrInArray,0,PGO, 2 $Bitmap,40800
+IsPrefixOfStringInTable_1,1,PGO, 2 $Bitmap,25966
+IsPrefixOfStringInTable_2,2,PGO, 2 $Bitmap,66162
+IsPrefixOfStringInTable_3,3,PGO, 2 $Bitmap,21970
+IsPrefixOfStringInTable_4,4,PGO, 2 $Bitmap,22660
+IsPrefixOfStringInTable_5,5,PGO, 2 $Bitmap,66428
+IsPrefixOfStringInTable_6,6,PGO, 2 $Bitmap,20060
+IsPrefixOfStringInTable_7,7,PGO, 2 $Bitmap,19764
+IsPrefixOfStringInTable_8,8,PGO, 2 $Bitmap,18602
+IsPrefixOfStringInTable_9,9,PGO, 2 $Bitmap,18692
+IsPrefixOfStringInTable_10,10,PGO, 2 $Bitmap,18262
+IsPrefixOfStringInTable_11,11,PGO, 2 $Bitmap,18048
+IsPrefixOfStringInTable_12,12,PGO, 2 $Bitmap,19176
+IsPrefixOfStringInTable_13,13,PGO, 2 $Bitmap,17026
+IsPrefixOfStringInTable_14,14,PGO, 2 $Bitmap,17094
+IsPrefixOfStringInTable_x64_1,15,PGO, 2 $Bitmap,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 2 $Bitmap,24668
+IsPrefixOfStringInTable_x64_3,17,PGO, 2 $Bitmap,59728
+IsPrefixOfStringInTable_x64_4,18,PGO, 2 $Bitmap,23844
+IsPrefixOfStringInTable_x64_5,19,PGO, 2 $Bitmap,23688
+IsPrefixOfStringInTable_x64_6,20,PGO, 2 $Bitmap,23700
+IsPrefixOfStringInTable_x64_7,21,PGO, 2 $Bitmap,58756
+IsPrefixOfStringInTable_x64_8,22,PGO, 2 $Bitmap,20984
+IsPrefixOfStringInTable_x64_9,23,PGO, 2 $Bitmap,20144
+IsPrefixOfStringInTable_x64_10,24,PGO, 2 $Bitmap,20192
+IntegerDivision_x64_1,25,PGO, 2 $Bitmap,95000
+IsPrefixOfCStrInArray,0,PGO, 3 $Boot,45282
+IsPrefixOfStringInTable_1,1,PGO, 3 $Boot,25884
+IsPrefixOfStringInTable_2,2,PGO, 3 $Boot,66168
+IsPrefixOfStringInTable_3,3,PGO, 3 $Boot,21966
+IsPrefixOfStringInTable_4,4,PGO, 3 $Boot,22568
+IsPrefixOfStringInTable_5,5,PGO, 3 $Boot,66520
+IsPrefixOfStringInTable_6,6,PGO, 3 $Boot,20014
+IsPrefixOfStringInTable_7,7,PGO, 3 $Boot,19764
+IsPrefixOfStringInTable_8,8,PGO, 3 $Boot,18580
+IsPrefixOfStringInTable_9,9,PGO, 3 $Boot,18690
+IsPrefixOfStringInTable_10,10,PGO, 3 $Boot,18258
+IsPrefixOfStringInTable_11,11,PGO, 3 $Boot,18038
+IsPrefixOfStringInTable_12,12,PGO, 3 $Boot,19136
+IsPrefixOfStringInTable_13,13,PGO, 3 $Boot,17070
+IsPrefixOfStringInTable_14,14,PGO, 3 $Boot,17098
+IsPrefixOfStringInTable_x64_1,15,PGO, 3 $Boot,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 3 $Boot,24662
+IsPrefixOfStringInTable_x64_3,17,PGO, 3 $Boot,59726
+IsPrefixOfStringInTable_x64_4,18,PGO, 3 $Boot,23870
+IsPrefixOfStringInTable_x64_5,19,PGO, 3 $Boot,23708
+IsPrefixOfStringInTable_x64_6,20,PGO, 3 $Boot,23696
+IsPrefixOfStringInTable_x64_7,21,PGO, 3 $Boot,58728
+IsPrefixOfStringInTable_x64_8,22,PGO, 3 $Boot,20984
+IsPrefixOfStringInTable_x64_9,23,PGO, 3 $Boot,20308
+IsPrefixOfStringInTable_x64_10,24,PGO, 3 $Boot,20130
+IntegerDivision_x64_1,25,PGO, 3 $Boot,94996
+IsPrefixOfCStrInArray,0,PGO, 4 $Extend,51746
+IsPrefixOfStringInTable_1,1,PGO, 4 $Extend,50738
+IsPrefixOfStringInTable_2,2,PGO, 4 $Extend,66168
+IsPrefixOfStringInTable_3,3,PGO, 4 $Extend,21970
+IsPrefixOfStringInTable_4,4,PGO, 4 $Extend,22618
+IsPrefixOfStringInTable_5,5,PGO, 4 $Extend,66452
+IsPrefixOfStringInTable_6,6,PGO, 4 $Extend,20052
+IsPrefixOfStringInTable_7,7,PGO, 4 $Extend,19758
+IsPrefixOfStringInTable_8,8,PGO, 4 $Extend,18588
+IsPrefixOfStringInTable_9,9,PGO, 4 $Extend,18686
+IsPrefixOfStringInTable_10,10,PGO, 4 $Extend,18180
+IsPrefixOfStringInTable_11,11,PGO, 4 $Extend,17988
+IsPrefixOfStringInTable_12,12,PGO, 4 $Extend,19118
+IsPrefixOfStringInTable_13,13,PGO, 4 $Extend,17066
+IsPrefixOfStringInTable_14,14,PGO, 4 $Extend,17088
+IsPrefixOfStringInTable_x64_1,15,PGO, 4 $Extend,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 4 $Extend,24678
+IsPrefixOfStringInTable_x64_3,17,PGO, 4 $Extend,59726
+IsPrefixOfStringInTable_x64_4,18,PGO, 4 $Extend,23828
+IsPrefixOfStringInTable_x64_5,19,PGO, 4 $Extend,23664
+IsPrefixOfStringInTable_x64_6,20,PGO, 4 $Extend,23698
+IsPrefixOfStringInTable_x64_7,21,PGO, 4 $Extend,58724
+IsPrefixOfStringInTable_x64_8,22,PGO, 4 $Extend,20978
+IsPrefixOfStringInTable_x64_9,23,PGO, 4 $Extend,20150
+IsPrefixOfStringInTable_x64_10,24,PGO, 4 $Extend,20106
+IntegerDivision_x64_1,25,PGO, 4 $Extend,94980
+IsPrefixOfCStrInArray,0,PGO, 5 $LogFile,60712
+IsPrefixOfStringInTable_1,1,PGO, 5 $LogFile,68886
+IsPrefixOfStringInTable_2,2,PGO, 5 $LogFile,66204
+IsPrefixOfStringInTable_3,3,PGO, 5 $LogFile,21972
+IsPrefixOfStringInTable_4,4,PGO, 5 $LogFile,22576
+IsPrefixOfStringInTable_5,5,PGO, 5 $LogFile,66476
+IsPrefixOfStringInTable_6,6,PGO, 5 $LogFile,20048
+IsPrefixOfStringInTable_7,7,PGO, 5 $LogFile,19764
+IsPrefixOfStringInTable_8,8,PGO, 5 $LogFile,18578
+IsPrefixOfStringInTable_9,9,PGO, 5 $LogFile,18710
+IsPrefixOfStringInTable_10,10,PGO, 5 $LogFile,18254
+IsPrefixOfStringInTable_11,11,PGO, 5 $LogFile,18066
+IsPrefixOfStringInTable_12,12,PGO, 5 $LogFile,19126
+IsPrefixOfStringInTable_13,13,PGO, 5 $LogFile,17096
+IsPrefixOfStringInTable_14,14,PGO, 5 $LogFile,17100
+IsPrefixOfStringInTable_x64_1,15,PGO, 5 $LogFile,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 5 $LogFile,24648
+IsPrefixOfStringInTable_x64_3,17,PGO, 5 $LogFile,59730
+IsPrefixOfStringInTable_x64_4,18,PGO, 5 $LogFile,23838
+IsPrefixOfStringInTable_x64_5,19,PGO, 5 $LogFile,23692
+IsPrefixOfStringInTable_x64_6,20,PGO, 5 $LogFile,23750
+IsPrefixOfStringInTable_x64_7,21,PGO, 5 $LogFile,58722
+IsPrefixOfStringInTable_x64_8,22,PGO, 5 $LogFile,20990
+IsPrefixOfStringInTable_x64_9,23,PGO, 5 $LogFile,20338
+IsPrefixOfStringInTable_x64_10,24,PGO, 5 $LogFile,20184
+IntegerDivision_x64_1,25,PGO, 5 $LogFile,95164
+IsPrefixOfCStrInArray,0,PGO, 6 $MftMirr,68684
+IsPrefixOfStringInTable_1,1,PGO, 6 $MftMirr,73664
+IsPrefixOfStringInTable_2,2,PGO, 6 $MftMirr,66198
+IsPrefixOfStringInTable_3,3,PGO, 6 $MftMirr,21972
+IsPrefixOfStringInTable_4,4,PGO, 6 $MftMirr,22518
+IsPrefixOfStringInTable_5,5,PGO, 6 $MftMirr,66424
+IsPrefixOfStringInTable_6,6,PGO, 6 $MftMirr,20056
+IsPrefixOfStringInTable_7,7,PGO, 6 $MftMirr,19784
+IsPrefixOfStringInTable_8,8,PGO, 6 $MftMirr,18584
+IsPrefixOfStringInTable_9,9,PGO, 6 $MftMirr,18660
+IsPrefixOfStringInTable_10,10,PGO, 6 $MftMirr,18258
+IsPrefixOfStringInTable_11,11,PGO, 6 $MftMirr,18044
+IsPrefixOfStringInTable_12,12,PGO, 6 $MftMirr,19134
+IsPrefixOfStringInTable_13,13,PGO, 6 $MftMirr,17068
+IsPrefixOfStringInTable_14,14,PGO, 6 $MftMirr,17086
+IsPrefixOfStringInTable_x64_1,15,PGO, 6 $MftMirr,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 6 $MftMirr,24648
+IsPrefixOfStringInTable_x64_3,17,PGO, 6 $MftMirr,59724
+IsPrefixOfStringInTable_x64_4,18,PGO, 6 $MftMirr,23824
+IsPrefixOfStringInTable_x64_5,19,PGO, 6 $MftMirr,23686
+IsPrefixOfStringInTable_x64_6,20,PGO, 6 $MftMirr,23692
+IsPrefixOfStringInTable_x64_7,21,PGO, 6 $MftMirr,58728
+IsPrefixOfStringInTable_x64_8,22,PGO, 6 $MftMirr,20994
+IsPrefixOfStringInTable_x64_9,23,PGO, 6 $MftMirr,20324
+IsPrefixOfStringInTable_x64_10,24,PGO, 6 $MftMirr,20192
+IntegerDivision_x64_1,25,PGO, 6 $MftMirr,95162
+IsPrefixOfCStrInArray,0,PGO, 7 $Mft,69678
+IsPrefixOfStringInTable_1,1,PGO, 7 $Mft,31852
+IsPrefixOfStringInTable_2,2,PGO, 7 $Mft,66096
+IsPrefixOfStringInTable_3,3,PGO, 7 $Mft,21994
+IsPrefixOfStringInTable_4,4,PGO, 7 $Mft,22546
+IsPrefixOfStringInTable_5,5,PGO, 7 $Mft,66426
+IsPrefixOfStringInTable_6,6,PGO, 7 $Mft,20042
+IsPrefixOfStringInTable_7,7,PGO, 7 $Mft,19784
+IsPrefixOfStringInTable_8,8,PGO, 7 $Mft,18572
+IsPrefixOfStringInTable_9,9,PGO, 7 $Mft,18694
+IsPrefixOfStringInTable_10,10,PGO, 7 $Mft,18230
+IsPrefixOfStringInTable_11,11,PGO, 7 $Mft,18048
+IsPrefixOfStringInTable_12,12,PGO, 7 $Mft,19168
+IsPrefixOfStringInTable_13,13,PGO, 7 $Mft,17068
+IsPrefixOfStringInTable_14,14,PGO, 7 $Mft,17092
+IsPrefixOfStringInTable_x64_1,15,PGO, 7 $Mft,7488
+IsPrefixOfStringInTable_x64_2,16,PGO, 7 $Mft,24688
+IsPrefixOfStringInTable_x64_3,17,PGO, 7 $Mft,59728
+IsPrefixOfStringInTable_x64_4,18,PGO, 7 $Mft,23842
+IsPrefixOfStringInTable_x64_5,19,PGO, 7 $Mft,23706
+IsPrefixOfStringInTable_x64_6,20,PGO, 7 $Mft,23710
+IsPrefixOfStringInTable_x64_7,21,PGO, 7 $Mft,58742
+IsPrefixOfStringInTable_x64_8,22,PGO, 7 $Mft,21000
+IsPrefixOfStringInTable_x64_9,23,PGO, 7 $Mft,20314
+IsPrefixOfStringInTable_x64_10,24,PGO, 7 $Mft,20186
+IntegerDivision_x64_1,25,PGO, 7 $Mft,95174
+IsPrefixOfCStrInArray,0,PGO, 8 $Secure,81622
+IsPrefixOfStringInTable_1,1,PGO, 8 $Secure,70668
+IsPrefixOfStringInTable_2,2,PGO, 8 $Secure,71476
+IsPrefixOfStringInTable_3,3,PGO, 8 $Secure,27006
+IsPrefixOfStringInTable_4,4,PGO, 8 $Secure,28836
+IsPrefixOfStringInTable_5,5,PGO, 8 $Secure,73052
+IsPrefixOfStringInTable_6,6,PGO, 8 $Secure,25636
+IsPrefixOfStringInTable_7,7,PGO, 8 $Secure,25400
+IsPrefixOfStringInTable_8,8,PGO, 8 $Secure,24604
+IsPrefixOfStringInTable_9,9,PGO, 8 $Secure,24174
+IsPrefixOfStringInTable_10,10,PGO, 8 $Secure,24334
+IsPrefixOfStringInTable_11,11,PGO, 8 $Secure,23894
+IsPrefixOfStringInTable_12,12,PGO, 8 $Secure,24522
+IsPrefixOfStringInTable_13,13,PGO, 8 $Secure,21520
+IsPrefixOfStringInTable_14,14,PGO, 8 $Secure,21626
+IsPrefixOfStringInTable_x64_1,15,PGO, 8 $Secure,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 8 $Secure,34600
+IsPrefixOfStringInTable_x64_3,17,PGO, 8 $Secure,66700
+IsPrefixOfStringInTable_x64_4,18,PGO, 8 $Secure,34396
+IsPrefixOfStringInTable_x64_5,19,PGO, 8 $Secure,34390
+IsPrefixOfStringInTable_x64_6,20,PGO, 8 $Secure,34310
+IsPrefixOfStringInTable_x64_7,21,PGO, 8 $Secure,66282
+IsPrefixOfStringInTable_x64_8,22,PGO, 8 $Secure,27450
+IsPrefixOfStringInTable_x64_9,23,PGO, 8 $Secure,26554
+IsPrefixOfStringInTable_x64_10,24,PGO, 8 $Secure,26478
+IntegerDivision_x64_1,25,PGO, 8 $Secure,95168
+IsPrefixOfCStrInArray,0,PGO, 9 $UpCase,87616
+IsPrefixOfStringInTable_1,1,PGO, 9 $UpCase,83872
+IsPrefixOfStringInTable_2,2,PGO, 9 $UpCase,71518
+IsPrefixOfStringInTable_3,3,PGO, 9 $UpCase,27020
+IsPrefixOfStringInTable_4,4,PGO, 9 $UpCase,28912
+IsPrefixOfStringInTable_5,5,PGO, 9 $UpCase,73064
+IsPrefixOfStringInTable_6,6,PGO, 9 $UpCase,25616
+IsPrefixOfStringInTable_7,7,PGO, 9 $UpCase,25470
+IsPrefixOfStringInTable_8,8,PGO, 9 $UpCase,24566
+IsPrefixOfStringInTable_9,9,PGO, 9 $UpCase,24164
+IsPrefixOfStringInTable_10,10,PGO, 9 $UpCase,24324
+IsPrefixOfStringInTable_11,11,PGO, 9 $UpCase,23882
+IsPrefixOfStringInTable_12,12,PGO, 9 $UpCase,24516
+IsPrefixOfStringInTable_13,13,PGO, 9 $UpCase,21536
+IsPrefixOfStringInTable_14,14,PGO, 9 $UpCase,21618
+IsPrefixOfStringInTable_x64_1,15,PGO, 9 $UpCase,7486
+IsPrefixOfStringInTable_x64_2,16,PGO, 9 $UpCase,34512
+IsPrefixOfStringInTable_x64_3,17,PGO, 9 $UpCase,66696
+IsPrefixOfStringInTable_x64_4,18,PGO, 9 $UpCase,34428
+IsPrefixOfStringInTable_x64_5,19,PGO, 9 $UpCase,34262
+IsPrefixOfStringInTable_x64_6,20,PGO, 9 $UpCase,34242
+IsPrefixOfStringInTable_x64_7,21,PGO, 9 $UpCase,63220
+IsPrefixOfStringInTable_x64_8,22,PGO, 9 $UpCase,27540
+IsPrefixOfStringInTable_x64_9,23,PGO, 9 $UpCase,26558
+IsPrefixOfStringInTable_x64_10,24,PGO, 9 $UpCase,26398
+IntegerDivision_x64_1,25,PGO, 9 $UpCase,94980
+IsPrefixOfCStrInArray,0,PGO,10 $Volume,93102
+IsPrefixOfStringInTable_1,1,PGO,10 $Volume,87920
+IsPrefixOfStringInTable_2,2,PGO,10 $Volume,71464
+IsPrefixOfStringInTable_3,3,PGO,10 $Volume,26956
+IsPrefixOfStringInTable_4,4,PGO,10 $Volume,28852
+IsPrefixOfStringInTable_5,5,PGO,10 $Volume,72968
+IsPrefixOfStringInTable_6,6,PGO,10 $Volume,25616
+IsPrefixOfStringInTable_7,7,PGO,10 $Volume,25420
+IsPrefixOfStringInTable_8,8,PGO,10 $Volume,24544
+IsPrefixOfStringInTable_9,9,PGO,10 $Volume,24190
+IsPrefixOfStringInTable_10,10,PGO,10 $Volume,24302
+IsPrefixOfStringInTable_11,11,PGO,10 $Volume,23862
+IsPrefixOfStringInTable_12,12,PGO,10 $Volume,24490
+IsPrefixOfStringInTable_13,13,PGO,10 $Volume,21558
+IsPrefixOfStringInTable_14,14,PGO,10 $Volume,21628
+IsPrefixOfStringInTable_x64_1,15,PGO,10 $Volume,7490
+IsPrefixOfStringInTable_x64_2,16,PGO,10 $Volume,34540
+IsPrefixOfStringInTable_x64_3,17,PGO,10 $Volume,66700
+IsPrefixOfStringInTable_x64_4,18,PGO,10 $Volume,34342
+IsPrefixOfStringInTable_x64_5,19,PGO,10 $Volume,34356
+IsPrefixOfStringInTable_x64_6,20,PGO,10 $Volume,34222
+IsPrefixOfStringInTable_x64_7,21,PGO,10 $Volume,63226
+IsPrefixOfStringInTable_x64_8,22,PGO,10 $Volume,27456
+IsPrefixOfStringInTable_x64_9,23,PGO,10 $Volume,26576
+IsPrefixOfStringInTable_x64_10,24,PGO,10 $Volume,26446
+IntegerDivision_x64_1,25,PGO,10 $Volume,95164
+IsPrefixOfCStrInArray,0,PGO,11 $Cairo,129610
+IsPrefixOfStringInTable_1,1,PGO,11 $Cairo,65678
+IsPrefixOfStringInTable_2,2,PGO,11 $Cairo,71482
+IsPrefixOfStringInTable_3,3,PGO,11 $Cairo,27010
+IsPrefixOfStringInTable_4,4,PGO,11 $Cairo,28886
+IsPrefixOfStringInTable_5,5,PGO,11 $Cairo,73020
+IsPrefixOfStringInTable_6,6,PGO,11 $Cairo,25586
+IsPrefixOfStringInTable_7,7,PGO,11 $Cairo,25426
+IsPrefixOfStringInTable_8,8,PGO,11 $Cairo,24494
+IsPrefixOfStringInTable_9,9,PGO,11 $Cairo,24208
+IsPrefixOfStringInTable_10,10,PGO,11 $Cairo,24326
+IsPrefixOfStringInTable_11,11,PGO,11 $Cairo,23866
+IsPrefixOfStringInTable_12,12,PGO,11 $Cairo,24300
+IsPrefixOfStringInTable_13,13,PGO,11 $Cairo,21226
+IsPrefixOfStringInTable_14,14,PGO,11 $Cairo,21276
+IsPrefixOfStringInTable_x64_1,15,PGO,11 $Cairo,7488
+IsPrefixOfStringInTable_x64_2,16,PGO,11 $Cairo,34572
+IsPrefixOfStringInTable_x64_3,17,PGO,11 $Cairo,66704
+IsPrefixOfStringInTable_x64_4,18,PGO,11 $Cairo,34430
+IsPrefixOfStringInTable_x64_5,19,PGO,11 $Cairo,34262
+IsPrefixOfStringInTable_x64_6,20,PGO,11 $Cairo,34248
+IsPrefixOfStringInTable_x64_7,21,PGO,11 $Cairo,63212
+IsPrefixOfStringInTable_x64_8,22,PGO,11 $Cairo,27538
+IsPrefixOfStringInTable_x64_9,23,PGO,11 $Cairo,26564
+IsPrefixOfStringInTable_x64_10,24,PGO,11 $Cairo,26418
+IntegerDivision_x64_1,25,PGO,11 $Cairo,96168
+IsPrefixOfCStrInArray,0,PGO,12 $INDEX_ALLOCATION,252776
+IsPrefixOfStringInTable_1,1,PGO,12 $INDEX_ALLOCATION,206244
+IsPrefixOfStringInTable_2,2,PGO,12 $INDEX_ALLOCATION,102656
+IsPrefixOfStringInTable_3,3,PGO,12 $INDEX_ALLOCATION,32230
+IsPrefixOfStringInTable_4,4,PGO,12 $INDEX_ALLOCATION,36634
+IsPrefixOfStringInTable_5,5,PGO,12 $INDEX_ALLOCATION,63266
+IsPrefixOfStringInTable_6,6,PGO,12 $INDEX_ALLOCATION,32274
+IsPrefixOfStringInTable_7,7,PGO,12 $INDEX_ALLOCATION,32174
+IsPrefixOfStringInTable_8,8,PGO,12 $INDEX_ALLOCATION,29940
+IsPrefixOfStringInTable_9,9,PGO,12 $INDEX_ALLOCATION,30100
+IsPrefixOfStringInTable_10,10,PGO,12 $INDEX_ALLOCATION,30136
+IsPrefixOfStringInTable_11,11,PGO,12 $INDEX_ALLOCATION,31048
+IsPrefixOfStringInTable_12,12,PGO,12 $INDEX_ALLOCATION,31784
+IsPrefixOfStringInTable_13,13,PGO,12 $INDEX_ALLOCATION,27752
+IsPrefixOfStringInTable_14,14,PGO,12 $INDEX_ALLOCATION,27682
+IsPrefixOfStringInTable_x64_1,15,PGO,12 $INDEX_ALLOCATION,7490
+IsPrefixOfStringInTable_x64_2,16,PGO,12 $INDEX_ALLOCATION,43492
+IsPrefixOfStringInTable_x64_3,17,PGO,12 $INDEX_ALLOCATION,120892
+IsPrefixOfStringInTable_x64_4,18,PGO,12 $INDEX_ALLOCATION,43686
+IsPrefixOfStringInTable_x64_5,19,PGO,12 $INDEX_ALLOCATION,43158
+IsPrefixOfStringInTable_x64_6,20,PGO,12 $INDEX_ALLOCATION,40474
+IsPrefixOfStringInTable_x64_7,21,PGO,12 $INDEX_ALLOCATION,119640
+IsPrefixOfStringInTable_x64_8,22,PGO,12 $INDEX_ALLOCATION,100598
+IsPrefixOfStringInTable_x64_9,23,PGO,12 $INDEX_ALLOCATION,38602
+IsPrefixOfStringInTable_x64_10,24,PGO,12 $INDEX_ALLOCATION,37828
+IntegerDivision_x64_1,25,PGO,12 $INDEX_ALLOCATION,95168
+IsPrefixOfCStrInArray,0,PGO,13 $DATA,105584
+IsPrefixOfStringInTable_1,1,PGO,13 $DATA,66676
+IsPrefixOfStringInTable_2,2,PGO,13 $DATA,71476
+IsPrefixOfStringInTable_3,3,PGO,13 $DATA,26980
+IsPrefixOfStringInTable_4,4,PGO,13 $DATA,28896
+IsPrefixOfStringInTable_5,5,PGO,13 $DATA,73036
+IsPrefixOfStringInTable_6,6,PGO,13 $DATA,25548
+IsPrefixOfStringInTable_7,7,PGO,13 $DATA,25426
+IsPrefixOfStringInTable_8,8,PGO,13 $DATA,24528
+IsPrefixOfStringInTable_9,9,PGO,13 $DATA,24154
+IsPrefixOfStringInTable_10,10,PGO,13 $DATA,24272
+IsPrefixOfStringInTable_11,11,PGO,13 $DATA,23886
+IsPrefixOfStringInTable_12,12,PGO,13 $DATA,24538
+IsPrefixOfStringInTable_13,13,PGO,13 $DATA,21580
+IsPrefixOfStringInTable_14,14,PGO,13 $DATA,21662
+IsPrefixOfStringInTable_x64_1,15,PGO,13 $DATA,7486
+IsPrefixOfStringInTable_x64_2,16,PGO,13 $DATA,34546
+IsPrefixOfStringInTable_x64_3,17,PGO,13 $DATA,66700
+IsPrefixOfStringInTable_x64_4,18,PGO,13 $DATA,34476
+IsPrefixOfStringInTable_x64_5,19,PGO,13 $DATA,34312
+IsPrefixOfStringInTable_x64_6,20,PGO,13 $DATA,34464
+IsPrefixOfStringInTable_x64_7,21,PGO,13 $DATA,63230
+IsPrefixOfStringInTable_x64_8,22,PGO,13 $DATA,27476
+IsPrefixOfStringInTable_x64_9,23,PGO,13 $DATA,26612
+IsPrefixOfStringInTable_x64_10,24,PGO,13 $DATA,26492
+IntegerDivision_x64_1,25,PGO,13 $DATA,95166
+IsPrefixOfCStrInArray,0,PGO,14 ????,77656
+IsPrefixOfStringInTable_1,1,PGO,14 ????,54740
+IsPrefixOfStringInTable_2,2,PGO,14 ????,66160
+IsPrefixOfStringInTable_3,3,PGO,14 ????,21970
+IsPrefixOfStringInTable_4,4,PGO,14 ????,22576
+IsPrefixOfStringInTable_5,5,PGO,14 ????,66526
+IsPrefixOfStringInTable_6,6,PGO,14 ????,20048
+IsPrefixOfStringInTable_7,7,PGO,14 ????,19788
+IsPrefixOfStringInTable_8,8,PGO,14 ????,18586
+IsPrefixOfStringInTable_9,9,PGO,14 ????,18692
+IsPrefixOfStringInTable_10,10,PGO,14 ????,18250
+IsPrefixOfStringInTable_11,11,PGO,14 ????,18038
+IsPrefixOfStringInTable_12,12,PGO,14 ????,19152
+IsPrefixOfStringInTable_13,13,PGO,14 ????,17068
+IsPrefixOfStringInTable_14,14,PGO,14 ????,17092
+IsPrefixOfStringInTable_x64_1,15,PGO,14 ????,7482
+IsPrefixOfStringInTable_x64_2,16,PGO,14 ????,24652
+IsPrefixOfStringInTable_x64_3,17,PGO,14 ????,59728
+IsPrefixOfStringInTable_x64_4,18,PGO,14 ????,23840
+IsPrefixOfStringInTable_x64_5,19,PGO,14 ????,23704
+IsPrefixOfStringInTable_x64_6,20,PGO,14 ????,23698
+IsPrefixOfStringInTable_x64_7,21,PGO,14 ????,58722
+IsPrefixOfStringInTable_x64_8,22,PGO,14 ????,20984
+IsPrefixOfStringInTable_x64_9,23,PGO,14 ????,20336
+IsPrefixOfStringInTable_x64_10,24,PGO,14 ????,20142
+IntegerDivision_x64_1,25,PGO,14 ????,95168
+IsPrefixOfCStrInArray,0,PGO,15 .,72898
+IsPrefixOfStringInTable_1,1,PGO,15 .,43794
+IsPrefixOfStringInTable_2,2,PGO,15 .,66162
+IsPrefixOfStringInTable_3,3,PGO,15 .,21976
+IsPrefixOfStringInTable_4,4,PGO,15 .,22460
+IsPrefixOfStringInTable_5,5,PGO,15 .,66512
+IsPrefixOfStringInTable_6,6,PGO,15 .,20054
+IsPrefixOfStringInTable_7,7,PGO,15 .,19778
+IsPrefixOfStringInTable_8,8,PGO,15 .,18578
+IsPrefixOfStringInTable_9,9,PGO,15 .,18712
+IsPrefixOfStringInTable_10,10,PGO,15 .,18272
+IsPrefixOfStringInTable_11,11,PGO,15 .,18036
+IsPrefixOfStringInTable_12,12,PGO,15 .,19142
+IsPrefixOfStringInTable_13,13,PGO,15 .,17086
+IsPrefixOfStringInTable_14,14,PGO,15 .,17104
+IsPrefixOfStringInTable_x64_1,15,PGO,15 .,7488
+IsPrefixOfStringInTable_x64_2,16,PGO,15 .,24652
+IsPrefixOfStringInTable_x64_3,17,PGO,15 .,59728
+IsPrefixOfStringInTable_x64_4,18,PGO,15 .,23816
+IsPrefixOfStringInTable_x64_5,19,PGO,15 .,23706
+IsPrefixOfStringInTable_x64_6,20,PGO,15 .,23702
+IsPrefixOfStringInTable_x64_7,21,PGO,15 .,58724
+IsPrefixOfStringInTable_x64_8,22,PGO,15 .,20990
+IsPrefixOfStringInTable_x64_9,23,PGO,15 .,20340
+IsPrefixOfStringInTable_x64_10,24,PGO,15 .,20168
+IntegerDivision_x64_1,25,PGO,15 .,95166
+IsPrefixOfCStrInArray,0,PGO,16 $Bai123456789012,124760
+IsPrefixOfStringInTable_1,1,PGO,16 $Bai123456789012,151774
+IsPrefixOfStringInTable_2,2,PGO,16 $Bai123456789012,66284
+IsPrefixOfStringInTable_3,3,PGO,16 $Bai123456789012,34770
+IsPrefixOfStringInTable_4,4,PGO,16 $Bai123456789012,37328
+IsPrefixOfStringInTable_5,5,PGO,16 $Bai123456789012,67558
+IsPrefixOfStringInTable_6,6,PGO,16 $Bai123456789012,33690
+IsPrefixOfStringInTable_7,7,PGO,16 $Bai123456789012,33584
+IsPrefixOfStringInTable_8,8,PGO,16 $Bai123456789012,33266
+IsPrefixOfStringInTable_9,9,PGO,16 $Bai123456789012,32458
+IsPrefixOfStringInTable_10,10,PGO,16 $Bai123456789012,31800
+IsPrefixOfStringInTable_11,11,PGO,16 $Bai123456789012,31082
+IsPrefixOfStringInTable_12,12,PGO,16 $Bai123456789012,31834
+IsPrefixOfStringInTable_13,13,PGO,16 $Bai123456789012,27492
+IsPrefixOfStringInTable_14,14,PGO,16 $Bai123456789012,27198
+IsPrefixOfStringInTable_x64_1,15,PGO,16 $Bai123456789012,7486
+IsPrefixOfStringInTable_x64_2,16,PGO,16 $Bai123456789012,47848
+IsPrefixOfStringInTable_x64_3,17,PGO,16 $Bai123456789012,72180
+IsPrefixOfStringInTable_x64_4,18,PGO,16 $Bai123456789012,47590
+IsPrefixOfStringInTable_x64_5,19,PGO,16 $Bai123456789012,46820
+IsPrefixOfStringInTable_x64_6,20,PGO,16 $Bai123456789012,46814
+IsPrefixOfStringInTable_x64_7,21,PGO,16 $Bai123456789012,70680
+IsPrefixOfStringInTable_x64_8,22,PGO,16 $Bai123456789012,32838
+IsPrefixOfStringInTable_x64_9,23,PGO,16 $Bai123456789012,32026
+IsPrefixOfStringInTable_x64_10,24,PGO,16 $Bai123456789012,31700
+IntegerDivision_x64_1,25,PGO,16 $Bai123456789012,95164
+IsPrefixOfCStrInArray,0,PGO,17 a,75872
+IsPrefixOfStringInTable_1,1,PGO,17 a,45778
+IsPrefixOfStringInTable_2,2,PGO,17 a,46786
+IsPrefixOfStringInTable_3,3,PGO,17 a,17088
+IsPrefixOfStringInTable_4,4,PGO,17 a,18920
+IsPrefixOfStringInTable_5,5,PGO,17 a,44330
+IsPrefixOfStringInTable_6,6,PGO,17 a,14956
+IsPrefixOfStringInTable_7,7,PGO,17 a,15154
+IsPrefixOfStringInTable_8,8,PGO,17 a,13384
+IsPrefixOfStringInTable_9,9,PGO,17 a,11998
+IsPrefixOfStringInTable_10,10,PGO,17 a,11978
+IsPrefixOfStringInTable_11,11,PGO,17 a,11978
+IsPrefixOfStringInTable_12,12,PGO,17 a,12006
+IsPrefixOfStringInTable_13,13,PGO,17 a,11468
+IsPrefixOfStringInTable_14,14,PGO,17 a,11028
+IsPrefixOfStringInTable_x64_1,15,PGO,17 a,7486
+IsPrefixOfStringInTable_x64_2,16,PGO,17 a,7980
+IsPrefixOfStringInTable_x64_3,17,PGO,17 a,37164
+IsPrefixOfStringInTable_x64_4,18,PGO,17 a,7006
+IsPrefixOfStringInTable_x64_5,19,PGO,17 a,7006
+IsPrefixOfStringInTable_x64_6,20,PGO,17 a,7008
+IsPrefixOfStringInTable_x64_7,21,PGO,17 a,7978
+IsPrefixOfStringInTable_x64_8,22,PGO,17 a,7982
+IsPrefixOfStringInTable_x64_9,23,PGO,17 a,7980
+IsPrefixOfStringInTable_x64_10,24,PGO,17 a,7980
+IntegerDivision_x64_1,25,PGO,17 a,94992
+IsPrefixOfCStrInArray,0,PGO,18 fox1,75870
+IsPrefixOfStringInTable_1,1,PGO,18 fox1,57726
+IsPrefixOfStringInTable_2,2,PGO,18 fox1,46788
+IsPrefixOfStringInTable_3,3,PGO,18 fox1,17118
+IsPrefixOfStringInTable_4,4,PGO,18 fox1,18922
+IsPrefixOfStringInTable_5,5,PGO,18 fox1,45278
+IsPrefixOfStringInTable_6,6,PGO,18 fox1,14956
+IsPrefixOfStringInTable_7,7,PGO,18 fox1,15142
+IsPrefixOfStringInTable_8,8,PGO,18 fox1,13466
+IsPrefixOfStringInTable_9,9,PGO,18 fox1,12002
+IsPrefixOfStringInTable_10,10,PGO,18 fox1,11976
+IsPrefixOfStringInTable_11,11,PGO,18 fox1,11976
+IsPrefixOfStringInTable_12,12,PGO,18 fox1,12020
+IsPrefixOfStringInTable_13,13,PGO,18 fox1,11466
+IsPrefixOfStringInTable_14,14,PGO,18 fox1,11466
+IsPrefixOfStringInTable_x64_1,15,PGO,18 fox1,7488
+IsPrefixOfStringInTable_x64_2,16,PGO,18 fox1,7980
+IsPrefixOfStringInTable_x64_3,17,PGO,18 fox1,37166
+IsPrefixOfStringInTable_x64_4,18,PGO,18 fox1,7004
+IsPrefixOfStringInTable_x64_5,19,PGO,18 fox1,6994
+IsPrefixOfStringInTable_x64_6,20,PGO,18 fox1,7006
+IsPrefixOfStringInTable_x64_7,21,PGO,18 fox1,7982
+IsPrefixOfStringInTable_x64_8,22,PGO,18 fox1,7980
+IsPrefixOfStringInTable_x64_9,23,PGO,18 fox1,7980
+IsPrefixOfStringInTable_x64_10,24,PGO,18 fox1,7980
+IntegerDivision_x64_1,25,PGO,18 fox1,95172
+IsPrefixOfCStrInArray,0,PGO,19 abcdefghijklmnopqrstuvw,75870
+IsPrefixOfStringInTable_1,1,PGO,19 abcdefghijklmnopqrstuvw,110256
+IsPrefixOfStringInTable_2,2,PGO,19 abcdefghijklmnopqrstuvw,42794
+IsPrefixOfStringInTable_3,3,PGO,19 abcdefghijklmnopqrstuvw,17510
+IsPrefixOfStringInTable_4,4,PGO,19 abcdefghijklmnopqrstuvw,18920
+IsPrefixOfStringInTable_5,5,PGO,19 abcdefghijklmnopqrstuvw,41708
+IsPrefixOfStringInTable_6,6,PGO,19 abcdefghijklmnopqrstuvw,15530
+IsPrefixOfStringInTable_7,7,PGO,19 abcdefghijklmnopqrstuvw,15142
+IsPrefixOfStringInTable_8,8,PGO,19 abcdefghijklmnopqrstuvw,13392
+IsPrefixOfStringInTable_9,9,PGO,19 abcdefghijklmnopqrstuvw,11976
+IsPrefixOfStringInTable_10,10,PGO,19 abcdefghijklmnopqrstuvw,11974
+IsPrefixOfStringInTable_11,11,PGO,19 abcdefghijklmnopqrstuvw,11976
+IsPrefixOfStringInTable_12,12,PGO,19 abcdefghijklmnopqrstuvw,12024
+IsPrefixOfStringInTable_13,13,PGO,19 abcdefghijklmnopqrstuvw,11476
+IsPrefixOfStringInTable_14,14,PGO,19 abcdefghijklmnopqrstuvw,11016
+IsPrefixOfStringInTable_x64_1,15,PGO,19 abcdefghijklmnopqrstuvw,7486
+IsPrefixOfStringInTable_x64_2,16,PGO,19 abcdefghijklmnopqrstuvw,7980
+IsPrefixOfStringInTable_x64_3,17,PGO,19 abcdefghijklmnopqrstuvw,37162
+IsPrefixOfStringInTable_x64_4,18,PGO,19 abcdefghijklmnopqrstuvw,7004
+IsPrefixOfStringInTable_x64_5,19,PGO,19 abcdefghijklmnopqrstuvw,6994
+IsPrefixOfStringInTable_x64_6,20,PGO,19 abcdefghijklmnopqrstuvw,7012
+IsPrefixOfStringInTable_x64_7,21,PGO,19 abcdefghijklmnopqrstuvw,7982
+IsPrefixOfStringInTable_x64_8,22,PGO,19 abcdefghijklmnopqrstuvw,7980
+IsPrefixOfStringInTable_x64_9,23,PGO,19 abcdefghijklmnopqrstuvw,7980
+IsPrefixOfStringInTable_x64_10,24,PGO,19 abcdefghijklmnopqrstuvw,7982
+IntegerDivision_x64_1,25,PGO,19 abcdefghijklmnopqrstuvw,95030

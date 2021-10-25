@@ -1,0 +1,65 @@
+S:\tracer>iaca x64\Release\PerfectHashTable.dll
+Intel(R) Architecture Code Analyzer Version -  v3.0-28-g1ba2cbb build date: 2017-10-23;17:30:24
+Analyzed File -  x64\Release\PerfectHashTable.dll
+Binary Format - 64Bit
+Architecture  -  SKL
+Analysis Type - Throughput
+
+Throughput Analysis Report
+--------------------------
+Block Throughput: 19.00 Cycles       Throughput Bottleneck: Backend
+Loop Count:  22
+Port Binding In Cycles Per Iteration:
+--------------------------------------------------------------------------------------------------
+|  Port  |   0   -  DV   |   1   |   2   -  D    |   3   -  D    |   4   |   5   |   6   |   7   |
+--------------------------------------------------------------------------------------------------
+| Cycles |  2.5     0.0  |  2.0  |  7.0     7.0  |  7.0     7.0  |  2.0  |  2.5  |  2.0  |  2.0  |
+--------------------------------------------------------------------------------------------------
+
+DV - Divider pipe (on port 0)
+D - Data fetch pipe (on ports 2 and 3)
+F - Macro Fusion with the previous instruction occurred
+* - instruction micro-ops not bound to a port
+^ - Micro Fusion occurred
+# - ESP Tracking sync uop was issued
+@ - SSE instruction followed an AVX256/AVX512 instruction, dozens of cycles penalty is expected
+X - instruction not supported, was not accounted in Analysis
+
+| Num Of   |                    Ports pressure in cycles                         |      |
+|  Uops    |  0  - DV    |  1   |  2  -  D    |  3  -  D    |  4   |  5   |  6   |  7   |
+-----------------------------------------------------------------------------------------
+|   1*     |             |      |             |             |      |      |      |      | mov rbx, r8
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov r9, qword ptr [rcx+0xc8]
+|   1*     |             |      |             |             |      |      |      |      | mov r10, rcx
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov edi, dword ptr [r9+0x64]
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov eax, dword ptr [r9+0x6c]
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov r11d, dword ptr [r9+0x68]
+|   1      |             | 0.5  |             |             |      |      | 0.5  |      | xor eax, edx
+|   0X     |             |      |             |             |      |      |      |      | crc32 edi, edx
+|   2      | 1.0         |      |             |             |      |      | 1.0  |      | rol edx, 0xf
+|   0X     |             |      |             |             |      |      |      |      | crc32 r11d, edx
+|   0X     |             |      |             |             |      |      |      |      | crc32 r11d, eax
+|   1*     |             |      |             |             |      |      |      |      | cmp edi, r11d
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x19
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov dword ptr [r8], 0x0
+|   1      |             | 0.5  |             |             |      | 0.5  |      |      | mov eax, 0x80004005
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov rbx, qword ptr [rsp+0x8]
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov rdi, qword ptr [rsp+0x10]
+|   3^     |             |      | 1.0     1.0 |             |      |      |      |      | ret
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov r8, qword ptr [rcx+0x98]
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov ecx, dword ptr [rcx+0x44]
+|   1*     |             |      |             |             |      |      |      |      | mov eax, edi
+|   1#     |             | 0.5  |             | 1.0     1.0 |      | 0.5  |      |      | mov rdi, qword ptr [rsp+0x10]
+|   1      | 0.5         |      |             |             |      | 0.5  |      |      | and rax, rcx
+|   1*     |             |      |             |             |      |      |      |      | mov edx, r11d
+|   1      |             | 0.5  |             |             |      |      | 0.5  |      | and rdx, rcx
+|   1      |             |      | 1.0     1.0 |             |      |      |      |      | mov ecx, dword ptr [r8+rdx*4]
+|   2      | 0.5         |      |             | 1.0     1.0 |      | 0.5  |      |      | add ecx, dword ptr [r8+rax*4]
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   2^     | 0.5         |      | 1.0     1.0 |             |      | 0.5  |      |      | and ecx, dword ptr [r10+0x48]
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov dword ptr [rbx], ecx
+|   1      |             |      |             | 1.0     1.0 |      |      |      |      | mov rbx, qword ptr [rsp+0x8]
+Total Num Of Uops: 34
+Analysis Notes:
+There was an unsupported instruction(s), it was not accounted in Analysis.
+Backend allocation was stalled due to unavailable allocation resources.

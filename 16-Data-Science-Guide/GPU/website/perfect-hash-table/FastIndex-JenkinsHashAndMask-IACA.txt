@@ -1,0 +1,166 @@
+S:\tracer>iaca x64\Release\PerfectHashTable.dll
+Intel(R) Architecture Code Analyzer Version -  v3.0-28-g1ba2cbb build date: 2017-10-23;17:30:24
+Analyzed File -  x64\Release\PerfectHashTable.dll
+Binary Format - 64Bit
+Architecture  -  SKL
+Analysis Type - Throughput
+
+Throughput Analysis Report
+--------------------------
+Block Throughput: 42.00 Cycles       Throughput Bottleneck: Backend
+Loop Count:  22
+Port Binding In Cycles Per Iteration:
+--------------------------------------------------------------------------------------------------
+|  Port  |   0   -  DV   |   1   |   2   -  D    |   3   -  D    |   4   |   5   |   6   |   7   |
+--------------------------------------------------------------------------------------------------
+| Cycles | 21.0     0.0  | 22.0  |  7.5     7.5  |  7.5     7.5  |  2.0  | 22.0  | 22.0  |  2.0  |
+--------------------------------------------------------------------------------------------------
+
+DV - Divider pipe (on port 0)
+D - Data fetch pipe (on ports 2 and 3)
+F - Macro Fusion with the previous instruction occurred
+* - instruction micro-ops not bound to a port
+^ - Micro Fusion occurred
+# - ESP Tracking sync uop was issued
+@ - SSE instruction followed an AVX256/AVX512 instruction, dozens of cycles penalty is expected
+X - instruction not supported, was not accounted in Analysis
+
+| Num Of   |                    Ports pressure in cycles                         |      |
+|  Uops    |  0  - DV    |  1   |  2  -  D    |  3  -  D    |  4   |  5   |  6   |  7   |
+-----------------------------------------------------------------------------------------
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov r10, qword ptr [rcx+0xc8]
+|   1*     |             |      |             |             |      |      |      |      | mov eax, edx
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x10
+|   1*     |             |      |             |             |      |      |      |      | mov r11d, edx
+|   1*     |             |      |             |             |      |      |      |      | movzx edx, al
+|   1*     |             |      |             |             |      |      |      |      | mov rbx, rcx
+|   1      | 1.0         |      |             |             |      |      |      |      | shr r11d, 0x18
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r9d
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov esi, dword ptr [r10+0x64]
+|   1*     |             |      |             |             |      |      |      |      | mov rdi, r8
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov r10d, dword ptr [r10+0x68]
+|   1      |             | 1.0  |             |             |      |      |      |      | mov r8d, 0x9e3779b9
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x8
+|   1*     |             |      |             |             |      |      |      |      | movzx ecx, al
+|   1*     |             |      |             |             |      |      |      |      | mov eax, esi
+|   1      | 1.0         |      |             |             |      |      |      |      | shr eax, 0xd
+|   1      |             |      |             |             |      |      | 1.0  |      | shl r11d, 0x8
+|   1      |             |      |             |             |      | 1.0  |      |      | add r11d, edx
+|   1*     |             |      |             |             |      |      |      |      | movzx r9d, r9b
+|   1*     |             |      |             |             |      |      |      |      | mov edx, r9d
+|   1      | 1.0         |      |             |             |      |      |      |      | shl r11d, 0x8
+|   1      |             | 1.0  |             |             |      |      |      |      | sub edx, esi
+|   1      |             |      |             |             |      | 1.0  |      |      | add r11d, ecx
+|   1*     |             |      |             |             |      |      |      |      | mov ecx, r8d
+|   1      |             |      |             |             |      |      | 1.0  |      | shl r11d, 0x8
+|   1      |             | 1.0  |             |             |      |      |      |      | sub ecx, esi
+|   1      |             |      |             |             |      | 1.0  |      |      | add edx, r11d
+|   1      |             | 1.0  |             |             |      |      |      |      | xor edx, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r9d, r10d
+|   1      | 1.0         |      |             |             |      |      |      |      | sub ecx, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, edx
+|   1      |             |      |             |             |      |      | 1.0  |      | shl eax, 0x8
+|   1      |             | 1.0  |             |             |      |      |      |      | sub r8d, r10d
+|   1      |             |      |             |             |      | 1.0  |      |      | xor ecx, eax
+|   1      | 1.0         |      |             |             |      |      |      |      | add r9d, r11d
+|   1      |             | 1.0  |             |             |      |      |      |      | sub esi, ecx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, ecx
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0xd
+|   1      |             |      |             |             |      | 1.0  |      |      | sub esi, edx
+|   1      | 1.0         |      |             |             |      |      |      |      | xor esi, eax
+|   1      |             | 1.0  |             |             |      |      |      |      | sub edx, esi
+|   1*     |             |      |             |             |      |      |      |      | mov eax, esi
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0xc
+|   1      |             |      |             |             |      | 1.0  |      |      | sub edx, ecx
+|   1      | 1.0         |      |             |             |      |      |      |      | xor edx, eax
+|   1      |             | 1.0  |             |             |      |      |      |      | sub ecx, esi
+|   1      |             |      |             |             |      | 1.0  |      |      | sub ecx, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, edx
+|   1      |             |      |             |             |      |      | 1.0  |      | shl eax, 0x10
+|   1      | 1.0         |      |             |             |      |      |      |      | xor ecx, eax
+|   1      |             | 1.0  |             |             |      |      |      |      | sub esi, ecx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, ecx
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x5
+|   1      |             |      |             |             |      | 1.0  |      |      | sub esi, edx
+|   1      | 1.0         |      |             |             |      |      |      |      | xor esi, eax
+|   1      |             | 1.0  |             |             |      |      |      |      | sub edx, esi
+|   1*     |             |      |             |             |      |      |      |      | mov eax, esi
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0x3
+|   1      |             |      |             |             |      | 1.0  |      |      | sub edx, ecx
+|   1      | 1.0         |      |             |             |      |      |      |      | xor edx, eax
+|   1      |             | 1.0  |             |             |      |      |      |      | sub ecx, esi
+|   1      |             |      |             |             |      | 1.0  |      |      | sub ecx, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, edx
+|   1      |             |      |             |             |      |      | 1.0  |      | shl eax, 0xa
+|   1      | 1.0         |      |             |             |      |      |      |      | xor ecx, eax
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r10d
+|   1      |             |      |             |             |      |      | 1.0  |      | shr eax, 0xd
+|   1      |             | 1.0  |             |             |      |      |      |      | sub esi, ecx
+|   1      |             |      |             |             |      | 1.0  |      |      | xor r9d, eax
+|   1      | 1.0         |      |             |             |      |      |      |      | shr ecx, 0xf
+|   1      |             | 1.0  |             |             |      |      |      |      | sub r8d, r9d
+|   1      |             |      |             |             |      | 1.0  |      |      | sub esi, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r9d
+|   1      |             |      |             |             |      |      | 1.0  |      | xor esi, ecx
+|   1      | 1.0         |      |             |             |      |      |      |      | shl eax, 0x8
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r8d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r10d, r8d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r8d
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r10d, r9d
+|   1      | 1.0         |      |             |             |      |      |      |      | shr eax, 0xd
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r10d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r9d, r10d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r10d
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r9d, r8d
+|   1      | 1.0         |      |             |             |      |      |      |      | shr eax, 0xc
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r9d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r8d, r10d
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r8d, r9d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r9d
+|   1      | 1.0         |      |             |             |      |      |      |      | shl eax, 0x10
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r8d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r10d, r8d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r8d
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r10d, r9d
+|   1      | 1.0         |      |             |             |      |      |      |      | shr eax, 0x5
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r10d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r9d, r10d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r10d
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r9d, r8d
+|   1      | 1.0         |      |             |             |      |      |      |      | shr eax, 0x3
+|   1      |             | 1.0  |             |             |      |      |      |      | sub r8d, r10d
+|   1      |             |      |             |             |      | 1.0  |      |      | xor r9d, eax
+|   1      |             |      |             |             |      |      | 1.0  |      | sub r8d, r9d
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r9d
+|   1      | 1.0         |      |             |             |      |      |      |      | shl eax, 0xa
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r8d, eax
+|   1      |             |      |             |             |      | 1.0  |      |      | sub r10d, r8d
+|   1      |             |      |             |             |      |      | 1.0  |      | shr r8d, 0xf
+|   1      | 1.0         |      |             |             |      |      |      |      | sub r10d, r9d
+|   1      |             | 1.0  |             |             |      |      |      |      | xor r10d, r8d
+|   1*     |             |      |             |             |      |      |      |      | cmp esi, r10d
+|   0*F    |             |      |             |             |      |      |      |      | jnz 0x1d
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov dword ptr [rdi], 0x0
+|   1      |             |      |             |             |      | 1.0  |      |      | mov eax, 0x80004005
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rbx, qword ptr [rsp+0x8]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rsi, qword ptr [rsp+0x10]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rdi, qword ptr [rsp+0x18]
+|   3^     |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | ret
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov edx, dword ptr [rbx+0x44]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov r8, qword ptr [rbx+0x98]
+|   1*     |             |      |             |             |      |      |      |      | mov ecx, edx
+|   1*     |             |      |             |             |      |      |      |      | mov eax, r10d
+|   1      |             |      |             |             |      |      | 1.0  |      | and rcx, rax
+|   1*     |             |      |             |             |      |      |      |      | mov eax, esi
+|   1#     | 1.0         |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rsi, qword ptr [rsp+0x10]
+|   1      |             | 1.0  |             |             |      |      |      |      | and rdx, rax
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov eax, dword ptr [r8+rcx*4]
+|   2      |             |      | 0.5     0.5 | 0.5     0.5 |      | 1.0  |      |      | add eax, dword ptr [r8+rdx*4]
+|   2^     |             |      | 0.5     0.5 | 0.5     0.5 |      |      | 1.0  |      | and eax, dword ptr [rbx+0x48]
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rbx, qword ptr [rsp+0x8]
+|   2^     |             |      |             |             | 1.0  |      |      | 1.0  | mov dword ptr [rdi], eax
+|   1*     |             |      |             |             |      |      |      |      | xor eax, eax
+|   1      |             |      | 0.5     0.5 | 0.5     0.5 |      |      |      |      | mov rdi, qword ptr [rsp+0x18]
+Total Num Of Uops: 138
+Analysis Notes:
+Backend allocation was stalled due to unavailable allocation resources.
