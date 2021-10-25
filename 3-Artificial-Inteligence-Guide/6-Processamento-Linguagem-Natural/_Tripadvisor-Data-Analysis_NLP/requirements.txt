@@ -1,0 +1,7 @@
+wordcloud==1.8.1
+autoviml
+gensim==3.8.3
+transformers==4.5.1
+sentencepiece
+vaderSentiment
+pydot
