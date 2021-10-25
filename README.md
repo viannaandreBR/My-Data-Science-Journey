@@ -26,6 +26,10 @@
 ![title](assets/DataSicence-Journey.jpg)
 
 
+# Data Science Roadmap
+
+![title](assets/roadmap.png)
+
 
 # Content
 
