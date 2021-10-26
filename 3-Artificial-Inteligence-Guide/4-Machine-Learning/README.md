@@ -17,10 +17,13 @@
  ---
   ### Árvore de Decisão
 
-   ![title](1-Classificacao/naive-bayes-classificacao.gif)
+   ![title](1-Classificacao/arvore-decisao-classificacao2.gif)
 ---
 ---
-  - Aprendizagem por Regras
+  ### Aprendizagem por Regras
+     
+    ![title](1-Classificacao/arvore-decisao-classificacao2.gif)
+
   - KNN (K-Nearest Neighbors) 
   - SVM (Suport Vector Machine) 
 
