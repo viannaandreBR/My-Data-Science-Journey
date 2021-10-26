@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<scheme version="2.0" title="" description="">
+<scheme version="2.0" title="Aprendizagem Baseada em Regras" description="">
 	<nodes>
 		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(239.0, 361.0)" />
 		<node id="1" name="CN2 Rule Induction" qualified_name="Orange.widgets.model.owrules.OWRuleLearner" project_name="Orange3" version="" title="CN2 Rule Induction" position="(561.0, 362.0)" />

@@ -36,10 +36,15 @@
 ### Aprendizagem baseado em Instâncias
   - KNN (K-Nearest Neighbors) 
 
+![KNN-Classificacao](1-Classificacao/KNN-classificacao.gif)
+
 
 ---
 ### Aprendizagem com Máquinas de Vetores de Suporte
   - SVM (Suport Vector Machine) 
+
+![SVM-Classificacao](1-Classificacao/SVM-classificacao.gif)
+
 
 ---
 ### Regressão Logística
