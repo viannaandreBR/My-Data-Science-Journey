@@ -1,0 +1,11 @@
+*.pyc
+__pycache__
+*.swp
+.vscode/
+.idea/
+.git/
+
+# Debug Dirs
+profiling/
+nvtx_plugins/
+nsys/
