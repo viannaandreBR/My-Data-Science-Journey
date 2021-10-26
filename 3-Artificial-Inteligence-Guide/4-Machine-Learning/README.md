@@ -2,6 +2,7 @@
 
 
 
+
 # Machine Learning
 ![title](assets/machine-learing2.png)
 
@@ -12,21 +13,44 @@
 ## [1. Classificação](./1-Classificacao/)
 ---
   ### Naive Bayes
+
+  - Naive Bayes Classifier
  ![title](1-Classificacao/naive-bayes-classificacao.gif)
----
  ---
   ### Árvore de Decisão
 
-   ![title](1-Classificacao/arvore-decisao-classificacao2.gif)
----
----
-  ### Aprendizagem por Regras
-     
-    ![title](1-Classificacao/arvore-decisao-classificacao2.gif)
+  - Decision Tree Clssifier 
 
+   ![title](1-Classificacao/arvore-decisao-classificacao2.gif)
+
+      
+
+---
+  ### Aprendizagem por Regras 
+  
+    - CN2 Rule Induction
+
+![aprendizagem-regra](1-Classificacao/aprendizagem-regra-classificacao.gif)
+
+---
+### Aprendizagem baseado em Instâncias
   - KNN (K-Nearest Neighbors) 
+
+
+---
+### Aprendizagem com Máquinas de Vetores de Suporte
   - SVM (Suport Vector Machine) 
 
+---
+### Regressão Logística
+- Logistic Regression
+
+
+---
+### Validação Cruzada
+- Cross Validation
+
+---
 ## [2. Regressão](./2-Regressao/)
   - Regressão Linear
 
