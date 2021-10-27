@@ -49,6 +49,8 @@
 ---
 ### Regressão Logística
 - Logistic Regression
+![Regressao-Logistica-Classificacao](1-Classificacao/Regressao-Logistica-classificacao.gif)
+
 
 
 ---
