@@ -48,8 +48,18 @@
 
 ---
 ### Regressão Logística
-- Logistic Regression
+- Logistic Regression & Others
 ![Regressao-Logistica-Classificacao](1-Classificacao/Regressao-Logistica-classificacao.gif)
+
+---
+### Wine Classification Problem
+- Logistic Regression & Others 
+![Wine-Classificacao](1-Classificacao/Wine-classificacao.gif)
+
+---
+### Image Classification Problem
+- Logistic Regression & Others 
+![Wine-Classificacao](1-Classificacao/Wine-classificacao.gif)
 
 
 
