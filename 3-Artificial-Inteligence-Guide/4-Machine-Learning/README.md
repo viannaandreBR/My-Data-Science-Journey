@@ -59,7 +59,7 @@
 ---
 ### Image Classification Problem
 - Logistic Regression & Others 
-![Wine-Classificacao](1-Classificacao/Wine-classificacao.gif)
+![Imagem-Classificacao](1-Classificacao/Imagem-classificacao.gif)
 
 
 
