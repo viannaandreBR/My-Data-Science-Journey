@@ -70,24 +70,31 @@
 ---
 ## [2. Regressão](./2-Regressao/)
   - Regressão Linear
+![Regressao-Linear](2-Regressao/regressao-Linear.gif)
 
+
+---
 
 ## [3. Agrupamento](./3-Agrupamento/)
   - K-means
 
+---
 ## [4. Associação](./4-Associacao/)
   - Apriori
 
+---
 ## [5. Aprendizagem por Reforço](./5-Aprendizagem-por-Reforco/)
   - 
   -
   - 
 
+---
 ## [6. Visualização & Exploração de Dados Natural](./6-Visualizacao-Exploracao-Dados/)
   - Gráficos com o Orange
   -
   -
 
+---
 
 ## [7. Tópicos Complementares](./7-Topicos-Complementares/)
   - 
