@@ -1,0 +1,2 @@
+femino,dependentes:2,casado:sim,educacao:graduado,trabalha-por-conta:nao,rendimendo:2000,valor-emprestimo=800 -> classe DENIED
+femino,dependentes:2,casado:sim,educacao:graduado,trabalha-por-conta:nao,rendimendo:10000,valor-emprestimo=800 -> classe APPROVED
