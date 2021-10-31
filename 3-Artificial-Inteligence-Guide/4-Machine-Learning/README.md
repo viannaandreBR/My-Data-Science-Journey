@@ -69,8 +69,12 @@
 
 ---
 ## [2. Regressão](./2-Regressao/)
-  - Regressão Linear
-![Regressao-Linear](2-Regressao/regressao-Linear.gif)
+  - Regressão Linear Teoria
+![Regressao-Linear 1](2-Regressao/regressao-Linear-1.gif)
+
+- Regressão Linear Exercício
+![Regressao-Linear 2](2-Regressao/regressao-Linear-2.gif)
+
 
 
 ---
