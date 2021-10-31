@@ -1,0 +1,263 @@
+---
+title: "20151208Demo"
+author: "David Chiu"
+date: "2015年12月10日"
+output: html_document
+---
+
+## iris training
+```
+data(iris)
+class(iris)
+str(iris)
+
+install.packages("rpart")
+library(rpart)
+
+fit = rpart(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+
+plot(fit)
+text(fit)
+
+plot(fit, margin=0.1)
+text(fit)
+
+
+plot(iris$Petal.Length, iris$Petal.Width )
+
+plot(iris$Petal.Length, iris$Petal.Width, col="red" )
+
+plot(iris$Petal.Length, iris$Petal.Width, col=iris$Species )
+
+abline(v = 2.45, col="blue",lwd = 3)
+abline(h = 1.75, col="orange",lwd = 3)
+?abline
+
+predict(fit, iris)
+prediction = predict(fit, iris, type="class")
+
+
+realcase = c('1', '2', '1', '2', '3')
+forecast = c('1', '2', '3', '2', '2')
+table(realcase, forecast)
+
+table(iris$Species, prediction)
+```
+
+## churn analysis
+```
+install.packages("C50")
+library(C50)
+data(churn)
+str(churnTrain)
+
+df = data.frame(a = c(1,2), b = c(3,4))
+df
+df[,"a"]
+ df[,-1]
+ df[,names(df) %in% 'a']
+ df[,! names(df) %in% 'a']
+churnTrain = churnTrain[,! names(churnTrain) %in% c("state", "area_code", "account_length") ]
+
+
+nrow(churnTrain)
+samp = sample(2, nrow(churnTrain), replace= TRUE ,prob=c(.7,.3))
+table(samp)
+
+idx = sample(2, nrow(churnTrain), replace= TRUE ,prob=c(.7,.3))
+
+a = c(1,2,3,4)
+b = c(1,2,1,2)
+a[b == 1]
+
+ind <- sample(2, nrow(churnTrain), replace = TRUE, prob=c(0.7, 0.3))
+trainset = churnTrain[ind == 1,]
+testset = churnTrain[ind == 2,]
+names(trainset)
+churn.rp <- rpart(churn ~ ., data=trainset)
+plot(churn.rp, margin= 0.1)
+text(churn.rp, all=TRUE, use.n = TRUE)
+ctree.model <- ctree(churn ~ . , data = trainset)
+plot(ctree.model)
+
+iris.model <- ctree(Species ~ . , data = iris)
+plot(iris.model)
+
+min(churn.rp$cptable[,"xerror"])
+which.min(churn.rp$cptable[,"xerror"])
+churn.rp$cptable
+churn.cp = churn.rp$cptable[8,"CP"]
+prune.tree = prune(churn.rp, cp= churn.cp)
+plot(prune.tree, margin= 0.1)
+text(prune.tree, all=TRUE , use.n=TRUE)
+
+predictions <- predict(churn.rp, testset, type="class")
+table(testset$churn, predictions)
+tb= table(testset$churn, predictions)
+
+install.packages("caret")
+library(caret)
+confusionMatrix(tb)
+
+```
+```
+predictions2 <- predict(churn.rp, testset)
+predict_label = predictions2[,1]
+predict_label_y = as.factor(ifelse(predict_label >= 0, 'yes', 'no'))
+
+tbl = table(testset$churn, predict_label_y)
+tbl
+135 0
+4 803
+    yes no
+yes  135 0
+no   803 4
+ TPR = 135 /(135 + 803)
+ FPR = 0 / (4)
+
+```
+
+```
+install.packages("ROCR")
+library(ROCR)
+predictions <- predict(churn.rp, testset, type="prob")
+pred.to.roc <- predictions[, 1] 
+pred.rocr <- prediction(pred.to.roc, as.factor(testset[,(dim(testset)[[2]])])) 
+
+perf.rocr <- performance(pred.rocr, measure = "auc", x.measure = "cutoff") 
+perf.tpr.rocr <- performance(pred.rocr, "tpr","fpr") 
+plot(perf.tpr.rocr, colorize=T,main=paste("AUC:",(perf.rocr@y.values)))
+
+
+
+```
+
+
+```
+a = "我喜歡郭雪芙，不喜歡宋米秦"
+b = '我不喜歡郭雪芙也不喜歡宋米秦'
+
+   我 喜歡 郭雪芙 不 宋米秦
+a   1   2    1     1    1
+b   1   2    1     2    1
+
+test1 = worker()
+test1 <= "我喜歡郭雪芙，不喜歡宋米秦"
+test1  <= '我不喜歡郭雪芙也不喜歡宋米秦'
+
+
+
+?dist
+x = c(0, 0, 1, 1, 1, 1)
+y = c(1, 0, 1, 1, 0, 1)
+歐氏距離
+dist(rbind(x,y), method =  "euclidean")
+dist(rbind(x,y), method ="minkowski", p=2)
+sqrt(sum((x - y) ^ 2))
+
+曼哈頓距離
+dist(rbind(x,y), method =  "manhattan")
+dist(rbind(x,y), method ="minkowski", p=1)
+sum(abs(x - y))
+
+```
+```
+customer= read.csv('customer.csv', header=TRUE)
+head(customer)
+str(customer)
+
+customer = scale(customer[,-1])
+hc = hclust(dist(customer, method="euclidean"), method="ward.D2")
+plot(hc, hang = -0.01, cex = 0.7)
+
+hc2 = hclust(dist(customer), method="single")
+plot(hc2, hang = -0.01, cex = 0.7)
+
+```
+```
+library(cluster)
+?diana
+dv = diana(customer, metric = "euclidean")
+summary(dv)
+plot(dv)
+
+
+fit = cutree(hc, k = 4)
+table(fit)
+rect.hclust(hc, k = 4 , border="red")
+
+```
+## kmeans
+```
+set.seed(22)
+fit = kmeans(customer, 4)
+
+barplot(t(fit$centers), beside = TRUE,xlab="cluster", ylab="value")
+fit = kmeans(customer, 4)
+
+
+plot(customer, col = fit$cluster)
+```
+## evaluation
+```
+set.seed(22)
+km = kmeans(customer, 4)
+kms = silhouette(km$cluster,dist(customer))
+summary(kms)
+plot(kms)
+
+nk=2:10
+library(fpc)
+SW = sapply(nk, function(k) {
+  cluster.stats(dist(customer), kmeans(customer, centers=k)$cluster)$avg.silwidth
+})
+plot(nk, SW, type="l", xlab="number of clusers", ylab="average silhouette width")
+
+nk = 2:10
+set.seed(22)
+WSS = sapply(nk, function(k) {
+    kmeans(customer, centers=k)$tot.withinss
+})
+WSS
+
+plot(nk, WSS, type="l", xlab= "number of k", ylab="within sum of squares")
+
+
+single_c =  hclust(dist(customer), method="single")
+hc_single = cutree(single_c, k = 4)
+
+complete_c =  hclust(dist(customer), method="complete")
+hc_complete =  cutree(complete_c, k = 4)
+
+set.seed(22)
+km = kmeans(customer, 4)
+
+cs = cluster.stats(dist(customer), km$cluster)
+cs[c("within.cluster.ss","avg.silwidth")]
+
+sapply(list(kmeans = km$cluster, 
+         hc_single = hc_single, 
+         hc_complete = hc_complete), function(c) cluster.stats(dist(customer), c)[c("within.cluster.ss","avg.silwidth")])
+
+
+
+```
+
+
+
+data(iris)
+data <- iris[,-5]
+class <- iris[,5]
+
+results <- kmeans(data,3)
+results
+results$size
+results$cluster
+table(class,results$cluster)
+
+par(mfrow = c(2, 2))
+plot(data$Petal.Length,data$Petal.Width,col=results$cluster)
+plot(data$Petal.Length,data$Petal.Width,col=class)
+plot(data$Sepal.Length, data$Sepal.Width,col=results$cluster)
+plot(data$Sepal.Length, data$Sepal.Width,col=class)
+

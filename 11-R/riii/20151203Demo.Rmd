@@ -1,0 +1,443 @@
+---
+title: '20151203'
+author: "David Chiu"
+date: "2015年12月3日"
+output: html_document
+---
+
+
+## RBasic
+```
+a = 3
+b <-2 
+a + b
+a - b
+a * b
+a/ b
+
+a = 3
+a = c(3)
+a = c(1,2,3,4)
+b = c(4,3,2,1)
+
+matrix(1:9 , nrow =3, byrow=TRUE)
+
+data.frame(a=c(1,2,3), b= c(2,3,4))
+data(iris)
+class(iris)
+
+employee = list(age=30, profession="it")
+
+a = c('sunny', 'sunny', 'rainy')
+factor(a)
+
+```
+## Flow Control
+```
+x=5;
+if(x>3){
+  print
+  ("x > 3");
+}else{
+  print
+  ("x <= 3");
+}
+
+
+x=5;
+if(x>3){
+  print ("x > 3");
+} else if (x ==3){
+  print ("x == 3");
+}else{
+  print
+  ("x <= 3");
+}
+
+for(i in 1:10){
+  print(i);
+}
+
+sum=0
+for(i in 1:100){
+  sum= sum+ i;
+}
+sum
+
+sum(1:100)
+
+
+ary = rep(NA, 100)
+for(i in 1:100){
+  ary[i]= i;
+}
+ary
+
+ary2 =c()
+for(i in 1:100){
+  ary2 = c(ary2, i);
+}
+ary2
+
+seq_len(5)
+
+mat = matrix(1:9, byrow=TRUE, nrow=3)
+for(i in seq_len(nrow(mat))) {
+  for(j in seq_len(ncol(mat))) {
+    cat(mat[i, j], " ")
+  }
+  cat('\n');
+}
+
+sum = 0;
+cnt = 0;
+while(cnt <= 100){
+  sum = sum + cnt;
+  cnt = cnt + 1;
+}
+sum
+```
+
+
+```
+for (i in 1:9){
+  for (j in 1:9){  
+      cat(i * j, " " );
+  }
+  cat(" \n" );
+}
+
+
+for (i in 1:9){
+  for (j in 1:9){  
+      cat(sprintf("%d * %d = %d", i, j, i * j), " ");
+  }
+  cat(" \n" );
+}
+
+matrix(1:9, nrow =9) %*% matrix(1:9, nrow= 1)
+
+```
+
+
+```
+a = c(1,2,3,4)
+b = c()
+for(i in 1:4){
+    if(a[i] != 3){
+       b = c(b, a[i]);
+    }
+}
+b    
+
+a = c(1,2,3,4)
+b = c(TRUE, TRUE, FALSE, TRUE)
+a[b]
+
+f = function(a = 3) {
+    b = 2
+    b
+}
+
+f()
+
+b = 3
+f = function(a = 3) {
+    b = 2
+    b
+}
+f()
+b
+
+b = 3
+f = function(a = 3) {
+    b
+}
+f()
+b
+
+
+f = function(a, b = 2, c = NULL) {
+   a + b
+}
+f(a = 3)
+
+f(3)
+
+
+f = function(a, b = 2, c = NULL) {
+   return(a + b)
+}
+f(3)
+
+
+f= function(a, b){
+    a*2
+}
+f(3)
+
+f= function(a, b){
+     print(a+b)
+}
+f(3)
+
+f = function(a,b){
+    if(a > 3){
+       a = 100;
+    }
+    a + b;
+}
+
+f(5,8)
+f(5,"Hello World")
+debug(f)
+f(5,"Hello World")
+undebug(f)
+
+
+mat = matrix(-1, nrow=5, ncol = 5)
+mat
+rownames(mat) = c("A","B","C","D","E")
+colnames(mat) = c("A","B","C","D","E")
+
+mat['A','C'] = 3
+
+
+```
+
+```
+mat = matrix(-1, nrow=5, ncol = 5)
+mat
+rownames(mat) = c("A","B","C","D","E")
+colnames(mat) = c("A","B","C","D","E")
+
+mat['A','C'] = 3
+match = read.table('match.txt', sep= "|")
+for (i in 1:nrow(match)){
+    mat[match[i,1], match[i,2]] = match[i,3];
+}
+mat
+
+match_func = function(filename= "match.txt"){
+  mat = matrix(-1, nrow=5, ncol = 5)
+  rownames(mat) = c("A","B","C","D","E")
+  colnames(mat) = c("A","B","C","D","E")
+  
+  match = read.table(filename, sep= "|")
+  for (i in 1:nrow(match)){
+      mat[match[i,1], match[i,2]] = match[i,3];
+  }
+  mat
+}
+
+match_func('match.txt')
+match_func()
+```
+
+
+```
+grades =list(kevin = c(80,60,92), marry = c(56,75,64,84,56), QOO = c(10,20,3,4,10))
+
+unlist(grades[1])
+for (i in 1:length(grades)){
+      print(sum(unlist(grades[i])));
+}
+
+lapply(grades, sum)
+lapply(grades, mean)
+lapply(grades, function(e){list(sum = sum(e), min = min(e))})
+
+lapply(c(1,2,3,4,5),  function(e){paste(as.character(e), "hello")})
+m1 = matrix(1:4, byrow=TRUE, nrow=2)
+m2 = matrix(5:8, byrow=TRUE, nrow=2)
+
+li = list(m1, m2)
+lapply(li, mean)
+
+
+class(lapply(grades, sum))
+sapply(grades, sum)
+
+m1 = matrix(1:4, byrow=TRUE, nrow=2)
+m2 = matrix(5:8, byrow=TRUE, nrow=2)
+li = list(m1, m2)
+sapply(li, mean)
+sapply(li,function(e) e[1,])
+
+m = matrix(1:4, byrow=TRUE, nrow=2)
+apply(m, 1, sum) # rowsums
+apply(m, 2, sum) # colsums
+
+rowmeans = apply(m, 1, mean)
+colmeans = apply(m, 2, mean)
+
+x = c(80,70,59,88,72,57)
+t = c(1,1,2,1,1,2)
+tapply(x,t, mean)
+
+data(iris)
+
+tapply(iris$Sepal.Length, iris$Species,mean)
+
+```
+## Find Center
+```
+names(cdc)
+str(cdc)
+?hist
+hist(cdc$weight)
+
+a = c(1,2,2,3,1,2,4,5,6,5,6,7,8,9,9,8)
+hist(a)
+
+
+salary = c(22,23,25,27,32,35,22,23,25,27,32,35,50,55,60,220,230,250,300,220,230,250,300)
+hist(salary)
+
+low = rnorm(40, mean= 28, sd = 3)
+med = rnorm(20, mean= 50, sd = 10)
+high = rnorm(40, mean= 200, sd = 20)
+hist(c(low, med, high))
+hist(cdc$weight, breaks=50)
+hist(cdc$weight, breaks=500)
+
+```
+
+```
+table(cdc$weight %% 10)
+
+a = c(1,2,2,3,1,2,4,5,6,5,6,7,8,9,9,8)
+hist(a)
+stem(a)
+
+salary = c(22,23,25,27,32,35,22,23,25,27,32,35,50,55,60,220,230,250,300,220,230,250,300)
+stem(salary)
+
+a = c(100,120,130,110,100,90,80,90,100,110)
+sum(a) / 10
+mean(a)
+
+b = c(a, 10000)
+mean(b)
+
+a 
+sort(a)
+median(a)
+
+sort(b)
+median(b)
+
+mean(cdc$weight)
+median(cdc$weight)
+names(which.max(table(a)))
+str(cdc)
+table(cdc$smoke100)mosaicplot(gender_smokers)
+
+
+table(cdc$smoke100) / length(cdc$smoke100)
+barplot(table(cdc$smoke100))
+gender_smokers = table(cdc$gender,cdc$smoke100)
+mosaicplot(gender_smokers)
+
+
+```
+
+```
+a = c(150, 155, 160, 162, 168, 171, 173, 175, 178, 182, 185)
+stem(a)
+quantile(a,0.5)
+quantile(a,0.25)
+quantile(a,0.75)
+quantile(a,0.75) - quantile(a,0.25)
+IQR(a)
+boxplot(a)
+
+low_adjacent = max(median(a) - 1.5 * IQR(a), 150)
+high_adjacent = min(median(a) + 1.5 * IQR(a), 180)
+low_adjacent
+b = c(150, 155, 160, 162, 168, 171, 173, 175, 178, 182, 185, 220)
+boxplot(b)
+
+boxplot(cdc$weight)
+
+
+par(mfrow=c(2,1))
+hist(cdc$weight)
+boxplot(cdc$weight, horizontal=TRUE)
+
+# par(mfrow=c(2,2))
+boxplot(cdc$weight ~ cdc$gender)
+boxplot(cdc$height ~ cdc$gender)
+
+temp = c(20,30,22,21,35,23,24,27,28)
+temp = rnorm(10000, mean = 25, sd = 5)
+
+temp2 = c(temp, 9999,9999,9999,9999,9999,9999,-1,-1,-1,-1)
+mean(temp)
+mean(temp2)
+
+boxplot(temp2)
+boxplot(temp2[temp2 < 50 & temp2 > 0])
+
+bmi = (cdc$weight/cdc$height^2) * 703
+boxplot(bmi ~ cdc$genhlth)
+
+plot(cdc$weight, cdc$wtdesire)
+
+```
+
+```
+sd(cdc$weight)
+sd(cdc$weight) ^ 2
+
+var(cdc$weight)
+
+rnorm(10)
+?rnorm
+
+rnorm(10, mean =70, sd = 10)
+hist(rnorm(10, mean =70, sd = 10))
+hist(rnorm(100, mean =70, sd = 10))
+hist(rnorm(1000, mean =70, sd = 10))
+
+h1 = rnorm(1000, mean =70, sd = 10)
+dh1 = density(h1)
+plot(dh1)
+dnorm(70, mean = 70, sd = 10)
+dnorm(100, mean = 70, sd = 10)
+
+curve(dnorm, -3,3)
+dnorm(0)
+
+dice = sample.int(6, 10000, replace=TRUE)
+hist(dice)
+
+set.seed(123)
+sample.int(42, 6)
+
+set.seed(50)
+y = runif(10000,0,5)
+hist(y)
+
+hist(rpois(5000,3))
+hist(rpois(5000,300))
+
+pnorm(0)
+pnorm(1)
+pnorm(2)
+
+curve(dnorm, -3,3)
+pnorm(1) - pnorm(-1)
+x = c(-1,seq(-1,1,0.1),1)
+y = c(0,dnorm(seq(-1,1,0.1)),0)
+polygon(x,y, col = "blue")
+
+pnorm(2) - pnorm(-2)
+pnorm(1.96) - pnorm(-1.96)
+
+curve(dnorm, -3,3)
+pnorm(1) - pnorm(-1)
+x = c(-1.96,seq(-1.96,1.96,0.1),1.96)
+y = c(0,dnorm(seq(-1.96,1.96,0.1)),0)
+polygon(x,y, col = "red")
+```

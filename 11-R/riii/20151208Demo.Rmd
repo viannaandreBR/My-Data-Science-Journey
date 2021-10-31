@@ -1,0 +1,284 @@
+---
+title: "20151208Demo"
+author: "David Chiu"
+date: "2015年12月8日"
+output: html_document
+---
+
+```
+hist(rnorm(1000,mean=70, sd=30))
+
+sample(1:10)
+sample(1:10, size = 5)
+sample(1:42, size = 6)
+sample(c(0,1), 2)
+sample(c(0,1), 3)
+
+sample(c(0,1), 10, replace = TRUE)
+sample.int(20, 12)
+
+```
+
+
+```
+coins = c("heads", "tails")
+fair_coin = sample(coins, size = 100, replace = TRUE)
+table(fair_coin)
+
+dice = sample(1:6, size=1000,replace=TRUE)
+table(dice)
+barplot(table(dice))
+
+
+outcomes = c("head", "tail")
+unfair_coin = sample(outcomes, size = 100, replace = TRUE, prob = c(0.3,0.7))
+table(unfair_coin)
+
+```
+
+```
+rnorm(100)
+hist(rnorm(100))
+
+set.seed(123)
+sample(1:10, 3)
+
+set.seed(123)
+sample(1:42, 6)
+sample(1:42, 6)
+
+set.seed(123)
+head(.Random.seed)
+
+set.seed(50)
+head(.Random.seed)
+
+
+
+
+```
+
+
+```
+names(ames)
+str(ames)
+
+area = ames$Gr.Liv.Area
+hist(area)
+shapiro.test(area)
+
+
+sample_means10 = rep(NA, 5)
+rep(NA, 5)
+
+a = c()
+for(i in 1:3){
+ a = c(a, i)
+}
+
+
+a = rep(NA,3)
+for(i in 1:3){
+ a[i] = i
+}
+
+
+sample_means10 = rep(NA, 5000)
+sample_means50 = rep(NA, 5000)
+sample_means100 = rep(NA, 5000)
+sample(area, 10)
+
+for (i in 1:5000){
+  sample_means10[i] = mean(sample(area, 10))
+}
+
+hist(sample_means10)
+
+for (i in 1:5000){
+  sample_means50[i] = mean(sample(area, 50))
+}
+
+hist(sample_means50)
+
+
+for (i in 1:5000){
+  sample_means100[i] = mean(sample(area, 100))
+}
+
+hist(sample_means100)
+
+par(mfrow = c(3, 1))
+
+xlimits = range(sample_means10)
+
+hist(sample_means10, breaks = 20, xlim = xlimits)
+hist(sample_means50, breaks = 20, xlim = xlimits)
+hist(sample_means100, breaks = 20, xlim = xlimits)
+
+
+```
+
+
+```
+
+curve(dnorm, -3,3)
+pnorm(1) - pnorm(-1)
+x = c(-1.96,seq(-1.96,1.96,0.1),1.96)
+y = c(0,dnorm(seq(-1.96,1.96,0.1)),0)
+polygon(x,y, col = "red")
+
+
+a = rnorm(1000)
+shapiro.test(a)
+b = rpois(1000, lambda = 3)
+hist(b)
+shapiro.test(b)
+
+```
+
+```
+population = ames$Gr.Liv.Area
+mean(population)
+
+samp = sample(population, 50)
+sample_mean = mean(samp)
+hist(samp)
+
+sde = sd(samp)/sqrt(50)
+
+lower = sample_mean - 1.96 * sde
+upper = sample_mean + 1.96 * sde
+
+dens <- density(population)
+plot(dens, col="red")
+mean(population)
+abline(v = mean(population), col="blue")
+
+lower
+upper
+polygon(c(lower, dens$x[dens$x>lower & dens$x < upper], upper), c(0, dens$y[dens$x>=lower & dens$x <= upper], 0), col="red", density = c(10, 50) ,angle = c(-45, 45))
+
+
+curve(dnorm, -3,3)
+x = c(-1.96,seq(-1.96,1.96,0.1),1.96)
+y = c(0,dnorm(seq(-1.96,1.96,0.1)),0)
+polygon(x,y, col = "red")
+
+alpha = 0.05
+1 - alpha / 2
+qnorm(1 - alpha / 2)
+qnorm( 1 - (1 - alpha / 2))
+
+alpha = 0.01
+1 - alpha / 2
+qnorm(1 - alpha / 2)
+qnorm( 1 - (1 - alpha / 2))
+
+
+lower = sample_mean - 2.58 * sde
+upper = sample_mean + 2.58 * sde
+
+polygon(c(lower, dens$x[dens$x>lower & dens$x < upper], upper), c(0, dens$y[dens$x>=lower & dens$x <= upper], 0), col="green", density = c(10, 50) ,angle = c(-45, 45))
+
+```
+
+
+```
+x = c(160,170,180)
+y = c(64, 68, 72)
+
+cov_xy = sum((x - mean(x)) * (y - mean(y))) / 2
+cov(x,y)
+
+cor_xy = (sum((x - mean(x)) * (y - mean(y))) / 2) / (sd(x) * sd(y))  
+cor(x,y)
+
+plot(x,y)
+
+
+data(mtcars)
+mtcars
+
+cov(mtcars)
+cor(mtcars)
+cov(mtcars[1:3])
+
+
+gdp = read.csv("gdp.csv",header=TRUE)
+
+gdp = gdp[1:15,]
+gdp$GDP = as.numeric(sub(",", "", gdp$GDP))
+gdp$Export = as.numeric(sub(",", "", gdp$Export))
+cor(gdp$Export, gdp$GDP)
+```
+
+```
+names(cdc)
+hist(cdc$height)
+boxplot(cdc$height)
+boxplot(cdc$height~ cdc$gender)
+
+pop_mean <- 300
+pop_sd <- 10
+coke = c(278,289,291,291,291,285,295,278,304,287,291,287,288,300,309,280,294,283,292,306)
+
+sde <- pop_sd / sqrt(length(coke))
+z   <- (mean(coke) - pop_mean) / sde
+curve(dnorm(x), -3,3)
+p   <- (1 - pnorm(abs(z))) * 2
+
+
+pop_mean = mean(cdc$height)
+pop_sd = sd(cdc$height)
+
+set.seed(123)
+samp = sample(cdc[cdc$gender == 'm',]$height, 20)
+boxplot(samp)
+abline(h = pop_mean, col= "red")
+sde <- pop_sd / sqrt(length(samp))
+z   <- (mean(samp) - pop_mean) / sde
+
+# two sample means are equal
+p   <- (1 - pnorm(abs(z))) * 2
+
+# the mean height of the sample is taller than the mean height of the population
+p   <- 1- pnorm(z)
+
+z.test <- function(x, pop_mean, pop_sd, side="twoside"){
+  sde <- pop_sd / sqrt(length(x))
+  z   <- (mean(x) - pop_mean) / sde
+  
+  switch(side, 
+         twoside={
+           p   <- (1 - pnorm(abs(z))) * 2
+         },
+         less={
+           p   <- pnorm(z)
+         },
+         {
+           p   <- 1- pnorm(z)
+         }
+  )
+  return(list(z = z , p = p))
+}
+
+help(package ="stat")
+
+```
+
+-- http://scikit-learn.org/stable/_static/ml_map.png
+
+```
+data(iris)
+head(iris)
+install.packages("rpart")
+library(rpart)
+fit = rpart(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+plot(fit, margin =0.1)
+text(fit)
+
+install.packages("e1071")
+library(e1071)
+fit2 = svm(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = iris)
+
+```

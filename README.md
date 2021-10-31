@@ -5,9 +5,9 @@
 
 ![title](assets/DataScience-Cloud.png)
 
-# Data Science Joourney
+# Data Science Journey
 
-![title](assets/DataScience-Journey1.png)
+![title](assets/DS-Men.jpeg)
 
 
 
