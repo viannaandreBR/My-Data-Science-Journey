@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Topicos-Complementares-Series-Temporais-1" description="Series Temporal&#10;&#10;uma série temporal é uma coleção de observações feitas sequencialmente ao longo do tempo. Uma característica muito importante deste tipo de dados é que as observações vizinhas são dependentes e o interesse é analisar e modelar essa dependência.&#10;As séries temporais existem nas mais variadas atividades, como: finanças, marketing, economia, seguros, demografia, ciências sociais, meteorologia, energia, epidemiologia.">
+	<nodes />
+	<links />
+	<annotations />
+	<thumbnail />
+	<node_properties />
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
