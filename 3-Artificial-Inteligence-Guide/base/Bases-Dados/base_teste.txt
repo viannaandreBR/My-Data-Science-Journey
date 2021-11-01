@@ -1,0 +1,85 @@
+texto,emocao
+não precisei pagar o ingresso,alegria
+se eu ajeitar tudo fica bem,alegria
+minha fortuna ultrapassará a sua,alegria
+sou muito afortunado,alegria
+é benéfico para todos esta nova medida,alegria
+ficou lindo,alegria
+achei esse sapato muito simpático,alegria
+estou ansiosa pela sua chegada,alegria
+congratulações pelo seu aniversário,alegria
+delicadamente ele a colocou para dormir,alegria
+a música é linda,alegria
+sem música eu não vivo,alegria
+concluí uma tarefa muito difícil,alegria
+concluí minha graduação,alegria
+estou muito contente com tudo,alegria
+eu confio em você,alegria
+é um prazer conhecê-lo,alegria
+o coleguismo de vocês é animador,alegria
+estou aproveitando as férias,alegria
+vamos aproveitar as férias,alegria
+é muito divertido este jogo,alegria
+vamos ter muita diversão,alegria
+não achei que me divertiria tanto assim,alegria
+vou consentir o orçamento ao cliente,alegria
+com o consentimento dos meus pais podemos nos casar,alegria
+eu adorei este perfume,alegria
+sua bondade é cativante,alegria
+estou despreocupada,alegria
+não me preocupo com o que aconteceu,alegria
+me sinto completamente segura,alegria
+estimo muito o seu trabalho,alegria
+somos estimados por nossa família,alegria
+concretizamos nossa ideia,alegria
+nosso ideal foi alcançado,alegria
+estamos muito felizes juntos,alegria
+estou tão animada com os preparativos para o casamento,alegria
+você será muito amado meu filho,alegria
+os apaixonados sãoo maravilhosos,alegria
+agradeço imensamente o seu apoio nestes dias,alegria
+esta comida me parece muito atraente,alegria
+você me completa,alegria
+poderemos completar o projeto hoje!,alegria
+estamos namorando,alegria
+estou namorando este vestido a um tempo,alegria
+pude comprar meu celular hoje,alegria
+e um deleite poder compartilhar minhas vitórias,alegria
+ela é um boa garota,alegria
+estivemos em um útimo show,alegria
+que abominável esse monstro!,medo
+vamos alarmar a todos sobre a situação,medo
+estou amedrontada,medo
+estou com muito medo da noite,medo
+ele esta me ameaçando a dias,medo
+quanta angústia,medo
+estou angustiada,medo
+angustiadamente vou sair de casa,medo
+isso me deixa apavorada,medo
+você esta me apavorando,medo
+estou desconfiada de você,medo
+não confio em você,medo
+atá o cachorro está apavorado,medo
+estou assustado com as atitudes do meu colega,medo
+agora se sente humilhado apavorado,medo
+assustou a população e provocou mortes,medo
+estou com dificuldades para respirar e muito assustado,medo
+os policiais se assustaram quando o carro capotou,medo
+o trabalhador é assombrado pelo temor do desemprego,medo
+este lugar é mal assombrado,medo
+estou assombrado pela crise financeira,medo
+mesmo aterrorizado lembro de você,medo
+aterrorizado e suando frio,medo
+um grupo de elefantes selvagens tem aterrorizado vilas,medo
+me sinto intimidada pela sua presença,medo
+tenho medo de ser advertida novamente,medo
+estou correndo o risco de ser advertido,medo
+estou correndo riscos,medo
+os riscos são reais,medo
+podemos perder muito dinheiro com essa investida,medo
+socorro fui intimado a depor,medo
+fui notificado e estou com medo de perder a guarda da minha filha,medo
+estou angustiada com meus filhos na rua,medo
+e abominável o que fazem com os animais,medo
+foi terrível o tigre quase o matou,medo
+me advertiram sobre isso,medo

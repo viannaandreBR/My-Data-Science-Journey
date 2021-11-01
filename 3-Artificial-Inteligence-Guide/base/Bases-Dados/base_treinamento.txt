@@ -1,0 +1,197 @@
+texto,emocao
+este trabalho é agradável,alegria
+gosto de ficar no seu aconchego,alegria
+fiz a adesão ao curso hoje,alegria
+eu sou admirada por muitos,alegria
+adoro como você,alegria
+adoro seu cabelo macio,alegria
+adoro a cor dos seus olhos,alegria
+somo tão amáveis um com o outro,alegria
+sinto uma grande afeição por ele,alegria
+quero agradar meus filhos,alegria
+me sinto completamente amado,alegria
+eu amo você,alegria
+que grande alívio,alegria
+a dor esta amenizando finalmente,alegria
+acho que me apaixonei,alegria
+amar é maravilhoso,alegria
+estou me sentindo muito animada,alegria
+me sinto muito bem hoje,alegria
+como o luar é belo,alegria
+o dia esta muito bonito,alegria
+nossa como sou afortunado,alegria
+as maravilhas do mundo,alegria
+recebi muito carinho hoje do meus colegas,alegria
+estou me sentindo reconfortada hoje,alegria
+é muito bom estar com os amigos,alegria
+estou muito contente com o resultado dos testes,alegria
+essa pintura esta bem brilhante,alegria
+temos água em abundância,alegria
+que roupa delicada,alegria
+você é um grande comediante,alegria
+que bondade a sua em vir aqui,alegria
+o amor é lindo,alegria
+nossa amizade vai durar para sempre,alegria
+estou eufórica com a notícia,alegria
+ele é realmente fiel a mim,alegria
+vou dar uma grande festa para comemorar meu aniversário,alegria
+graças a deus que eu enxerguei o certo,alegria
+essa é a melhor escolhas de todas,alegria
+o mais incrível é você minha bela,alegria
+é tão engraçado tentar explicar,alegria
+é emocionante estar neste lugar,alegria
+estou cativada pelo seu olhar,alegria
+estou loucamente apaixonada,alegria
+eu nunca tive dúvidas,alegria
+estou rodeada pelo seu abraço,alegria
+eu vejo estrelas pelo caminho,alegria
+eu sinto o sol sempre que você esta por perto,alegria
+eu estou sorrindo de orelha a orelha,alegria
+isso vale a pena,alegria
+finalmente você colocou meu amor em primeiro lugar,alegria
+nós dançamos noite adentro,alegria
+seu amor é brilhante,alegria
+toquei muitos corações durante o meu caminho,alegria
+eu serei sua amiga e companheira,alegria
+você me traz de volta a vida,alegria
+você e como um sonho doce,alegria
+adoro este doce de frutas,alegria
+meu suco favorito,alegria
+estou agradecida pela ajuda,alegria
+é um enorme prazer ter você em nossa equipe,alegria
+trabalhar em equipe é o melhor,alegria
+me sinto flutuando no ar,alegria
+a brisa esta agradável hoje,alegria
+ótimo e compatível,alegria
+somos compatíveis um com o outro,alegria
+o órgão é compatível com o paciente,alegria
+estou contente fui aceita na faculdade,alegria
+fui aprovada no meu exame,alegria
+fui beneficiada pela minha empresa,alegria
+eu sou muito cativante,alegria
+estou contente com o apoio,alegria
+como este lugar e confortável,alegria
+e bom estar quente neste frio,alegria
+um elogio nunca e demais,alegria
+vou te chamar para comemorar,alegria
+é desejável a sua presença em nossa apresentação,alegria
+sou muito grata a você,alegria
+me dedico muito naquilo que faço,alegria
+estou completamente apaixonada ,alegria
+vamos agitar essa noite,alegria
+você significa muito para mim,alegria
+vamos agir sem preconceitos e julgamentos,alegria
+finalmente completei a minha coleção maravilhoso,alegria
+eu sou sua rainha ,alegria
+satisfatoriamente eu anuncio o vencedor dos jogos,alegria
+você me atrai facilmente ,alegria
+aquele rapaz e extremamente atraente,alegria
+sinto-me viva ,alegria
+sinto-me em paz ,alegria
+estamos tendo muito lucro,alegria
+muito bem esta tudo em ordem agora ,alegria
+podemos arrumar um emprego juntos ,alegria
+a arrumação esta terminada que alívio,alegria
+o câncer é benigno ,alegria
+o amor é abundante,alegria
+vamos ser caridosos este natal,alegria
+com todo esse charme você irá atrair a todos,alegria
+nossa como você é charmoso querido ,alegria
+sou querida pelos meu amigos,alegria
+seja cuidadoso com os meus sentimentos,alegria
+estou comovido com tamanha caridade,alegria
+um chá quente e reconfortante,alegria
+que alegria ter vocês aqui ,alegria
+vamos aplaudir o vencedor ,alegria
+palmas para a aniversariante,alegria
+desejo a você tudo de bom,alegria
+hora de apreciar um bom vinho,alegria
+aprecio sua presença em minha escola,alegria
+anseio por seus próximos trabalhos,alegria
+maravilhoso jogo amistoso,alegria
+e ótimo que os menimos tenham se apaziguado,alegria
+concretizei finalmente meu sonho,alegria
+eu imploro não me matem!,medo
+tem certeza que não é perigoso?,medo
+não tenho certeza se é seguro,medo
+tenho que correr pra não me pegarem,medo
+socorro! ele queria roubar os meus doces!,medo
+esse cara está me perseguindo,medo
+não entro lá é um lugar muito perigoso,medo
+este lugar continua assustador,medo
+na selva tem muitos animais perigosos,medo
+avancem com cautela,medo
+este lugar está silencioso de mais cuidado!,medo
+por favor deixe-me viver!,medo
+vou ficar sem mesada se tirar nota baixa,medo
+parece que tem olhos nos vigiando,medo
+eu temo que a sentença do juiz possa ser negativa,medo
+mas essa missão é arriscada,medo
+salvem-se quem puder!,medo
+meu plano pode ser descoberto,medo
+não tive culpa juro não fui eu,medo
+tenho que tomar cuidado com o lobisomem,medo
+se eu não achar ele vai descobrir a verdade,medo
+meu deus ele desapareceu!,medo
+tomara que eles não me vejam daqui!,medo
+mantenha isso em segredo se descobrirem estaremos ferrados,medo
+por favor me soltem eu sou inocente,medo
+estou ouvindo passos atrás de mim,medo
+eu vou pedir socorro!,medo
+cuidado com as curvas na estrada,medo
+não sei não parece perigoso,medo
+estou tremendo de medo!,medo
+socorro eu vou cair!,medo
+eu não vou até a floresta negra é muito perigoso,medo
+ouço passos na minha direção,medo
+acho que está arriscado de mais,medo
+vamos voltar é muito perigoso,medo
+fuja se não acabaremos mortos,medo
+receio por não me livrar desta situação,medo
+socorro! ele está armado!,medo
+ei cuidado você vai bater no poste!,medo
+socorro nós estamos afundando,medo
+e sério cuidado com essa arma!,medo
+os tubarões estão atacando!,medo
+sinto arrepios quando fico sozinho no escuro,medo
+calma eu não estou com o dinheiro,medo
+eu acho que estou sendo enganado,medo
+ligeiro temos que fugir depressa,medo
+tem um crocodilo selvagem vindo para cá,medo
+se ficarmos quietos eles não vão nos achar,medo
+fuja! o tigre parece faminto,medo
+estou sem saída preciso de um milagre,medo
+tire isso de mim! socorro!,medo
+não sei nadar vou me afogar!,medo
+não tenho certeza se e seguro,medo
+vou apanhar se meus pais verem meu boletim,medo
+não consigo sair daqui!,medo
+se sair tão tarde poderei ser assaltada,medo
+não me deixe por favor!,medo
+espere não pode me largar aqui sozinho,medo
+temo pela sua segurança,medo
+eu te entrego o dinheiro por favor não me mate!,medo
+ele vai levar todo o meu dinheiro,medo
+não dirija tão rápido assim,medo
+me descobriram irão me prender!,medo
+só espero que não me façam nenhum mal,medo
+vou me afogar me ajudem a sair da água,medo
+não estaremos a salvo aqui,medo
+não quero nem pensar no que pode acontecer,medo
+nessa cidade é uma desgraça atrás da outra,medo
+alguém esta me ligando estou assustado,medo
+isso não é remedio não me matem,medo
+eu não confio nele tenho que ter cautela,medo
+muita cautela,medo
+vou ser descoberto meu deus,medo
+receio que terei de ir,medo
+a noite e muito perigosa,medo
+estou estremecendo com essa casa,medo
+olha aquela criatura se movendo monstruosamente,medo
+não aguento este suspense,medo
+afugente os cães,medo
+estou chocado e amedrontado com este assassinato brutal,medo
+é preciso afugenta com ímpeto este medo do inferno,medo
+políticos usam suas forças para afugentar e amedrontar o povo,medo
+o objetivo disso e apenas me amedrontar mais,medo
+isso me apavora,medo
