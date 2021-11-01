@@ -12,11 +12,13 @@
 		<node id="8" name="Correlogram" qualified_name="orangecontrib.timeseries.widgets.owcorrelogram.OWCorrelogram" project_name="Orange3-Timeseries" version="" title="Correlogram" position="(1069.0, 272.0)" />
 		<node id="9" name="Spiralogram" qualified_name="orangecontrib.timeseries.widgets.owspiralogram.OWSpiralogram" project_name="Orange3-Timeseries" version="" title="Spiralogram" position="(1200, 450)" />
 		<node id="10" name="ARIMA Model" qualified_name="orangecontrib.timeseries.widgets.owarimamodel.OWARIMAModel" project_name="Orange3-Timeseries" version="" title="ARIMA Model" position="(455.0, 458.0)" />
-		<node id="11" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (2)" position="(776.0, 237.0)" />
+		<node id="11" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (2)" position="(614.0, 598.0)" />
 		<node id="12" name="Line Chart" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" project_name="Orange3-Timeseries" version="" title="Line Chart (1)" position="(750, 450)" />
-		<node id="13" name="VAR Model" qualified_name="orangecontrib.timeseries.widgets.owvarmodel.OWVARModel" project_name="Orange3-Timeseries" version="" title="VAR Model" position="(918.0, 336.0)" />
+		<node id="13" name="VAR Model" qualified_name="orangecontrib.timeseries.widgets.owvarmodel.OWVARModel" project_name="Orange3-Timeseries" version="" title="VAR Model" position="(820.0, 347.0)" />
 		<node id="14" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (3)" position="(831.0, 552.0)" />
 		<node id="15" name="Line Chart" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" project_name="Orange3-Timeseries" version="" title="Line Chart (2)" position="(1032.0, 528.0)" />
+		<node id="16" name="Model Evaluation" qualified_name="orangecontrib.timeseries.widgets.owmodelevaluation.OWModelEvaluation" project_name="Orange3-Timeseries" version="" title="Model Evaluation" position="(762.0, 274.0)" />
+		<node id="17" name="Model Evaluation" qualified_name="orangecontrib.timeseries.widgets.owmodelevaluation.OWModelEvaluation" project_name="Orange3-Timeseries" version="" title="Model Evaluation (1)" position="(932.0, 304.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Time series" sink_channel="Data" enabled="true" />
@@ -37,9 +39,13 @@
 		<link id="15" source_node_id="13" sink_node_id="14" source_channel="Forecast" sink_channel="Data" enabled="true" />
 		<link id="16" source_node_id="13" sink_node_id="15" source_channel="Forecast" sink_channel="Forecast" enabled="true" />
 		<link id="17" source_node_id="3" sink_node_id="15" source_channel="Data" sink_channel="Time series" enabled="true" />
+		<link id="18" source_node_id="5" sink_node_id="16" source_channel="Time series" sink_channel="Time series" enabled="true" />
+		<link id="19" source_node_id="10" sink_node_id="16" source_channel="Time series model" sink_channel="Time series model" enabled="true" />
+		<link id="20" source_node_id="13" sink_node_id="17" source_channel="Time series model" sink_channel="Time series model" enabled="true" />
+		<link id="21" source_node_id="5" sink_node_id="17" source_channel="Time series" sink_channel="Time series" enabled="true" />
 	</links>
 	<annotations>
-		<text id="0" type="text/plain" rect="(53.0, 25.0, 926.0, 40.0)" font-family="Sans Serif" font-size="16">Séries Temporais 2 - Forecast</text>
+		<text id="0" type="text/plain" rect="(53.0, 25.0, 926.0, 40.0)" font-family="Sans Serif" font-size="16">Séries Temporais 3 - Valuation</text>
 	</annotations>
 	<thumbnail />
 	<node_properties>
@@ -133,6 +139,8 @@ aB1oJE5oJYloJn2UaChLAGgpSwNoKksCaCtoLIwKY2lfcGVyY2VudJRLX3ViaBNoFU6MEU9wZW4g
 KDk1JUNJIGhpZ2gplIeUUpR9lChoGmhYaBtOaBxoHWgkTmgliWgmfZRoKEsAaClLA2gqSwJoK2gs
 aFdLX3VihpR1YmFhaC1dlIlhaC9dlGg/YWgESwJ1aDJOdWJldS4=
 </properties>
+		<properties node_id="16" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'forecast_steps': 10, 'n_folds': 20, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x00\x00\x02\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties node_id="17" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'forecast_steps': 10, 'n_folds': 20, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
