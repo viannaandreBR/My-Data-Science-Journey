@@ -1,0 +1,40 @@
+{
+	"name": "1 in 1 placeholder two out vectors test",
+	"details": "Placeholders model test",
+	"id": "1_in_1_placeholder_2_out_vectors_test",
+	"version": "1",
+	"author": "doc.ai",
+	"license": "",
+	"model": {
+		"file": "predict",
+		"quantized": false,
+		"backend": "tensorflow",
+		"modes": ["predict"]
+	},
+	"inputs": [
+		{
+			"name": "input1",
+			"type": "array",
+			"shape": [1,4]
+		}
+	],
+	"placeholders": [
+		{
+			"name": "input2",
+			"type": "array",
+			"shape": [1,4]
+		}
+	],
+	"outputs": [
+		{
+			"name": "output1",
+			"type": "array",
+			"shape": [1,1]
+		},
+		{
+			"name": "output2",
+			"type": "array",
+			"shape": [1,1]
+		}
+	]
+}
