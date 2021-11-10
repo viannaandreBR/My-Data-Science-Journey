@@ -1,0 +1,12 @@
+Loaded 1 labels
+Loaded 6171 images
+------------------------------------------------------------------------------------------------------------------------------------------------
+TRAINING NEURAL NETWORK
+------------------------------------------------------------------------------------------------------------------------------------------------
+Epoch:1, Time:117470ms, TrainError:0.5483721, TrainErrorChange:0.5483721, TrainAccuracy: 0.58677685
+Epoch:2, Time:106093ms, TrainError:0.47611678, TrainErrorChange:-0.07225531, TrainAccuracy: 0.9178415
+Epoch:3, Time:109682ms, TrainError:NaN, TrainErrorChange:NaN, TrainAccuracy: 0.41322315
+
+TRAINING COMPLETED
+Total Training Time: 499189ms
+------------------------------------------------------------------------
